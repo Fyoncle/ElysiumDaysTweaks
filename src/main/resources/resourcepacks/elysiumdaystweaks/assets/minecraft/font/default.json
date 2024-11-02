@@ -1,0 +1,22 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "icons:items/music/frostysnig_disc.png",
+      "ascent": 10,
+      "height": 16,
+      "chars": [
+        "\uE001"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "icons:items/music/frostysnig_disc_time.png",
+      "ascent": 4,
+      "height": 5,
+      "chars": [
+        "\uE002"
+      ]
+    }
+  ]
+}
