@@ -11,9 +11,9 @@
 		"§3JavaJumper"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/modpack/elysium-days",
-		"sources": "https://github.com/Fyoncle/Elysium-Days",
-		"issues": "https://github.com/Fyoncle/Elysium-Days/issues"
+		"homepage": "https://modrinth.com/mod/elysium-days-tweaks",
+		"sources": "https://github.com/Fyoncle/ElysiumDaysTweaks",
+		"issues": "https://github.com/Fyoncle/ElysiumDaysTweaks/issues"
 	},
 	"license": "ARR",
 	"icon": "assets/elysium-days-tweaks/icon.png",
