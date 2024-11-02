@@ -1,7 +1,6 @@
 package net.fyoncle.elysiumdaystweaks.utility.configs;
 
-import my.edt.utility.constants.Constants;
-
+import net.fyoncle.elysiumdaystweaks.utility.constants.Constants;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;

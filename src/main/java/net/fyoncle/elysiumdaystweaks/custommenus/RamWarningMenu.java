@@ -70,8 +70,8 @@ public class RamWarningMenu extends Screen {
     private void addStopShowingButton() {
         this.addDrawableChild(new HoverableTextButton(this.width/2-200/2,
                 this.height/2+30, 200, 20, 0, 0, 0, 200, 20,
-                Constants.Other.Ram.WidgetsText.DONT_SHOW_AGAIN_TEXT, Textures.DONT_SHOW_BUTTON_UNFOCUSED,
-                Textures.DONT_SHOW_BUTTON_FOCUSED, button -> {
+                Constants.Other.Ram.WidgetsText.DONT_SHOW_AGAIN_TEXT, Textures.RED_BUTTON_UNFOCUSED,
+                Textures.RED_BUTTON_FOCUSED, button -> {
             client.configSaver.saveData("true", Constants.Other.Configs.DISABLED_RAM_SCREEN_CONFIG_TYPE);
             this.close();
         }));
