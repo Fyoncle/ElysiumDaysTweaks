@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "regions_unexplored:blackwood_taiga",
+    "regions_unexplored:cold_boreal_taiga",
+    "regions_unexplored:cold_deciduous_forest",
+    "regions_unexplored:golden_boreal_taiga",
+    "regions_unexplored:grassland",
+    "regions_unexplored:shrubland"
+  ]
+}

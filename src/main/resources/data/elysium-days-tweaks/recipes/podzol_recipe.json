@@ -1,0 +1,18 @@
+{
+  "result": {
+    "item": "minecraft:podzol"
+  },
+  "pattern": [
+    "XW",
+    "WX"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:sand"
+    },
+    "X": {
+      "item": "minecraft:dirt"
+    }
+  }
+}

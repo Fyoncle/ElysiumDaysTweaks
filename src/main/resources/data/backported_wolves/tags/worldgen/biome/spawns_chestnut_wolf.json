@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "regions_unexplored:blackwood_taiga",
+    "regions_unexplored:boreal_taiga",
+    "regions_unexplored:old_growth_bayou",
+    "regions_unexplored:towering_cliffs"
+  ]
+}

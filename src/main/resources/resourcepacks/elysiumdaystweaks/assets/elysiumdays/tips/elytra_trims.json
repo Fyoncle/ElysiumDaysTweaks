@@ -1,0 +1,17 @@
+{
+  "title": {
+    "text": "Tip",
+    "underlined": true,
+    "color": "light_purple"
+  },
+  "tip": {
+    "text": "You can now also trim elytras!",
+    "color": "white"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["elytratrims"]
+    }
+  ]
+}

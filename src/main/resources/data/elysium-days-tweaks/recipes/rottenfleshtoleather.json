@@ -1,0 +1,10 @@
+{
+  "group": "misc",
+  "type": "minecraft:smelting",
+  "experience": 0,
+  "cookingtime": 275,
+  "ingredient": {
+    "item": "minecraft:rotten_flesh"
+  },
+  "result": "minecraft:leather"
+}

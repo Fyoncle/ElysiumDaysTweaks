@@ -1,0 +1,17 @@
+{
+  "title": {
+    "text": "Tip",
+    "underlined": true,
+    "color": "gold"
+  },
+  "tip": {
+    "text": "When you wear any gold-trimmed armor, piglins won’t become hostile towards you anymore!",
+    "color": "white"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["distractingtrims"]
+    }
+  ]
+}

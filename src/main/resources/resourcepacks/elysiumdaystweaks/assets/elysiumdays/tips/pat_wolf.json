@@ -1,0 +1,17 @@
+{
+  "title": {
+    "text": "Tip",
+    "underlined": true,
+    "color": "red"
+  },
+  "tip": {
+    "text": "You can sneak and right-click to pat your wolf and calm them!",
+    "color": "white"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["calmdowndog"]
+    }
+  ]
+}

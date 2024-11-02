@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "endermanoverhaul:crimson_forest_enderman",
+    "endermanoverhaul:nether_wastes_enderman",
+    "endermanoverhaul:soulsand_valley_enderman",
+    "endermanoverhaul:warped_forest_enderman",
+    "endermanoverhaul:spirit"
+  ]
+}

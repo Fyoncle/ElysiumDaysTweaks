@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "creeperoverhaul:bamboo_creeper",
+    "creeperoverhaul:mushroom_creeper",
+    "creeperoverhaul:swamp_creeper",
+    "creeperoverhaul:snowy_creeper",
+    "endermanoverhaul:end_enderman",
+    "endermanoverhaul:end_islands_enderman",
+    "endermanoverhaul:flower_fields_enderman",
+    "endermanoverhaul:mushroom_fields_enderman",
+    "endermanoverhaul:soulsand_valley_enderman",
+    "endermanoverhaul:swamp_enderman",
+    "endermanoverhaul:spirit",
+    "deeperdarker:sculk_snapper",
+    "deeperdarker:sludge",
+    "graveyard:reaper"
+  ]
+}

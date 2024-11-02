@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "net.fyoncle.elysiumdaystweaks.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+	],
+	"client": [
+      "MenuLogo",
+	  "MainMenuModifying",
+	  "EscapeMenuModifying",
+	  "CustomTitle",
+	  "CustomIconMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

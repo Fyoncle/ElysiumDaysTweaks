@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "regions_unexplored:rainforest",
+    "regions_unexplored:deciduous_forest",
+    "regions_unexplored:magnolia_woodland",
+    "regions_unexplored:redwoods",
+    "regions_unexplored:sparse_redwoods"
+  ]
+}
