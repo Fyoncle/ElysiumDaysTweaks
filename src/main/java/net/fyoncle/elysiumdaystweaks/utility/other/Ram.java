@@ -1,4 +1,4 @@
-package net.fyoncle.elysiumdaystweaks.utility;
+package net.fyoncle.elysiumdaystweaks.utility.other;
 
 public class Ram {
     public static float getAllocatedRam() {

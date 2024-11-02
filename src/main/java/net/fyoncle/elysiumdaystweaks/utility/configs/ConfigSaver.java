@@ -1,4 +1,6 @@
-package net.fyoncle.elysiumdaystweaks.utility;
+package net.fyoncle.elysiumdaystweaks.utility.configs;
+
+import my.edt.utility.constants.Constants;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -21,7 +23,7 @@ public class ConfigSaver {
     public void saveData(String data, int dataType) {
         try {
             fileWriter = new FileWriter(configFile);
-            if(dataType == Constants.DISABLED_RAM_SCREEN_DATA_TYPE) {
+            if(dataType == Constants.Other.Configs.DISABLED_RAM_SCREEN_CONFIG_TYPE) {
                 fileWriter.write("disableRamScreen = " + data);
                 fileWriter.close();
             }

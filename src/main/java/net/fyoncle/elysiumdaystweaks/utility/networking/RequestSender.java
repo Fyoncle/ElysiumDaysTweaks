@@ -1,6 +1,4 @@
-// This code was written by VipCoder.
-
-package net.fyoncle.elysiumdaystweaks.utility;
+package net.fyoncle.elysiumdaystweaks.utility.networking;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,12 +7,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class RequestSender {
-    private HttpURLConnection connection;
-    private String result;
     public String sendRequestTo(String urlString) {
         try {
-            connection = (HttpURLConnection) new URL(urlString).openConnection();
+            HttpURLConnection connection = (HttpURLConnection) new URL(urlString).openConnection();
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            String result;
             while((result = reader.readLine()) != null) {
                 return result;
             }

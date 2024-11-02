@@ -6,24 +6,24 @@ import net.minecraft.client.gui.widget.TexturedButtonWidget;
 import net.minecraft.util.Colors;
 import net.minecraft.util.Identifier;
 
-public class HoverableToggleButton extends TexturedButtonWidget {
+public class HoverableTextToggleButton extends TexturedButtonWidget {
 
-    private Identifier focusedToggled;
-    private Identifier focusedUnToggled;
+    private final Identifier focusedToggled;
+    private final Identifier focusedUnToggled;
 
-    private Identifier unfocusedToggled;
-    private Identifier unfocusedUnToggled;
+    private final Identifier unfocusedToggled;
+    private final Identifier unfocusedUnToggled;
 
     public String textToggled;
     public String textUnToggled;
-    public boolean isToggled = false;
+    public boolean isToggled;
 
-    public HoverableToggleButton(int x, int y, int width, int height, int u, int v,
-                                 Identifier ft, Identifier fut,
-                                 boolean isToggled,
-                                 String textToggled,
-                                 String textUnToggled,
-                                 Identifier uft, Identifier ufut, PressAction pressAction) {
+    public HoverableTextToggleButton(int x, int y, int width, int height, int u, int v,
+                                     Identifier ft, Identifier fut,
+                                     boolean isToggled,
+                                     String textToggled,
+                                     String textUnToggled,
+                                     Identifier uft, Identifier ufut, PressAction pressAction) {
         super(x, y, width, height, u, v, null, pressAction);
         this.isToggled = isToggled;
         this.textToggled = textToggled;
@@ -46,7 +46,8 @@ public class HoverableToggleButton extends TexturedButtonWidget {
                         this.width, this.height, this.width, this.height);
             }
             context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,
-                    this.textToggled, this.getX() + this.getWidth()/2 - 1, this.getY() + this.getHeight()/2-4,
+                    this.textToggled, this.getX() + this.getWidth()/2 - 1,
+                    this.getY() + this.getHeight()/2-4,
                     Colors.WHITE);
         } else {
             if(isHovered()) {
@@ -57,7 +58,8 @@ public class HoverableToggleButton extends TexturedButtonWidget {
                         this.width, this.height, this.width, this.height);
             }
             context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,
-                    this.textUnToggled, this.getX() + this.getWidth()/2 + 1, this.getY() + this.getHeight()/2-4,
+                    this.textUnToggled, this.getX() + this.getWidth()/2 + 1,
+                    this.getY() + this.getHeight()/2-4,
                     Colors.WHITE);
         }
     }

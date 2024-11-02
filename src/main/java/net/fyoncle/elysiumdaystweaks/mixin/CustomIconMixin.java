@@ -1,14 +1,19 @@
 package net.fyoncle.elysiumdaystweaks.mixin;
 
+import net.fyoncle.elysiumdaystweaks.utility.constants.Constants;
 import net.minecraft.client.util.Icons;
 import net.minecraft.resource.InputSupplier;
 import org.apache.commons.io.IOUtils;
 import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import java.io.*;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -16,15 +21,16 @@ import java.util.Map;
 
 @Mixin(Icons.class)
 public class CustomIconMixin {
-
-    private final String ICONS_PATH = "assets/elysium-days-tweaks/icons/";
+    @Unique
     private final Map<String, byte[]> STORAGE = new HashMap<>();
-    private final List<String> PNG_PATHS = new ArrayList<>();
+    @Unique
     private final List<InputSupplier<InputStream>> icons = new ArrayList<>();
+    @Unique
     private boolean isInitialized = false;
 
     public CustomIconMixin() {}
 
+    @Unique
     private void init() {
         if(!isInitialized) {
             loadResource("icon_16x16.png");
@@ -36,11 +42,13 @@ public class CustomIconMixin {
         }
     }
 
+    @Unique
     private void loadResource(String path) {
-        String fullPath = ICONS_PATH + path;
+        String fullPath = Constants.Core.Paths.ICONS_PATH + path;
         ClassLoader classLoader = CustomIconMixin.class.getClassLoader();
         try (InputStream stream = classLoader.getResourceAsStream(fullPath))
         {
+            assert stream != null;
             byte[] data = IOUtils.toByteArray(stream);
             STORAGE.put(path, data);
             icons.add(getResource(path));
@@ -51,6 +59,7 @@ public class CustomIconMixin {
         }
     }
 
+    @Unique
     public InputSupplier<InputStream> getResource(String path)
     {
         byte[] data = STORAGE.get(path);
@@ -58,15 +67,7 @@ public class CustomIconMixin {
         {
             throw new RuntimeException("Unexpected resource path " + path);
         }
-        InputSupplier<InputStream> inputSupplier = () -> new ByteArrayInputStream(data);
-        return inputSupplier;
-    }
-
-    public List<InputSupplier<InputStream>> getAllPngResources() {
-        init();
-        return PNG_PATHS.stream().
-                map(this::getResource).
-                toList();
+        return () -> new ByteArrayInputStream(data);
     }
 
     @Inject(method = "getIcons", at = @At("HEAD"), cancellable = true)

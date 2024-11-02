@@ -1,6 +1,9 @@
-package net.fyoncle.elysiumdaystweaks.utility;
+package net.fyoncle.elysiumdaystweaks.utility.configs;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.HashMap;
 
 public class ConfigReader {
@@ -16,15 +19,14 @@ public class ConfigReader {
 
     public HashMap<String, String> readData() {
         HashMap<String, String> result = new HashMap<>();
-        String line = "";
+        String line;
         try {
             bufferedReader = new BufferedReader(new FileReader(configFile));
             while((line = bufferedReader.readLine()) != null) {
                 result.put(getVarNameBeforeEquals(line), getDataAfterEquals(line).trim());
             }
             bufferedReader.close();
-        } catch (FileNotFoundException e) {throw new RuntimeException(e);}
-        catch (IOException e) {throw new RuntimeException(e);}
+        } catch (IOException e) {throw new RuntimeException(e);}
         return result;
     }
 

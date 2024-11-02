@@ -1,4 +1,4 @@
-package net.fyoncle.elysiumdaystweaks.utility;
+package net.fyoncle.elysiumdaystweaks.utility.other;
 
 public class Strings {
     public static String LATEST_ED_VERSION = "0.0.0";

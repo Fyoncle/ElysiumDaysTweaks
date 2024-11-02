@@ -1,4 +1,4 @@
-package net.fyoncle.elysiumdaystweaks.utility;
+package net.fyoncle.elysiumdaystweaks.utility.constants;
 
 import net.minecraft.util.Identifier;
 

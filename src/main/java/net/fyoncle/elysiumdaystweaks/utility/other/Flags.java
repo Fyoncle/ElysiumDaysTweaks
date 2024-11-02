@@ -1,4 +1,4 @@
-package net.fyoncle.elysiumdaystweaks.utility;
+package net.fyoncle.elysiumdaystweaks.utility.other;
 
 public class Flags {
     public static boolean IS_LATEST_VERSION = false;

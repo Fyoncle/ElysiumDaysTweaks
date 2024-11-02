@@ -1,5 +1,3 @@
-// This code was written by VipCoder.
-
 package net.fyoncle.elysiumdaystweaks.customwidgets;
 
 import net.minecraft.client.MinecraftClient;
@@ -9,13 +7,13 @@ import net.minecraft.util.Colors;
 import net.minecraft.util.Identifier;
 
 public class HoverableTextButton extends TexturedButtonWidget {
-    private Identifier unfocused;
-    private Identifier focused;
+    private final Identifier unfocused;
+    private final Identifier focused;
 
-    private int textureWidth;
-    private int textureHeight;
+    private final int textureWidth;
+    private final int textureHeight;
 
-    private String text;
+    private final String text;
 
     public HoverableTextButton(int x, int y, int width, int height,
                                int u, int v, int offset, int tw, int th,
@@ -32,13 +30,16 @@ public class HoverableTextButton extends TexturedButtonWidget {
 
     @Override
     public void renderButton(DrawContext context, int mouseX, int mouseY, float delta) {
-        if(isHovered()) {
-            context.drawTexture(focused, this.getX(), this.getY(), this.u, this.v, this.width, this.height, this.textureWidth,this.textureHeight);
-        } else {
-            context.drawTexture(unfocused, this.getX(), this.getY(), this.u, this.v, this.width, this.height, this.textureWidth,this.textureHeight);
-        }
         if(text != null) {
-            context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer, text, this.getX() + this.width/2,this.getY() + 6, Colors.WHITE);
+            context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,
+                    text, this.getX() + this.width/2,this.getY() + 6, Colors.WHITE);
+        }
+        if(isHovered()) {
+            context.drawTexture(focused, this.getX(), this.getY(), this.u, this.v, this.width,
+                    this.height, this.textureWidth,this.textureHeight);
+        } else {
+            context.drawTexture(unfocused, this.getX(), this.getY(), this.u, this.v, this.width,
+                    this.height, this.textureWidth,this.textureHeight);
         }
     }
 }

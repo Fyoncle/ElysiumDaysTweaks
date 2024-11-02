@@ -5,11 +5,11 @@
 	"mixins": [
 	],
 	"client": [
-      "MenuLogo",
-	  "MainMenuModifying",
-	  "EscapeMenuModifying",
-	  "CustomTitle",
-	  "CustomIconMixin"
+		"CustomIconMixin",
+		"CustomTitleMixin",
+		"EscapeMenuMixin",
+		"MainMenuMixin",
+		"MenuLogo"
 	],
 	"injectors": {
 		"defaultRequire": 1
