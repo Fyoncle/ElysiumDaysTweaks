@@ -30,16 +30,16 @@ public class HoverableTextButton extends TexturedButtonWidget {
 
     @Override
     public void renderButton(DrawContext context, int mouseX, int mouseY, float delta) {
-        if(text != null) {
-            context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,
-                    text, this.getX() + this.width/2,this.getY() + 6, Colors.WHITE);
-        }
         if(isHovered()) {
             context.drawTexture(focused, this.getX(), this.getY(), this.u, this.v, this.width,
                     this.height, this.textureWidth,this.textureHeight);
         } else {
             context.drawTexture(unfocused, this.getX(), this.getY(), this.u, this.v, this.width,
                     this.height, this.textureWidth,this.textureHeight);
+        }
+        if(text != null) {
+            context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,
+                    text, this.getX() + this.width/2,this.getY() + 6, Colors.WHITE);
         }
     }
 }
