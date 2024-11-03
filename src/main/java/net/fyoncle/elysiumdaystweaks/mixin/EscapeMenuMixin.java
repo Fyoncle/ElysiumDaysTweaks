@@ -18,7 +18,6 @@ import vazkii.neat.NeatConfig;
 
 @Mixin(GameMenuScreen.class)
 public class EscapeMenuMixin extends Screen {
-
     @Unique
     private HoverableTextToggleButton healthBarStatusButton;
 
@@ -33,14 +32,14 @@ public class EscapeMenuMixin extends Screen {
             if (this.children().get(i) instanceof TextWidget) {
                 if (((TextWidget) this.children().get(i)).getMessage()
                         .getString().equals(Text.translatable("menu.returnToMenu").getString())) {
-                    addHealthBarTogglingButton(((TextWidget) this.children().get(i)).getX(),
+                    addHealthBarTogglingButton(this.width/2 - 100/2,
                             ((TextWidget) this.children().get(i)).getY()
                     );
                 }
             } else if (this.children().get(i) instanceof ButtonWidget) {
                 if (((ButtonWidget) this.children().get(i)).getMessage()
                         .getString().equals(Text.translatable("menu.returnToMenu").getString())) {
-                    addHealthBarTogglingButton(((ButtonWidget) this.children().get(i)).getX(),
+                    addHealthBarTogglingButton(this.width/2 - 100/2,
                             ((ButtonWidget) this.children().get(i)).getY()
                     );
                 }
@@ -50,7 +49,8 @@ public class EscapeMenuMixin extends Screen {
 
     @Unique
     private void addHealthBarTogglingButton(int x, int y) {
-        healthBarStatusButton = new HoverableTextToggleButton(x, y + 20 + 5, 100, 20,
+        healthBarStatusButton = new HoverableTextToggleButton(x,
+                y + 20 + 5, 100, 20,
                 0, 0, Textures.FOCUSED_ON_HEALTHBAR_TEXTURE, Textures.FOCUSED_OFF_HEALTHBAR_TEXTURE,
                 Flags.IS_HEALTH_BAR_TOGGLED, Strings.HEALTH_BAR_TOGGLED_STATE,
                 Strings.HEALTH_BAR_UNTOGGLED_STATE,
