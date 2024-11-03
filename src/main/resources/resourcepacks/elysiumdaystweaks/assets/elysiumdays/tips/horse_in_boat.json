@@ -1,4 +1,10 @@
 {
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:mod_loaded",
+      "mods": ["horseinboat"]
+    }
+  ],
   "title": {
     "text": "Tip",
     "underlined": true,
@@ -7,11 +13,5 @@
   "tip": {
     "text": "Horses can now sit in boats to travel with you!",
     "color": "white"
-  },
-  "fabric:load_conditions": [
-    {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["horseinboat"]
-    }
-  ]
+  }
 }
