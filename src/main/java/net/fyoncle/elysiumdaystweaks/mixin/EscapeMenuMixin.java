@@ -1,5 +1,6 @@
 package net.fyoncle.elysiumdaystweaks.mixin;
 
+import net.fyoncle.elysiumdaystweaks.ElysiumDaysTweaks;
 import net.fyoncle.elysiumdaystweaks.customwidgets.HoverableTextToggleButton;
 import net.fyoncle.elysiumdaystweaks.utility.constants.Textures;
 import net.fyoncle.elysiumdaystweaks.utility.other.Flags;
@@ -48,7 +49,7 @@ public class EscapeMenuMixin extends Screen {
 
     @Unique
     private void addHealthBarTogglingButton(int x, int y) {
-        if (ServiceLoaders.NEAT_CONFIG_SERVICE != null) {
+        if (ServiceLoaders.Flags.IS_NEAT_CONFIG_LOADED) {
             healthBarStatusButton = new HoverableTextToggleButton(x,
                     y + 20 + 5, 100, 20,
                     0, 0, Textures.FOCUSED_ON_HEALTHBAR_TEXTURE, Textures.FOCUSED_OFF_HEALTHBAR_TEXTURE,
@@ -63,7 +64,7 @@ public class EscapeMenuMixin extends Screen {
     }
     @Unique
     private void restoreHealthBarToggleStates() {
-        if (!ServiceLoaders.NEAT_CONFIG_SERVICE.getDraw()) {
+        if (!ElysiumDaysTweaks.serviceLoaders.NEAT_CONFIG_SERVICE.getDraw()) {
             Flags.IS_HEALTH_BAR_TOGGLED = false;
             healthBarStatusButton.isToggled = false;
         } else {
@@ -76,11 +77,11 @@ public class EscapeMenuMixin extends Screen {
         if (!Flags.IS_HEALTH_BAR_TOGGLED) {
             Flags.IS_HEALTH_BAR_TOGGLED = true;
             healthBarStatusButton.isToggled = true;
-            ServiceLoaders.NEAT_CONFIG_SERVICE.setDraw(true);
+            ElysiumDaysTweaks.serviceLoaders.NEAT_CONFIG_SERVICE.setDraw(true);
         } else {
             Flags.IS_HEALTH_BAR_TOGGLED = false;
             healthBarStatusButton.isToggled = false;
-            ServiceLoaders.NEAT_CONFIG_SERVICE.setDraw(false);
+            ElysiumDaysTweaks.serviceLoaders.NEAT_CONFIG_SERVICE.setDraw(false);
         }
     }
 }
