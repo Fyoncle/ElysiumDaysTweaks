@@ -3,7 +3,9 @@ package net.fyoncle.elysiumdaystweaks.mixin;
 import net.fyoncle.elysiumdaystweaks.customwidgets.HoverableTextToggleButton;
 import net.fyoncle.elysiumdaystweaks.utility.constants.Textures;
 import net.fyoncle.elysiumdaystweaks.utility.other.Flags;
+import net.fyoncle.elysiumdaystweaks.utility.other.ServiceLoaders;
 import net.fyoncle.elysiumdaystweaks.utility.other.Strings;
+import net.fyoncle.elysiumdaystweaks.utility.services.interfaces.INeatConfigService;
 import net.minecraft.client.gui.screen.GameMenuScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
@@ -14,7 +16,6 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import vazkii.neat.NeatConfig;
 
 @Mixin(GameMenuScreen.class)
 public class EscapeMenuMixin extends Screen {
@@ -23,7 +24,6 @@ public class EscapeMenuMixin extends Screen {
 
     protected EscapeMenuMixin(Text title) {
         super(title);
-
     }
 
     @Inject(at = @At("RETURN"), method = "initWidgets")
@@ -49,20 +49,25 @@ public class EscapeMenuMixin extends Screen {
 
     @Unique
     private void addHealthBarTogglingButton(int x, int y) {
-        healthBarStatusButton = new HoverableTextToggleButton(x,
-                y + 20 + 5, 100, 20,
-                0, 0, Textures.FOCUSED_ON_HEALTHBAR_TEXTURE, Textures.FOCUSED_OFF_HEALTHBAR_TEXTURE,
-                Flags.IS_HEALTH_BAR_TOGGLED, Strings.HEALTH_BAR_TOGGLED_STATE,
-                Strings.HEALTH_BAR_UNTOGGLED_STATE,
-                Textures.UNFOCUSED_ON_HEALTHBAR_TEXTURE,
-                Textures.UNFOCUSED_OFF_HEALTHBAR_TEXTURE,
-                button -> toggleHealthBar());
-        restoreHealthBarToggleStates();
-        this.addDrawableChild(healthBarStatusButton);
+        try {
+            Class.forName("vazkii.neat.NeatConfig");
+            healthBarStatusButton = new HoverableTextToggleButton(x,
+                    y + 20 + 5, 100, 20,
+                    0, 0, Textures.FOCUSED_ON_HEALTHBAR_TEXTURE, Textures.FOCUSED_OFF_HEALTHBAR_TEXTURE,
+                    Flags.IS_HEALTH_BAR_TOGGLED, Strings.HEALTH_BAR_TOGGLED_STATE,
+                    Strings.HEALTH_BAR_UNTOGGLED_STATE,
+                    Textures.UNFOCUSED_ON_HEALTHBAR_TEXTURE,
+                    Textures.UNFOCUSED_OFF_HEALTHBAR_TEXTURE,
+                    button -> toggleHealthBar());
+            restoreHealthBarToggleStates();
+            this.addDrawableChild(healthBarStatusButton);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
     @Unique
     private void restoreHealthBarToggleStates() {
-        if (!NeatConfig.draw) {
+        if (!ServiceLoaders.NEAT_CONFIG_SERVICE.getDraw()) {
             Flags.IS_HEALTH_BAR_TOGGLED = false;
             healthBarStatusButton.isToggled = false;
         } else {
@@ -75,11 +80,11 @@ public class EscapeMenuMixin extends Screen {
         if (!Flags.IS_HEALTH_BAR_TOGGLED) {
             Flags.IS_HEALTH_BAR_TOGGLED = true;
             healthBarStatusButton.isToggled = true;
-            NeatConfig.draw = true;
+            ServiceLoaders.NEAT_CONFIG_SERVICE.setDraw(true);
         } else {
             Flags.IS_HEALTH_BAR_TOGGLED = false;
             healthBarStatusButton.isToggled = false;
-            NeatConfig.draw = false;
+            ServiceLoaders.NEAT_CONFIG_SERVICE.setDraw(false);
         }
     }
 }
