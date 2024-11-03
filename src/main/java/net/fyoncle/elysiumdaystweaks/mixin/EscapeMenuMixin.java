@@ -5,7 +5,6 @@ import net.fyoncle.elysiumdaystweaks.utility.constants.Textures;
 import net.fyoncle.elysiumdaystweaks.utility.other.Flags;
 import net.fyoncle.elysiumdaystweaks.utility.other.ServiceLoaders;
 import net.fyoncle.elysiumdaystweaks.utility.other.Strings;
-import net.fyoncle.elysiumdaystweaks.utility.services.interfaces.INeatConfigService;
 import net.minecraft.client.gui.screen.GameMenuScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
@@ -49,8 +48,7 @@ public class EscapeMenuMixin extends Screen {
 
     @Unique
     private void addHealthBarTogglingButton(int x, int y) {
-        try {
-            Class.forName("vazkii.neat.NeatConfig");
+        if (ServiceLoaders.NEAT_CONFIG_SERVICE != null) {
             healthBarStatusButton = new HoverableTextToggleButton(x,
                     y + 20 + 5, 100, 20,
                     0, 0, Textures.FOCUSED_ON_HEALTHBAR_TEXTURE, Textures.FOCUSED_OFF_HEALTHBAR_TEXTURE,
@@ -61,8 +59,6 @@ public class EscapeMenuMixin extends Screen {
                     button -> toggleHealthBar());
             restoreHealthBarToggleStates();
             this.addDrawableChild(healthBarStatusButton);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         }
     }
     @Unique
