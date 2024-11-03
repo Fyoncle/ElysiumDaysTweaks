@@ -21,6 +21,7 @@ public class ElysiumDaysTweaks implements ClientModInitializer {
 	public ConfigSaver configSaver;
 	public ConfigReader configReader;
 
+	//Other
 	private final VersionChecking versionChecking = new VersionChecking();
 
 	//Screens
