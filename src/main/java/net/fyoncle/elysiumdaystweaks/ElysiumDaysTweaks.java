@@ -10,6 +10,7 @@ import net.fyoncle.elysiumdaystweaks.utility.configs.ConfigReader;
 import net.fyoncle.elysiumdaystweaks.utility.configs.ConfigSaver;
 import net.fyoncle.elysiumdaystweaks.utility.constants.Constants;
 import net.fyoncle.elysiumdaystweaks.utility.other.Ram;
+import net.fyoncle.elysiumdaystweaks.utility.other.ServiceLoaders;
 import net.fyoncle.elysiumdaystweaks.utility.other.VersionChecking;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.text.Text;
@@ -23,6 +24,7 @@ public class ElysiumDaysTweaks implements ClientModInitializer {
 
 	//Other
 	private final VersionChecking versionChecking = new VersionChecking();
+	public final static ServiceLoaders serviceLoaders = new ServiceLoaders();
 
 	//Screens
 	private RamWarningMenu ramWarningMenu;
