@@ -31,14 +31,13 @@ public class EscapeMenuMixin extends Screen {
     private void addModsButton(CallbackInfo ci) {
         for (int i = 0; i < this.children().size(); i++) {
             ClickableWidget widget = (ClickableWidget) this.children().get(i);
+            String widgetText = widget.getMessage().getString();
             if (widget instanceof TextWidget) {
-                if (widget.getMessage().getString().equals(
-                        Text.translatable("menu.returnToMenu").getString())) {
+                if (widgetText.equals(Text.translatable("menu.returnToMenu").getString())) {
                     addHealthBarTogglingButton(this.width/2 - 100/2, widget.getY());
                 }
             } else if (widget instanceof ButtonWidget) {
-                if (widget.getMessage().getString().equals(
-                        Text.translatable("menu.returnToMenu").getString())) {
+                if (widgetText.equals(Text.translatable("menu.returnToMenu").getString())) {
                     addHealthBarTogglingButton(this.width/2 - 100/2, widget.getY());
                 }
             }
