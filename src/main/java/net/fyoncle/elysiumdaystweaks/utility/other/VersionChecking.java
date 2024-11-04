@@ -5,29 +5,25 @@ import net.fyoncle.elysiumdaystweaks.utility.constants.Constants;
 import net.fyoncle.elysiumdaystweaks.utility.networking.RequestSender;
 
 public class VersionChecking {
+
+    private boolean isVersionBigger(String[] version1, String[] version2) {
+        int greaterCount = 0;
+        for(int i = 0; i < version1.length; i++) {
+            greaterCount += (Integer.parseInt(version1[i]) >= Integer.parseInt(version2[i])) ? 1 : 0;
+        }
+        return greaterCount == version1.length;
+    }
+
     public void checkEDVersion() {
         RequestSender requestSender = new RequestSender();
         String jsonString = requestSender.sendRequestTo(
-                Constants.Links.MODRINTH_API_LINK +
-                "v2/project/lz3ryGPQ/version");
-        JsonParser parser = new JsonParser();
-        String latestVersion = parser.parse(jsonString).getAsJsonArray().get(0)
+                Constants.Links.MODRINTH_API_LINK + "v2/project/lz3ryGPQ/version");
+        Strings.LATEST_ED_VERSION = JsonParser.parseString(jsonString).getAsJsonArray().get(0)
                 .getAsJsonObject().get("version_number").getAsString();
-        Strings.LATEST_ED_VERSION = latestVersion;
 
         String[] currentVersionNums = Constants.Core.CURRENT_ED_VERSION.split("\\.");
-        String[] latestVersionNums = latestVersion.split("\\.");
+        String[] latestVersionNums = Strings.LATEST_ED_VERSION.split("\\.");
 
-        int greaterNumMatchingCount = 0;
-
-        for(int i = 0; i < currentVersionNums.length; i++) {
-            if(Integer.parseInt(currentVersionNums[i]) >= Integer.parseInt(latestVersionNums[i])) {
-                greaterNumMatchingCount++;
-            }
-        }
-
-        if(greaterNumMatchingCount >= 3) {
-            Flags.IS_LATEST_VERSION = true;
-        }
+        Flags.IS_LATEST_VERSION = isVersionBigger(currentVersionNums, latestVersionNums);
     }
 }
