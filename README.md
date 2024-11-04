@@ -1,10 +1,16 @@
 ![Banner](https://cdn.modrinth.com/data/cached_images/5b10cef83a9e5708683dc7ca3f88cf5b657f9333_0.webp)
 <div align="center">
 
-**This mod is made for [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack to tweak the main menu logo, recipes, panorama, and more features in the future.**
+This mod is made for [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack to tweak the main menu logo, recipes, panorama, and more features in the future.
 
 Incompatibilities will not be fixed unless they affect the Elysium Days modpack, as this mod is not intended for standalone use.
-#
+
+<a href="https://discord.gg/WFpDr7zY8Z" rel="noopener nofollow ugc">
+<img src="https://wsrv.nl/?url=https://i.ibb.co/V9DmRdC/discordicon.png" alt="Discord Icon"></a>
+<a href="https://github.com/Fyoncle/Elysium-Days/issues" rel="noopener nofollow ugc">
+<img src="https://wsrv.nl/?url=https://i.ibb.co/N9s5hz1/github.png" alt="GitHub"></a>
+
+***
 </div>
 <details>
 <summary>Tweak List</summary>
@@ -48,7 +54,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 
 - Removing [Icons](https://modrinth.com/resourcepack/icons) Food Tooltips That is Extra alongside [AppleSkin](https://modrinth.com/mod/appleskin)
 
-- Removing Splash Texts & Edition Text
+- Removing Splash Texts & Edition Logo of Minecraft
 
 - New Panorama
 
@@ -57,11 +63,18 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - 11 More Tips With Mod Support For The [Tips](https://modrinth.com/mod/tips) Mod
 
 </details>
-
 <div align="center">
 
-# Credits
-Special thanks to [VipCoder](https://github.com/VipCoder8) and [Shizotoaster](https://modrinth.com/user/shizotoaster) for their contributions while making this mod, without them, it wouldn't be possible :)
+***
+### Special Thanks
+<div align="center">
+  <a href="https://modrinth.com/user/shizotoaster" rel="noopener nofollow ugc">
+    <img src="https://wsrv.nl/?url=https://i.ibb.co/fdYNX3K/Heart.png" alt="Heart">
+  </a>
+</div>
 
-Special thanks to Vixel for letting me use his pixel arts in this mod! ❤
+**Special thanks to [VipCoder](https://github.com/VipCoder8) and [Shizotoaster](https://github.com/shizotoaster) for their contributions while making this mod, without them, it wouldn't be possible :)**
+
+And many thanks to [Vixel](https://modrinth.com/user/Vixel) for letting me use his pixel arts in this mod!
+***
 </div>
