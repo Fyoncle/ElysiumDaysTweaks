@@ -1,6 +1,5 @@
 package net.fyoncle.elysiumdaystweaks.mixin;
 
-import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
 import net.fyoncle.elysiumdaystweaks.customwidgets.HoverableButton;
 import net.fyoncle.elysiumdaystweaks.customwidgets.HoverableTextButton;
 import net.fyoncle.elysiumdaystweaks.utility.constants.Constants;
@@ -20,42 +19,38 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(TitleScreen.class)
 public class MainMenuMixin extends Screen {
-
     protected MainMenuMixin(Text title) {
         super(title);
     }
 
-    @Inject(at = @At("RETURN"), method = "initWidgetsNormal")
-    private void addModsButton(int y, int spacingY, CallbackInfo ci) {
-        ScreenEvents.AFTER_INIT.register((client, screen, scaledWidth, scaledHeight) -> {
-            if(screen instanceof TitleScreen) {
-                for (int i = 0; i < screen.children().size(); i++) {
-                    if (((ButtonWidget) screen.children().get(i)).getMessage()
-                            .getString().equals(Text.translatable("menu.quit").getString())) {
-                        addDiscordButton(i);
-                        addNewUpdateButton(Flags.IS_LATEST_VERSION,
-                                ((ButtonWidget) screen.children().get(i)).getY());
-                    }
-                }
+    @Inject(at = @At("RETURN"), method = "init")
+    private void addModsButton(CallbackInfo ci) {
+        for (int i = 0; i < this.children().size(); i++) {
+            ButtonWidget button = ((ButtonWidget) this.children().get(i));
+            if (button.getMessage().getString().equals(Text.translatable("menu.quit").getString())) {
+                addDiscordButton(((ButtonWidget) this.children().get(i+1)));
+                addNewUpdateButton(Flags.IS_LATEST_VERSION, button);
             }
-        });
+        }
     }
 
     @Unique
-    private void addDiscordButton(int i) {
-        int x = ((ButtonWidget) MainMenuMixin.this.children().get(i+1)).getX();
-        int yPos = ((ButtonWidget) MainMenuMixin.this.children().get(i+1)).getY();
-        int width = ((ButtonWidget) MainMenuMixin.this.children().get(i+1)).getWidth();
+    private void addDiscordButton(ButtonWidget startButton) {
+        int x = startButton.getX();
+        int yPos = startButton.getY();
+        int width = startButton.getWidth();
         this.addDrawableChild(new HoverableButton(x + width + 4, yPos, 20,
-                20, 0,0, 0, 20, 20, Textures.DISCORD_BUTTON_UNFOCUSED_TEXTURE,
+                20, 0,0, 0, 20, 20,
+                Textures.DISCORD_BUTTON_UNFOCUSED_TEXTURE,
                 Textures.DISCORD_BUTTON_FOCUSED_TEXTURE,
                 button -> Util.getOperatingSystem().open(Constants.Links.DISCORD_LINK)));
     }
 
     @Unique
-    private void addNewUpdateButton(boolean isLatestVersion, int quitGameButtonY) {
+    private void addNewUpdateButton(boolean isLatestVersion, ButtonWidget startButton) {
         if(!isLatestVersion) {
-            this.addDrawableChild(new HoverableTextButton(this.width/2-200/2, quitGameButtonY+30,
+            this.addDrawableChild(new HoverableTextButton(this.width/2-200/2,
+                    startButton.getY()+30,
                     200, 20,0, 0, 0, 200, 20,
                     "Modpack Update Available " + "(" + Strings.LATEST_ED_VERSION + ")",
                     Textures.GREEN_BUTTON_UNFOCUSED_TEXTURE,
