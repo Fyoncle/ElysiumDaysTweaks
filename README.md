@@ -1,4 +1,4 @@
-![Banner](https://cdn.modrinth.com/data/cached_images/a21c5a1daf3b121faf9de5a2ef83931cbcfd43d9.png)
+![Banner](https://cdn.modrinth.com/data/cached_images/5b10cef83a9e5708683dc7ca3f88cf5b657f9333_0.webp)
 <div align="center">
 
 **This mod is made for [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack to tweak the main menu logo, recipes, panorama, and more features in the future.**
