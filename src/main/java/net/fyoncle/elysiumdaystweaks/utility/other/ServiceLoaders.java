@@ -1,13 +1,11 @@
 package net.fyoncle.elysiumdaystweaks.utility.other;
 
+import net.fabricmc.loader.impl.FabricLoaderImpl;
 import net.fyoncle.elysiumdaystweaks.utility.services.interfaces.INeatConfigService;
 
 import java.util.ServiceLoader;
 
 public class ServiceLoaders {
-
-    private final ServiceLoader<INeatConfigService> neatConfigService =
-            ServiceLoader.load(INeatConfigService.class);
 
     public INeatConfigService NEAT_CONFIG_SERVICE;
 
@@ -16,14 +14,13 @@ public class ServiceLoaders {
     }
 
     private INeatConfigService getDefaultNeat() {
-        try {
-            Class.forName("vazkii.neat.NeatConfig");
+        if(FabricLoaderImpl.INSTANCE.isModLoaded("neat")) {
+            ServiceLoader<INeatConfigService> neatConfigService =
+                    ServiceLoader.load(INeatConfigService.class);
             Flags.IS_NEAT_CONFIG_LOADED = true;
             for (INeatConfigService service : neatConfigService) {
                 return service;
             }
-        } catch (ClassNotFoundException e) {
-            System.out.println("NeatConfig class was not found.");
         }
         return null;
     }
