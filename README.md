@@ -3,10 +3,7 @@
 
 **This mod is made for [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack to tweak the main menu logo, recipes, panorama, and more features in the future.**
 
-Any incompatibility won't be fixed **unless** it affecting Elysium Days modpack because this mod is not for using it standalone without Elysium Days.
-
-
-This mod does nothing on the server side, but also shouldn't cause crashes if used on the server.
+Incompatibilities will not be fixed unless they affect the Elysium Days modpack, as this mod is not intended for standalone use.
 #
 </div>
 <details>
@@ -14,36 +11,40 @@ This mod does nothing on the server side, but also shouldn't cause crashes if us
 
 ### Main Content
 
-- Main Menu Logo Elysium Days Logo [With Christmas & Halloween Variant]!
+- Elysium Days Logo For Main Menu [With Christmas & Halloween Variant!]
 
-- Main Menu Discord Button As Of 6.0.0
+- Main Menu Discord Button
 
-- Main Menu Modpack Update Notifier As Of 6.0.0
+- Modpack Update Notifier
 
-- Ram Warning Screen As Of 6.0.0
+- Ram Warning Screen
 
-- App Icon As Of 6.0.0
+- App Icon
+
+- Toggle Button For [Neat](https://modrinth.com/mod/neat) Mod
 
 ### Recipes
-- Netherite Horse Armor Recipe For [Simple Netherite Horse Armor](https://modrinth.com/mod/simple-netherite-horse-armor) Mod!
+- Netherite Horse Armor Recipe For [Simple Netherite Horse Armor](https://modrinth.com/mod/simple-netherite-horse-armor) Mod
 
-- Podzol Recipe!
+- Podzol Recipe
 
-- Rotten Flesh To Leather Smelting Recipe!
+- Rotten Flesh To Leather Smelting Recipe
 
-- Sponge Recipe!
+- Sponge Recipe
 
 ### Compatibilities
-- [Backported Wolves](https://modrinth.com/mod/backported-wolves) Compatibility For [Regions Unexplored](https://modrinth.com/mod/regions-unexplored)!
+- [Backported Wolves](https://modrinth.com/mod/backported-wolves) Compatibility for [Regions Unexplored](https://modrinth.com/mod/regions-unexplored)
 
-- [The Lost Castle](https://modrinth.com/mod/the-lost-castle) Mod Eye Spy Advancement Compatibility!
+- [The Lost Castle](https://modrinth.com/mod/the-lost-castle) Mod Eye Spy Advancement Compatibility
 
-- [Spawn Animations](https://modrinth.com/mod/spawn-animations) Compatibility For [Creeper Overhaul](https://modrinth.com/mod/creeper-overhaul), [Enderman Overhaul](https://modrinth.com/mod/enderman-overhaul), [Deeper and Darker](https://modrinth.com/mod/deeperdarker) and [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric) Mod!
+- [Spawn Animations](https://modrinth.com/mod/spawn-animations) Compatibility for [Creeper Overhaul](https://modrinth.com/mod/creeper-overhaul), [Enderman Overhaul](https://modrinth.com/mod/enderman-overhaul), [Deeper and Darker](https://modrinth.com/mod/deeperdarker) and [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric) Mod
+
+- [Icons](https://modrinth.com/resourcepack/icons) Compatibility for [Snow Pig](https://modrinth.com/mod/snowpig-fabric)'s Music Disc
 
 ### Other Tweaks
-- Special Translations For The [End Remastered](https://modrinth.com/mod/endrem) Mod!
+- Special Translations for [End Remastered](https://modrinth.com/mod/endrem) Mod!
 
-- Icons Advertisement Logo Replace For The [Icons](https://modrinth.com/resourcepack/icons) Resource Pack!
+- Icons Advertisement Logo Replacement for [Icons](https://modrinth.com/resourcepack/icons) Resource Pack!
 
 - Removing [Icons](https://modrinth.com/resourcepack/icons) Food Tooltips That is Extra alongside [AppleSkin](https://modrinth.com/mod/appleskin)
 
@@ -51,16 +52,16 @@ This mod does nothing on the server side, but also shouldn't cause crashes if us
 
 - New Panorama
 
-- New Map Icon Designs!
+- New Map Icon Designs! (Thanks to Vixel!)
 
-- One New Tip For The [Tips](https://modrinth.com/mod/tips) Mod!
+- 11 More Tips With Mod Support For The [Tips](https://modrinth.com/mod/tips) Mod
+
 </details>
-
 
 <div align="center">
 
 # Credits
-Special thanks to [Shizotoaster](https://modrinth.com/user/shizotoaster), [JavaJumper](https://github.com/JumperOnJava), [VipCoder](https://github.com/VipCoder8) for their contributions while making this mod, without them, it wouldn't be possible ;)
+Special thanks to [VipCoder](https://github.com/VipCoder8) and [Shizotoaster](https://modrinth.com/user/shizotoaster) for their contributions while making this mod, without them, it wouldn't be possible :)
 
 Special thanks to Vixel for letting me use his pixel arts in this mod! ❤
 </div>
