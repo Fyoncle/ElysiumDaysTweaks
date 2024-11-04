@@ -1,5 +1,6 @@
 package net.fyoncle.elysiumdaystweaks.utility.other;
 
+import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.impl.FabricLoaderImpl;
 import net.fyoncle.elysiumdaystweaks.utility.services.interfaces.INeatConfigService;
 
@@ -14,7 +15,7 @@ public class ServiceLoaders {
     }
 
     private INeatConfigService getDefaultNeat() {
-        if(FabricLoaderImpl.INSTANCE.isModLoaded("neat")) {
+        if(FabricLoader.getInstance().isModLoaded("neat")) {
             ServiceLoader<INeatConfigService> neatConfigService =
                     ServiceLoader.load(INeatConfigService.class);
             Flags.IS_NEAT_CONFIG_LOADED = true;
