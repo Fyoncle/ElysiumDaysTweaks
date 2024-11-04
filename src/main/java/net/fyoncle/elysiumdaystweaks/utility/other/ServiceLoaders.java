@@ -1,7 +1,6 @@
 package net.fyoncle.elysiumdaystweaks.utility.other;
 
 import net.fabricmc.loader.api.FabricLoader;
-import net.fabricmc.loader.impl.FabricLoaderImpl;
 import net.fyoncle.elysiumdaystweaks.utility.services.interfaces.INeatConfigService;
 
 import java.util.ServiceLoader;
