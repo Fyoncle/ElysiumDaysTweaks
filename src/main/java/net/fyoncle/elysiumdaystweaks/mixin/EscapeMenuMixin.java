@@ -9,6 +9,7 @@ import net.fyoncle.elysiumdaystweaks.utility.other.Strings;
 import net.minecraft.client.gui.screen.GameMenuScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
+import net.minecraft.client.gui.widget.ClickableWidget;
 import net.minecraft.client.gui.widget.TextWidget;
 import net.minecraft.text.Text;
 import org.spongepowered.asm.mixin.Mixin;
@@ -29,19 +30,16 @@ public class EscapeMenuMixin extends Screen {
     @Inject(at = @At("RETURN"), method = "initWidgets")
     private void addModsButton(CallbackInfo ci) {
         for (int i = 0; i < this.children().size(); i++) {
-            if (this.children().get(i) instanceof TextWidget) {
-                if (((TextWidget) this.children().get(i)).getMessage()
-                        .getString().equals(Text.translatable("menu.returnToMenu").getString())) {
-                    addHealthBarTogglingButton(this.width/2 - 100/2,
-                            ((TextWidget) this.children().get(i)).getY()
-                    );
+            ClickableWidget widget = (ClickableWidget) this.children().get(i);
+            if (widget instanceof TextWidget) {
+                if (widget.getMessage().getString().equals(
+                        Text.translatable("menu.returnToMenu").getString())) {
+                    addHealthBarTogglingButton(this.width/2 - 100/2, widget.getY());
                 }
-            } else if (this.children().get(i) instanceof ButtonWidget) {
-                if (((ButtonWidget) this.children().get(i)).getMessage()
-                        .getString().equals(Text.translatable("menu.returnToMenu").getString())) {
-                    addHealthBarTogglingButton(this.width/2 - 100/2,
-                            ((ButtonWidget) this.children().get(i)).getY()
-                    );
+            } else if (widget instanceof ButtonWidget) {
+                if (widget.getMessage().getString().equals(
+                        Text.translatable("menu.returnToMenu").getString())) {
+                    addHealthBarTogglingButton(this.width/2 - 100/2, widget.getY());
                 }
             }
         }
@@ -52,7 +50,8 @@ public class EscapeMenuMixin extends Screen {
         if (ServiceLoaders.Flags.IS_NEAT_CONFIG_LOADED) {
             healthBarStatusButton = new HoverableTextToggleButton(x,
                     y + 20 + 5, 100, 20,
-                    0, 0, Textures.FOCUSED_ON_HEALTHBAR_TEXTURE, Textures.FOCUSED_OFF_HEALTHBAR_TEXTURE,
+                    0, 0, Textures.FOCUSED_ON_HEALTHBAR_TEXTURE,
+                    Textures.FOCUSED_OFF_HEALTHBAR_TEXTURE,
                     Flags.IS_HEALTH_BAR_TOGGLED, Strings.HEALTH_BAR_TOGGLED_STATE,
                     Strings.HEALTH_BAR_UNTOGGLED_STATE,
                     Textures.UNFOCUSED_ON_HEALTHBAR_TEXTURE,
