@@ -5,12 +5,13 @@
   "mixins": [
   ],
   "client": [
-    "ResourcePackLock",
     "CustomIconMixin",
     "CustomTitleMixin",
     "EscapeMenuMixin",
     "MainMenuMixin",
-    "MenuLogo"
+    "MenuLogo",
+    "ResourcePackLock",
+    "SplashRemoverMixin"
   ],
   "injectors": {
     "defaultRequire": 1
