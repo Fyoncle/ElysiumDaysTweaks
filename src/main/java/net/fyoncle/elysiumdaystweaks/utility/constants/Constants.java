@@ -24,7 +24,7 @@ public class Constants {
 
         public static class Ram {
             public static final String RECOMMENDED_RAM = "6";
-            public static final String MINIMUM_RAM = "4";
+            public static final String MINIMUM_RAM = "5";
             public static class WidgetsText {
                 public static final String IGNORE_TEXT = "Ignore";
                 public static final String SHOW_GUIDE_TEXT = "Show Guide";
@@ -33,9 +33,9 @@ public class Constants {
                         "You have allocated §c",
                         " GB §fof memory to the modpack which is not enough to run.",
                         "Please, allocate a §nminimum§f of §6",
-                        "GB§f of RAM.",
-                        "For the best experience, §a",
-                        "GB§f or more is recommended."
+                        " GB §fof RAM.",
+                        "For the best experience, §a§l",
+                        " GB §for more is §lrecommended§f."
                 };
             }
         }
