@@ -1,9 +1,9 @@
 package net.fyoncle.elysiumdaystweaks.custommenus;
 
+import net.fyoncle.elysiumdaystweaks.ElysiumDaysTweaks;
 import net.fyoncle.elysiumdaystweaks.customwidgets.HoverableTextButton;
 import net.fyoncle.elysiumdaystweaks.utility.constants.Constants;
 import net.fyoncle.elysiumdaystweaks.utility.constants.Textures;
-import net.fyoncle.elysiumdaystweaks.ElysiumDaysTweaks;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.MultilineText;
 import net.minecraft.client.gui.DrawContext;
