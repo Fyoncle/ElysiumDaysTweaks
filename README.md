@@ -1,7 +1,7 @@
 ![Banner](https://cdn.modrinth.com/data/cached_images/5b10cef83a9e5708683dc7ca3f88cf5b657f9333_0.webp)
 <div align="center">
 
-This mod is made for tweaking numerous parts of the [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack.
+This mod is made for tweaking numerous parts of the [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack while providing compatibility between mods.
 
 Incompatibilities will not be fixed unless they affect the Elysium Days modpack, as this mod is not intended for standalone use.
 
@@ -64,7 +64,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 
 - New Map Icon Designs! (Thanks to Vixel!)
 
-- 11 More Tips With Mod Support For The [Tips](https://modrinth.com/mod/tips) Mod
+- 11 More Tips with Mod Support for the [Tips](https://modrinth.com/mod/tips) Mod
 
 </details>
 <div align="center">
