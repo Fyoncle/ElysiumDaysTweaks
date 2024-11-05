@@ -65,9 +65,9 @@ public class Textures {
   // Menu Logos
     public static final Identifier ED_DEFAULT_LOGO = new Identifier("elysium-days-tweaks",
             "logos/eddefaultlogo.png");
-    public static final Identifier ED_CHRISTMAS_LOGO = new Identifier("elysium-days-tweaks",
-         "logos/edchristmaslogo.png");
     public static final Identifier ED_HALLOWEEN_LOGO = new Identifier("elysium-days-tweaks",
             "logos/edhalloweenlogo.png");
+    public static final Identifier ED_CHRISTMAS_LOGO = new Identifier("elysium-days-tweaks",
+            "logos/edchristmaslogo.png");
 
 }
