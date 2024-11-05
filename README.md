@@ -45,12 +45,16 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 
 - [Spawn Animations](https://modrinth.com/mod/spawn-animations) Compatibility for [Creeper Overhaul](https://modrinth.com/mod/creeper-overhaul), [Enderman Overhaul](https://modrinth.com/mod/enderman-overhaul), [Deeper and Darker](https://modrinth.com/mod/deeperdarker) and [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric) Mod
 
-- [Icons](https://modrinth.com/resourcepack/icons) Compatibility for [Snow Pig](https://modrinth.com/mod/snowpig-fabric)'s Music Disc
+- [Icons](https://modrinth.com/resourcepack/icons) Compatibility for **Frosty Snig** Music Disc of [Snow Pig](https://modrinth.com/mod/snowpig-fabric) Mod
+
+- [Icons](https://modrinth.com/resourcepack/icons) Compatibility for **Heave Ho!** Music Disc of [Supplementaries](https://modrinth.com/mod/supplementaries) Mod
+
+- [Icons](https://modrinth.com/resourcepack/icons) Compatibility for **Incarnated Evil** Music Disc of [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric) Mod
 
 ### Other Tweaks
-- Special Translations for [End Remastered](https://modrinth.com/mod/endrem) Mod!
+- Special Translations for [End Remastered](https://modrinth.com/mod/endrem) Mod
 
-- Icons Advertisement Logo Replacement for [Icons](https://modrinth.com/resourcepack/icons) Resource Pack!
+- Icons Advertisement Logo Replacement for [Icons](https://modrinth.com/resourcepack/icons) Resource Pack
 
 - Removing [Icons](https://modrinth.com/resourcepack/icons) Food Tooltips That is Extra alongside [AppleSkin](https://modrinth.com/mod/appleskin)
 
