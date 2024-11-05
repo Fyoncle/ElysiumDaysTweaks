@@ -33,11 +33,11 @@ public class CustomIconMixin {
     @Unique
     private void init() {
         if(!isInitialized) {
-            loadResource("icon_16x16.png");
-            loadResource("icon_32x32.png");
-            loadResource("icon_48x48.png");
-            loadResource("icon_128x128.png");
-            loadResource("icon_256x256.png");
+            loadResource("defaulticons/ed_default_icon_16x16.png");
+            loadResource("defaulticons/ed_default_icon_32x32.png");
+            loadResource("defaulticons/ed_default_icon_48x48.png");
+            loadResource("defaulticons/ed_default_icon_128x128.png");
+            loadResource("defaulticons/ed_default_icon_256x256.png");
             isInitialized = true;
         }
     }
