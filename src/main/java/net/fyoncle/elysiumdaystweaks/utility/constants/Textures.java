@@ -7,18 +7,18 @@ public class Textures {
    // OFF
    public static Identifier UNFOCUSED_OFF_HEALTHBAR_TEXTURE = new Identifier(
             "elysium-days-tweaks",
-            "buttons/neat_disable_button_unfocused.png");
+            "buttons/neat_disabled_button_unfocused.png");
    public static Identifier FOCUSED_OFF_HEALTHBAR_TEXTURE = new Identifier(
            "elysium-days-tweaks",
-           "buttons/neat_disable_button_focused.png");
+           "buttons/neat_disabled_button_focused.png");
 
    // ON
    public static Identifier UNFOCUSED_ON_HEALTHBAR_TEXTURE = new Identifier(
            "elysium-days-tweaks",
-           "buttons/neat_button_unfocused.png");
+           "buttons/neat_enabled_button_unfocused.png");
     public static Identifier FOCUSED_ON_HEALTHBAR_TEXTURE = new Identifier(
             "elysium-days-tweaks",
-            "buttons/neat_button_focused.png");
+            "buttons/neat_enabled_button_focused.png");
 
     // Discord Button Textures
     public static Identifier DISCORD_BUTTON_UNFOCUSED_TEXTURE = new Identifier(
