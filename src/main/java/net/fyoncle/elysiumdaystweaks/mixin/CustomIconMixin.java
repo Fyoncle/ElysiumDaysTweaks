@@ -1,6 +1,7 @@
 package net.fyoncle.elysiumdaystweaks.mixin;
 
 import net.fyoncle.elysiumdaystweaks.utility.constants.Constants;
+import net.fyoncle.elysiumdaystweaks.utility.other.HolidayChecker;
 import net.minecraft.client.util.Icons;
 import net.minecraft.resource.InputSupplier;
 import org.apache.commons.io.IOUtils;
@@ -33,11 +34,20 @@ public class CustomIconMixin {
     @Unique
     private void init() {
         if(!isInitialized) {
-            loadResource("defaulticons/ed_default_icon_16x16.png");
-            loadResource("defaulticons/ed_default_icon_32x32.png");
-            loadResource("defaulticons/ed_default_icon_48x48.png");
-            loadResource("defaulticons/ed_default_icon_128x128.png");
-            loadResource("defaulticons/ed_default_icon_256x256.png");
+            if(HolidayChecker.isChristmas()) {
+                for(int i = 0; i < Constants.Core.Paths.CHRISTMAS_ED_ICONS_FILE_NAMES.length; i++) {
+                    loadResource(Constants.Core.Paths.CHRISTMAS_ED_ICONS_FILE_NAMES[i]);
+                }
+            } else if(HolidayChecker.isHalloween()) {
+                for(int i = 0; i < Constants.Core.Paths.HALLOWEEN_ED_ICONS_FILE_NAMES.length; i++) {
+                    loadResource(Constants.Core.Paths.HALLOWEEN_ED_ICONS_FILE_NAMES[i]);
+                }
+            }
+            if(!HolidayChecker.isChristmas() && !HolidayChecker.isHalloween()) {
+                for(int i = 0; i < Constants.Core.Paths.DEFAULT_ED_ICONS_FILE_NAMES.length; i++) {
+                    loadResource(Constants.Core.Paths.DEFAULT_ED_ICONS_FILE_NAMES[i]);
+                }
+            }
             isInitialized = true;
         }
     }

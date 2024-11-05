@@ -26,7 +26,8 @@ public class MenuLogo {
         } else if(HolidayChecker.isChristmas()) {
             resourceLocation = Textures.ED_CHRISTMAS_LOGO;
             original.call(instance, resourceLocation, i, j, 0f, 0f, 256, 70, 256, 70);
-        } else {
+        }
+        if(!HolidayChecker.isChristmas() && !HolidayChecker.isHalloween()) {
             resourceLocation = Textures.ED_DEFAULT_LOGO;
             original.call(instance, resourceLocation, i, j, 0f, 0f, 256, 70, 256, 70);
         }
