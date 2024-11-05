@@ -11,6 +11,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class ResourcePackLock {
     @Shadow public abstract String getName();
 
+    @Inject(at = @At("RETURN"), method = "getInitialPosition", cancellable = true)
+    public void getInitialPosition(CallbackInfoReturnable<ResourcePackProfile.InsertionPosition> cir) {
+        if(this.getName().equals("elysium-days-tweaks:elysiumdaystweaks")) {
+            cir.setReturnValue(ResourcePackProfile.InsertionPosition.TOP);
+        }
+    }
+
     @Inject(at = @At("RETURN"), method = "isPinned", cancellable = true)
     public void isPinned(CallbackInfoReturnable<Boolean> cir) {
         if(this.getName().equals("elysium-days-tweaks:elysiumdaystweaks")) {

@@ -72,10 +72,10 @@ public class ElysiumDaysTweaks implements ClientModInitializer {
 	private void registerBuiltinResourcePacks() {
 		FabricLoader.getInstance().getModContainer("elysium-days-tweaks").ifPresent(modContainer -> {
 			ResourceManagerHelper.registerBuiltinResourcePack(
-					new Identifier("elysium-days-tweaks", "elysiumdaystweaks"),
-					modContainer,
-					"§fElysium §6Days §cTweaks",
-					ResourcePackActivationType.ALWAYS_ENABLED);
+                    new Identifier("elysium-days-tweaks", "elysiumdaystweaks"),
+                    modContainer,
+                    Text.literal("§fElysium §6Days §cTweaks"),
+                    ResourcePackActivationType.ALWAYS_ENABLED);
 		});
 	}
 

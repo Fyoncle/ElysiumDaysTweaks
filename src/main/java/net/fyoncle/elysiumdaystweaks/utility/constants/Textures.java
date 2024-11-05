@@ -61,4 +61,13 @@ public class Textures {
     public static Identifier RED_BUTTON_FOCUSED = new Identifier(
             "elysium-days-tweaks",
             "buttons/red_button_focused.png");
+
+ // Menu Logos
+    public static final Identifier ED_CHRISTMAS_LOGO = new Identifier("elysium-days-tweaks",
+         "logos/edchristmaslogo.png");
+    public static final Identifier ED_HALLOWEEN_LOGO = new Identifier("elysium-days-tweaks",
+            "logos/edhalloweenlogo.png");
+    public static final Identifier ED_DEFAULT_LOGO = new Identifier("elysium-days-tweaks",
+            "logos/eddefaultlogo.png");
+
 }

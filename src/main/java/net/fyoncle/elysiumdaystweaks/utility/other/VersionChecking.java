@@ -18,12 +18,14 @@ public class VersionChecking {
         RequestSender requestSender = new RequestSender();
         String jsonString = requestSender.sendRequestTo(
                 Constants.Links.MODRINTH_API_LINK + "v2/project/lz3ryGPQ/version");
-        Strings.LATEST_ED_VERSION = JsonParser.parseString(jsonString).getAsJsonArray().get(0)
-                .getAsJsonObject().get("version_number").getAsString();
+        try {
+            Strings.LATEST_ED_VERSION = JsonParser.parseString(jsonString).getAsJsonArray().get(0)
+                    .getAsJsonObject().get("version_number").getAsString();
 
-        String[] currentVersionNums = Constants.Core.CURRENT_ED_VERSION.split("\\.");
-        String[] latestVersionNums = Strings.LATEST_ED_VERSION.split("\\.");
+            String[] currentVersionNums = Constants.Core.CURRENT_ED_VERSION.split("\\.");
+            String[] latestVersionNums = Strings.LATEST_ED_VERSION.split("\\.");
 
-        Flags.IS_LATEST_VERSION = isVersionBigger(currentVersionNums, latestVersionNums);
+            Flags.IS_LATEST_VERSION = isVersionBigger(currentVersionNums, latestVersionNums);
+        } catch(Exception e) {e.printStackTrace();}
     }
 }
