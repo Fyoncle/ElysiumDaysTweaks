@@ -10,7 +10,7 @@ public class Constants {
 
     public static class Core {
         public static final String ELYSIUM_DAYS_WINDOW_TITLE = "Minecraft 1.20.1 - Elysium Days";
-        public static final String CURRENT_ED_VERSION = "6.1.0";
+        public static final String CURRENT_ED_VERSION = "7.0.0";
         public static class Paths {
             public static final String ICONS_PATH = "assets/elysium-days-tweaks/icons/";
             public static final String[] DEFAULT_ED_ICONS_FILE_NAMES = new String[] {
