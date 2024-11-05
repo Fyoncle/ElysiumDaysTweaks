@@ -8,6 +8,11 @@ import org.spongepowered.asm.mixin.Overwrite;
 
 @Mixin(SplashTextRenderer.class)
 public class SplashRemoverMixin {
+
+    /**
+     * @author Fyoncle
+     * @reason I have no damn idea why.
+     */
     @Overwrite
     public void render(DrawContext context, int screenWidth, TextRenderer textRenderer, int alpha) {}
 }
