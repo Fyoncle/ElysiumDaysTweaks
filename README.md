@@ -52,7 +52,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - [Icons](https://modrinth.com/resourcepack/icons) Compatibility for **Incarnated Evil** Music Disc of [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric) Mod
 
 ### Other Tweaks
-- Special Translations for [End Remastered](https://modrinth.com/mod/endrem) Mod
+- Custom Translations for Eye Of Ender warning message in the [End Remastered](https://modrinth.com/mod/endrem) Mod
 
 - [Icons](https://modrinth.com/resourcepack/icons) Advertisement Logo Replacement
 
