@@ -1,7 +1,7 @@
 ![Banner](https://cdn.modrinth.com/data/cached_images/5b10cef83a9e5708683dc7ca3f88cf5b657f9333_0.webp)
 <div align="center">
 
-This mod is made for [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack to tweak the main menu logo, recipes, panorama, and more features in the future.
+This mod is made for tweaking numerous parts of the [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack.
 
 Incompatibilities will not be fixed unless they affect the Elysium Days modpack, as this mod is not intended for standalone use.
 
@@ -54,9 +54,9 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 ### Other Tweaks
 - Special Translations for [End Remastered](https://modrinth.com/mod/endrem) Mod
 
-- Icons Advertisement Logo Replacement for [Icons](https://modrinth.com/resourcepack/icons) Resource Pack
+- [Icons](https://modrinth.com/resourcepack/icons) Advertisement Logo Replacement
 
-- Removing [Icons](https://modrinth.com/resourcepack/icons) Food Tooltips That is Extra alongside [AppleSkin](https://modrinth.com/mod/appleskin)
+- Removal Of [Icons](https://modrinth.com/resourcepack/icons) Food tooltips which is extra alongside [AppleSkin](https://modrinth.com/mod/appleskin)
 
 - Removing Splash Texts & Edition Logo of Minecraft
 
