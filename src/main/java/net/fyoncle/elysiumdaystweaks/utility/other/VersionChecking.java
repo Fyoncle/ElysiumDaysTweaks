@@ -17,7 +17,9 @@ public class VersionChecking {
     public void checkEDVersion() {
         RequestSender requestSender = new RequestSender();
         String jsonString = requestSender.sendRequestTo(
-                Constants.Links.MODRINTH_API_LINK + "v2/project/lz3ryGPQ/version");
+                Constants.Links.MODRINTH_API_LINK
+                        + "v2/project/lz3ryGPQ/version?game_versions=[%22"
+                        + Constants.Core.CURRENT_MINECRAFT_VERSION +"%22]");
         try {
             Strings.LATEST_ED_VERSION = JsonParser.parseString(jsonString).getAsJsonArray().get(0)
                     .getAsJsonObject().get("version_number").getAsString();
