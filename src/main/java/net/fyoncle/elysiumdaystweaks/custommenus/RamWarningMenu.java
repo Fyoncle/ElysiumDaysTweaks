@@ -56,7 +56,7 @@ public class RamWarningMenu extends Screen {
         this.addDrawableChild(new HoverableTextButton(this.width/2-200/2,
                 this.height/2-20, 200, 20, 0, 0, 0, 200, 20,
                 Constants.Other.Ram.WidgetsText.IGNORE_TEXT,
-                Textures.IGNORE_BUTTON_UNFOCUSED, Textures.IGNORE_BUTTON_FOCUSED, button -> this.close()));
+                Textures.DEFAULT_BUTTON_UNFOCUSED, Textures.DEFAULT_BUTTON_FOCUSED, button -> this.close()));
     }
 
     private void addGuideButton() {
