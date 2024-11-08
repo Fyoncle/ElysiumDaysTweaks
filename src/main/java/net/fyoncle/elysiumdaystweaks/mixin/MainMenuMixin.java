@@ -19,8 +19,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(TitleScreen.class)
 public class MainMenuMixin extends Screen {
-    /*@Mutable
-    @Shadow @Final private static Identifier PANORAMA_OVERLAY;*/
+    @Mutable
+    @Shadow @Final private static Identifier PANORAMA_OVERLAY;
 
     protected MainMenuMixin(Text title) {
         super(title);
@@ -35,7 +35,7 @@ public class MainMenuMixin extends Screen {
                 addNewUpdateButton(Flags.IS_LATEST_VERSION, button);
             }
         }
-        //this.PANORAMA_OVERLAY = new Identifier("elysium-days-tweaks", "panoramas/halloween_panorama.png");
+        this.PANORAMA_OVERLAY = new Identifier("elysium-days-tweaks", "panoramas/halloween_panorama.png");
     }
 
     @Unique
