@@ -12,7 +12,6 @@ public class HolidayChecker {
     public static boolean isHalloween() {
         calendar = Calendar.getInstance();
         if (calendar.get(Calendar.MONTH) != Calendar.OCTOBER) return false;
-        calendar.get(Calendar.DAY_OF_MONTH);
         return calendar.get(Calendar.DAY_OF_MONTH) <= 31;
     }
 }
