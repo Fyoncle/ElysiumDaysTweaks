@@ -70,4 +70,15 @@ public class Textures {
     public static final Identifier ED_CHRISTMAS_LOGO = new Identifier("elysium-days-tweaks",
             "logos/edchristmaslogo.png");
 
+
+    // Menu Panoramas
+    public static final Identifier ED_HALLOWEEN_PANORAMA = new Identifier("elysium-days-tweaks",
+            "panoramas/halloween_panorama.png");
+
+    public static final Identifier ED_CHRISTMAS_PANORAMA = new Identifier("elysium-days-tweaks",
+            "panoramas/christmas_panorama.png");
+
+    public static final Identifier ED_DEFAULT_PANORAMA = new Identifier("elysium-days-tweaks",
+            "panoramas/default_panorama.png");
+
 }

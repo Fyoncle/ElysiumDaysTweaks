@@ -5,6 +5,7 @@ import net.fyoncle.elysiumdaystweaks.customwidgets.HoverableTextButton;
 import net.fyoncle.elysiumdaystweaks.utility.constants.Constants;
 import net.fyoncle.elysiumdaystweaks.utility.constants.Textures;
 import net.fyoncle.elysiumdaystweaks.utility.other.Flags;
+import net.fyoncle.elysiumdaystweaks.utility.other.HolidayChecker;
 import net.fyoncle.elysiumdaystweaks.utility.other.Strings;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.TitleScreen;
@@ -35,7 +36,19 @@ public class MainMenuMixin extends Screen {
                 addNewUpdateButton(Flags.IS_LATEST_VERSION, button);
             }
         }
-        this.PANORAMA_OVERLAY = new Identifier("elysium-days-tweaks", "panoramas/halloween_panorama.png");
+        changePanoramaBasedOnDate();
+    }
+
+    @Unique
+    private void changePanoramaBasedOnDate() {
+        if(HolidayChecker.isHalloween()) {
+            PANORAMA_OVERLAY = Textures.ED_HALLOWEEN_PANORAMA;
+        } else if(HolidayChecker.isChristmas()) {
+            PANORAMA_OVERLAY = Textures.ED_CHRISTMAS_PANORAMA;
+        }
+        if(!HolidayChecker.isChristmas() && !HolidayChecker.isHalloween()) {
+            PANORAMA_OVERLAY = Textures.ED_DEFAULT_PANORAMA;
+        }
     }
 
     @Unique
