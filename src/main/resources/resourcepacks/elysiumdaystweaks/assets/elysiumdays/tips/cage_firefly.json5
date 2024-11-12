@@ -2,16 +2,20 @@
   "bookshelf:load_conditions": [
     {
       "type": "bookshelf:mod_loaded",
-      "mods": ["sit"]
+      "mods": ["supplementaries"]
     }
   ],
   "title": {
     "text": "Tip",
     "underlined": true,
-    "color": "dark_green"
+    "color": "yellow"
   },
-  "tip": {
-    "text": "You can now sit on stairs and slabs!",
+  //? if >=1.21.1 {
+  "text": {
+    //?} else {
+  /*"tip": {
+    *///?}
+    "text": "You can cage fireflies!",
     "color": "white"
   }
 }

@@ -10,7 +10,11 @@
     "underlined": true,
     "color": "red"
   },
-  "tip": {
+  //? if >=1.21.1 {
+  "text": {
+    //?} else {
+    /*"tip": {
+      *///?}
     "text": "You can sneak and right-click to pat your wolf and calm them!",
     "color": "white"
   }

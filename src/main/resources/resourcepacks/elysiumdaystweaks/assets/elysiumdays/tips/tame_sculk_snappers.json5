@@ -2,16 +2,20 @@
   "bookshelf:load_conditions": [
     {
       "type": "bookshelf:mod_loaded",
-      "mods": ["horseinboat"]
+      "mods": ["deeperdarker"]
     }
   ],
   "title": {
     "text": "Tip",
     "underlined": true,
-    "color": "dark_aqua"
+    "color": "blue"
   },
-  "tip": {
-    "text": "Horses can now sit in boats to travel with you!",
+  //? if >=1.21.1 {
+  "text": {
+    //?} else {
+    /*"tip": {
+      *///?}
+    "text": "You can tame sculk snappers!",
     "color": "white"
   }
 }

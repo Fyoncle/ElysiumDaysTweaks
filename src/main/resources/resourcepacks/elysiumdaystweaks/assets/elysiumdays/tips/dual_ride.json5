@@ -2,7 +2,7 @@
   "bookshelf:load_conditions": [
     {
       "type": "bookshelf:mod_loaded",
-      "mods": ["supplementaries"]
+      "mods": ["kaffees_dual_ride"]
     }
   ],
   "title": {
@@ -10,8 +10,12 @@
     "underlined": true,
     "color": "yellow"
   },
-  "tip": {
-    "text": "You can cage fireflies!",
+  //? if >=1.21.1 {
+  "text": {
+    //?} else {
+    /*"tip": {
+      *///?}
+    "text": "Now your friends can sit together on the same horse as you!",
     "color": "white"
   }
 }
