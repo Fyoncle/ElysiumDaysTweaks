@@ -5,10 +5,10 @@
     "color": "gold"
   },
   //? if >=1.21.1 {
-  /*"text": {
-    *///?} else {
-    "tip": {
-      //?}
+  "text": {
+    //?} else {
+    /*"tip": {
+      *///?}
     "text": "On Halloween, mobs have a 22.5% chance to spawn with a pumpkin and a 2.5% chance to spawn with a jack-o'-lantern on their heads.",
     "color": "white"
   }
