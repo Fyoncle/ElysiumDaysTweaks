@@ -11,10 +11,10 @@
     "color": "light_purple"
   },
   //? if >=1.21.1 {
-  "text": {
-    //?} else {
-    /*"tip": {
-      *///?}
+  /*"text": {
+    *///?} else {
+    "tip": {
+      //?}
     "text": "You can now also trim elytras!",
     "color": "white"
   }
