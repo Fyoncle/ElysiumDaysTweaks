@@ -11,10 +11,10 @@
     "color": "yellow"
   },
   //? if >=1.21.1 {
-  "text": {
-    //?} else {
-    /*"tip": {
-      *///?}
+  /*"text": {
+    *///?} else {
+    "tip": {
+      //?}
     "text": "You can now right-click crops to harvest and automatically replant them, and using hoes allows you to harvest larger areas!",
     "color": "white"
   }

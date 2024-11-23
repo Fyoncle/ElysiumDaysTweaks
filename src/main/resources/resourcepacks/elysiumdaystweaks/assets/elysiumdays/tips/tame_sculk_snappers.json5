@@ -11,10 +11,10 @@
     "color": "blue"
   },
   //? if >=1.21.1 {
-  "text": {
-    //?} else {
-    /*"tip": {
-      *///?}
+  /*"text": {
+    *///?} else {
+    "tip": {
+      //?}
     "text": "You can tame sculk snappers!",
     "color": "white"
   }
