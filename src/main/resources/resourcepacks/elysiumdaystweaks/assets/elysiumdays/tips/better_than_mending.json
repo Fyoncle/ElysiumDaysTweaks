@@ -2,20 +2,16 @@
   "bookshelf:load_conditions": [
     {
       "type": "bookshelf:mod_loaded",
-      "mods": ["sit"]
+      "mods": ["betterthanmending"]
     }
   ],
   "title": {
     "text": "Tip",
     "underlined": true,
-    "color": "dark_green"
+    "color": "green"
   },
-  //? if >=1.21.1 {
-  "text": {
-    //?} else {
-    /*"tip": {
-      *///?}
-    "text": "You can now sit on stairs and slabs!",
+  "tip": {
+    "text": "You can sneak and right-click to repair tools that have Mending using your exp.",
     "color": "white"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:mod_loaded",
+      "mods": ["kaffees_dual_ride"]
+    }
+  ],
+  "title": {
+    "text": "Tip",
+    "underlined": true,
+    "color": "yellow"
+  },
+  "tip": {
+    "text": "Now your friends can sit together on the same horse as you!",
+    "color": "white"
+  }
+}

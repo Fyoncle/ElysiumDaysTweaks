@@ -1,0 +1,17 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:mod_loaded",
+      "mods": ["deeperdarker"]
+    }
+  ],
+  "title": {
+    "text": "Tip",
+    "underlined": true,
+    "color": "blue"
+  },
+  "tip": {
+    "text": "You can tame sculk snappers!",
+    "color": "white"
+  }
+}
