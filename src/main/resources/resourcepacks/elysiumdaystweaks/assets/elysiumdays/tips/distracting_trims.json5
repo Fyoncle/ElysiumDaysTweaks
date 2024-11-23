@@ -11,10 +11,10 @@
     "color": "gold"
   },
   //? if >=1.21.1 {
-  /*"text": {
-    *///?} else {
-    "tip": {
-      //?}
+  "text": {
+    //?} else {
+    /*"tip": {
+      *///?}
     "text": "When you wear any gold-trimmed armor, piglins won’t become hostile towards you anymore!",
     "color": "white"
   }

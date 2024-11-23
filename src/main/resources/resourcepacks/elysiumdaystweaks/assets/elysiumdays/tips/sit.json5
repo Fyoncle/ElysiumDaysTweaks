@@ -11,10 +11,10 @@
     "color": "dark_green"
   },
   //? if >=1.21.1 {
-  /*"text": {
-    *///?} else {
-    "tip": {
-      //?}
+  "text": {
+    //?} else {
+    /*"tip": {
+      *///?}
     "text": "You can now sit on stairs and slabs!",
     "color": "white"
   }
