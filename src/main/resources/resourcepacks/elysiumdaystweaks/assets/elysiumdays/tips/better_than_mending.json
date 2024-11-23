@@ -10,7 +10,7 @@
     "underlined": true,
     "color": "green"
   },
-  "tip": {
+  "text": {
     "text": "You can sneak and right-click to repair tools that have Mending using your exp.",
     "color": "white"
   }

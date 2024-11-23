@@ -10,7 +10,7 @@
     "underlined": true,
     "color": "dark_green"
   },
-  "tip": {
+  "text": {
     "text": "You can now sit on stairs and slabs!",
     "color": "white"
   }

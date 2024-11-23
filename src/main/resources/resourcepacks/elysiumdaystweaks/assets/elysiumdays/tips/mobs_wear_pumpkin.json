@@ -4,7 +4,7 @@
     "underlined": true,
     "color": "gold"
   },
-  "tip": {
+  "text": {
     "text": "On Halloween, mobs have a 22.5% chance to spawn with a pumpkin and a 2.5% chance to spawn with a jack-o'-lantern on their heads.",
     "color": "white"
   }

@@ -10,7 +10,7 @@
     "underlined": true,
     "color": "red"
   },
-  "tip": {
+  "text": {
     "text": "You can sneak and right-click to pat your wolf and calm them!",
     "color": "white"
   }

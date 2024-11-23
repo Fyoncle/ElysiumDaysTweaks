@@ -10,7 +10,7 @@
     "underlined": true,
     "color": "light_purple"
   },
-  "tip": {
+  "text": {
     "text": "You can now also trim elytras!",
     "color": "white"
   }
