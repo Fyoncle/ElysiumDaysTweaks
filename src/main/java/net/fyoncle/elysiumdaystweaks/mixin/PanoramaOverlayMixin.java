@@ -2,7 +2,6 @@ package net.fyoncle.elysiumdaystweaks.mixin;
 
 import net.fyoncle.elysiumdaystweaks.utility.constants.Textures;
 import net.fyoncle.elysiumdaystweaks.utility.other.HolidayChecker;
-import net.minecraft.client.gui.CubeMapRenderer;
 import net.minecraft.client.gui.RotatingCubeMapRenderer;
 import net.minecraft.util.Identifier;
 import org.spongepowered.asm.mixin.Final;
