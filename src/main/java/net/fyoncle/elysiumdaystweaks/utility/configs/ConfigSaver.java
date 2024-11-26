@@ -23,9 +23,11 @@ public class ConfigSaver {
     public void saveData(String data, int dataType) {
         try {
             fileWriter = new FileWriter(configFile);
-            if(dataType == Constants.Other.Configs.DISABLED_RAM_SCREEN_CONFIG_TYPE) {
-                fileWriter.write("disableRamScreen = " + data);
-                fileWriter.close();
+            switch(dataType) {
+                case Constants.Other.Configs.DISABLED_RAM_SCREEN_CONFIG_TYPE -> {
+                    fileWriter.write("disableRamScreen = " + data);
+                    fileWriter.close();
+                }
             }
         } catch (IOException e) {e.printStackTrace();}
     }

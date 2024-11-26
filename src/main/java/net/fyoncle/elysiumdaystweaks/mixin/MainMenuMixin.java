@@ -5,49 +5,32 @@ import net.fyoncle.elysiumdaystweaks.customwidgets.HoverableTextButton;
 import net.fyoncle.elysiumdaystweaks.utility.constants.Constants;
 import net.fyoncle.elysiumdaystweaks.utility.constants.Textures;
 import net.fyoncle.elysiumdaystweaks.utility.other.Flags;
-import net.fyoncle.elysiumdaystweaks.utility.other.HolidayChecker;
 import net.fyoncle.elysiumdaystweaks.utility.other.Strings;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
-import org.spongepowered.asm.mixin.*;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(TitleScreen.class)
 public class MainMenuMixin extends Screen {
-    @Mutable
-    @Shadow @Final private static Identifier PANORAMA_OVERLAY;
-
     protected MainMenuMixin(Text title) {
         super(title);
     }
 
     @Inject(at = @At("RETURN"), method = "init")
-    private void addModsButton(CallbackInfo ci) {
+    private void init(CallbackInfo ci) {
         for (int i = 0; i < this.children().size(); i++) {
             ButtonWidget button = ((ButtonWidget) this.children().get(i));
             if (button.getMessage().getString().equals(Text.translatable("menu.quit").getString())) {
                 addDiscordButton(((ButtonWidget) this.children().get(i+1)));
                 addNewUpdateButton(Flags.IS_LATEST_VERSION, button);
             }
-        }
-        changePanoramaBasedOnDate();
-    }
-
-    @Unique
-    private void changePanoramaBasedOnDate() {
-        if(HolidayChecker.isHalloween()) {
-            PANORAMA_OVERLAY = Textures.ED_HALLOWEEN_PANORAMA;
-        } else if(HolidayChecker.isChristmas()) {
-            PANORAMA_OVERLAY = Textures.ED_CHRISTMAS_PANORAMA;
-        }
-        if(!HolidayChecker.isChristmas() && !HolidayChecker.isHalloween()) {
-            PANORAMA_OVERLAY = Textures.ED_DEFAULT_PANORAMA;
         }
     }
 
@@ -68,7 +51,7 @@ public class MainMenuMixin extends Screen {
         if(!isLatestVersion) {
             this.addDrawableChild(new HoverableTextButton(this.width/2-200/2,
                     startButton.getY()+30,
-                    200, 20,0, 0, 0, 200, 20,
+                    200, 20,0, 0, 200, 20,
                     "Modpack Update Available " + "(" + Strings.LATEST_ED_VERSION + ")",
                     Textures.GREEN_BUTTON_UNFOCUSED_TEXTURE,
                     Textures.GREEN_BUTTON_FOCUSED_TEXTURE,

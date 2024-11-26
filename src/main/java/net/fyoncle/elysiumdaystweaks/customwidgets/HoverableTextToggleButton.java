@@ -18,16 +18,21 @@ public class HoverableTextToggleButton extends TexturedButtonWidget {
     public String textUnToggled;
     public boolean isToggled;
 
+    private final int u;
+    private final int v;
+
     public HoverableTextToggleButton(int x, int y, int width, int height, int u, int v,
                                      Identifier ft, Identifier fut,
                                      boolean isToggled,
                                      String textToggled,
                                      String textUnToggled,
                                      Identifier uft, Identifier ufut, PressAction pressAction) {
-        super(x, y, width, height, u, v, null, pressAction);
+        super(x, y, width, height,null, pressAction);
         this.isToggled = isToggled;
         this.textToggled = textToggled;
         this.textUnToggled = textUnToggled;
+        this.u = u;
+        this.v = v;
 
         focusedToggled = ft;
         focusedUnToggled = fut;
@@ -36,7 +41,7 @@ public class HoverableTextToggleButton extends TexturedButtonWidget {
     }
 
     @Override
-    public void renderButton(DrawContext context, int mouseX, int mouseY, float delta) {
+    public void renderWidget(DrawContext context, int mouseX, int mouseY, float delta) {
         if(isToggled) {
             if(isHovered()) {
                 context.drawTexture(focusedToggled, this.getX(), this.getY(), this.u, this.v,

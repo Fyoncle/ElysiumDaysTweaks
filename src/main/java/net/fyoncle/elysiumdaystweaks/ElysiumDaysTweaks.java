@@ -2,6 +2,8 @@ package net.fyoncle.elysiumdaystweaks;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
@@ -12,6 +14,8 @@ import net.fyoncle.elysiumdaystweaks.utility.constants.Constants;
 import net.fyoncle.elysiumdaystweaks.utility.other.Ram;
 import net.fyoncle.elysiumdaystweaks.utility.other.ServiceLoaders;
 import net.fyoncle.elysiumdaystweaks.utility.other.VersionChecking;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
@@ -27,14 +31,14 @@ public class ElysiumDaysTweaks implements ClientModInitializer {
 	public final static ServiceLoaders serviceLoaders = new ServiceLoaders();
 
 	//Screens
-	private RamWarningMenu ramWarningMenu;
+	public RamWarningMenu ramWarningMenu;
 
 	@Override
 	public void onInitializeClient() {
 		versionChecking.checkEDVersion();
 		initConfigs();
-		initEvents();
 		initCustomScreens();
+		initEvents();
 		registerBuiltinResourcePacks();
 	}
 
@@ -52,15 +56,15 @@ public class ElysiumDaysTweaks implements ClientModInitializer {
 	}
 
 	private void initEvents() {
-		ClientLifecycleEvents.CLIENT_STARTED.register(client -> {
+		ScreenEvents.AFTER_INIT.register((client, screen, scaledWidth, scaledHeight) -> {
 			if(configReader.readData().get("disableRamScreen").equals("false")) {
 				if(Ram.getAllocatedRam() < 4.5) {
-					if (client.currentScreen instanceof TitleScreen) {
-						client.setScreen(ramWarningMenu);
+					if(screen instanceof TitleScreen) {
+						client.setScreenAndRender(ramWarningMenu);
 					}
 				}
 			}
-		});
+        });
 	}
 
 	private void initCustomScreens() {
@@ -72,7 +76,7 @@ public class ElysiumDaysTweaks implements ClientModInitializer {
 	private void registerBuiltinResourcePacks() {
 		FabricLoader.getInstance().getModContainer("elysium-days-tweaks").ifPresent(modContainer -> {
 			ResourceManagerHelper.registerBuiltinResourcePack(
-                    new Identifier("elysium-days-tweaks", "elysiumdaystweaks"),
+                    Identifier.of("elysium-days-tweaks", "elysiumdaystweaks"),
                     modContainer,
                     Text.literal("§fElysium §6Days §cTweaks"),
                     ResourcePackActivationType.ALWAYS_ENABLED);

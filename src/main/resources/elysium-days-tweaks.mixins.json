@@ -10,6 +10,7 @@
     "EscapeMenuMixin",
     "MainMenuMixin",
     "MenuLogo",
+    "PanoramaOverlayMixin",
     "ResourcePackLock",
     "SplashRemoverMixin"
   ],

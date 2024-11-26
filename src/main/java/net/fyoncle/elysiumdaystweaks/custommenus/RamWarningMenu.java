@@ -1,6 +1,7 @@
 package net.fyoncle.elysiumdaystweaks.custommenus;
 
 import net.fyoncle.elysiumdaystweaks.ElysiumDaysTweaks;
+import net.fyoncle.elysiumdaystweaks.customwidgets.HoverableButton;
 import net.fyoncle.elysiumdaystweaks.customwidgets.HoverableTextButton;
 import net.fyoncle.elysiumdaystweaks.utility.constants.Constants;
 import net.fyoncle.elysiumdaystweaks.utility.constants.Textures;
@@ -8,6 +9,7 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.MultilineText;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.text.Text;
 import net.minecraft.util.Colors;
 import net.minecraft.util.Util;
@@ -39,7 +41,6 @@ public class RamWarningMenu extends Screen {
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        renderBackground(context);
         super.render(context, mouseX, mouseY, delta);
         MultilineText.create(
                         MinecraftClient.getInstance().textRenderer,
@@ -54,14 +55,18 @@ public class RamWarningMenu extends Screen {
 
     private void addIgnoreButton() {
         this.addDrawableChild(new HoverableTextButton(this.width/2-200/2,
-                this.height/2-20, 200, 20, 0, 0, 0, 200, 20,
+                this.height/2-20, 200, 20, 0, 0, 200,20,
                 Constants.Other.Ram.WidgetsText.IGNORE_TEXT,
-                Textures.DEFAULT_BUTTON_UNFOCUSED, Textures.DEFAULT_BUTTON_FOCUSED, button -> this.close()));
+                Textures.DEFAULT_BUTTON_UNFOCUSED, Textures.DEFAULT_BUTTON_FOCUSED, button -> {
+            System.out.println("This is being printed.");
+            this.close(); // Doesn't do anything lol.
+            System.out.println("This is also being printed.");
+        }));
     }
 
     private void addGuideButton() {
         this.addDrawableChild(new HoverableTextButton(this.width/2-200/2,
-                this.height/2+5, 200, 20, 0, 0, 0, 200, 20,
+                this.height/2+5, 200, 20, 0, 0, 200,20,
                 Constants.Other.Ram.WidgetsText.SHOW_GUIDE_TEXT,
                 Textures.GUIDE_BUTTON_UNFOCUSED, Textures.GUIDE_BUTTON_FOCUSED,
                 button -> Util.getOperatingSystem().open(Constants.Links.RAM_GUIDE_LINK)));
@@ -69,16 +74,11 @@ public class RamWarningMenu extends Screen {
 
     private void addStopShowingButton() {
         this.addDrawableChild(new HoverableTextButton(this.width/2-200/2,
-                this.height/2+30, 200, 20, 0, 0, 0, 200, 20,
+                this.height/2+30, 200, 20, 0, 0, 200, 20,
                 Constants.Other.Ram.WidgetsText.DONT_SHOW_AGAIN_TEXT, Textures.RED_BUTTON_UNFOCUSED,
                 Textures.RED_BUTTON_FOCUSED, button -> {
             client.configSaver.saveData("true", Constants.Other.Configs.DISABLED_RAM_SCREEN_CONFIG_TYPE);
             this.close();
         }));
-    }
-
-    @Override
-    public void close() {
-        super.close();
     }
 }

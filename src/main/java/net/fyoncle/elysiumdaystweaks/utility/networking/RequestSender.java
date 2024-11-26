@@ -4,12 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.URL;
+import java.net.URI;
 
 public class RequestSender {
     public String sendRequestTo(String urlString) {
         try {
-            HttpURLConnection connection = (HttpURLConnection) new URL(urlString).openConnection();
+            HttpURLConnection connection = (HttpURLConnection) URI.create(urlString).toURL().openConnection();
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String result;
             while((result = reader.readLine()) != null) {
