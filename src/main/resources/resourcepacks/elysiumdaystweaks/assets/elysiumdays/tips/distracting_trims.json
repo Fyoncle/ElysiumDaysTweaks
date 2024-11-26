@@ -4,6 +4,7 @@
     "underlined": true,
     "color": "gold"
   },
+  "type": "tipsmod:simple",
   "text": {
     "text": "When you wear any gold-trimmed armor, piglins won’t become hostile towards you anymore!",
     "color": "white"

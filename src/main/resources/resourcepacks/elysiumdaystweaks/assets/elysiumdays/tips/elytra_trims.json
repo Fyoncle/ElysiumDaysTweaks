@@ -4,6 +4,7 @@
     "underlined": true,
     "color": "light_purple"
   },
+  "type": "tipsmod:simple",
   "text": {
     "text": "You can now also trim elytras!",
     "color": "white"

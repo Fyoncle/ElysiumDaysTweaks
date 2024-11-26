@@ -4,6 +4,7 @@
     "underlined": true,
     "color": "yellow"
   },
+  "type": "tipsmod:simple",
   "text": {
     "text": "You can now right-click crops to harvest and automatically replant them, and using hoes allows you to harvest larger areas!",
     "color": "white"

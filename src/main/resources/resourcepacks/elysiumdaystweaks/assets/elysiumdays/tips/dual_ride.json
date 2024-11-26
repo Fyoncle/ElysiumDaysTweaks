@@ -4,6 +4,7 @@
     "underlined": true,
     "color": "yellow"
   },
+  "type": "tipsmod:simple",
   "text": {
     "text": "Now your friends can sit together on the same horse as you!",
     "color": "white"

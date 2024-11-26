@@ -4,6 +4,7 @@
     "underlined": true,
     "color": "red"
   },
+  "type": "tipsmod:simple",
   "text": {
     "text": "You can sneak and right-click to pat your wolf and calm them!",
     "color": "white"

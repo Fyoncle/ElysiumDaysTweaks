@@ -4,6 +4,7 @@
     "underlined": true,
     "color": "yellow"
   },
+  "type": "tipsmod:simple",
   "text": {
     "text": "You can cage fireflies!",
     "color": "white"

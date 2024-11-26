@@ -4,6 +4,7 @@
     "underlined": true,
     "color": "dark_aqua"
   },
+  "type": "tipsmod:simple",
   "text": {
     "text": "Horses can now sit in boats to travel with you!",
     "color": "white"
