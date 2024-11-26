@@ -60,7 +60,9 @@ public class ElysiumDaysTweaks implements ClientModInitializer {
 			if(configReader.readData().get("disableRamScreen").equals("false")) {
 				if(Ram.getAllocatedRam() < 4.5) {
 					if(screen instanceof TitleScreen) {
-						client.setScreenAndRender(ramWarningMenu);
+						if(!ramWarningMenu.wasOpened) {
+							client.setScreen(ramWarningMenu);
+						}
 					}
 				}
 			}

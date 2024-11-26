@@ -21,6 +21,7 @@ public class RamWarningMenu extends Screen {
     private final String minimumRam;
 
     private final ElysiumDaysTweaks client;
+    public boolean wasOpened = false;
 
     public RamWarningMenu(ElysiumDaysTweaks client, Text title, String currentRam,
                           String recommendedRam, String minimumRam) {
@@ -58,9 +59,8 @@ public class RamWarningMenu extends Screen {
                 this.height/2-20, 200, 20, 0, 0, 200,20,
                 Constants.Other.Ram.WidgetsText.IGNORE_TEXT,
                 Textures.DEFAULT_BUTTON_UNFOCUSED, Textures.DEFAULT_BUTTON_FOCUSED, button -> {
-            System.out.println("This is being printed.");
-            this.close(); // Doesn't do anything lol.
-            System.out.println("This is also being printed.");
+            wasOpened = true;
+            this.close();
         }));
     }
 
