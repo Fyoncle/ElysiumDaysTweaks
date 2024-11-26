@@ -1,4 +1,10 @@
 {
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:mod_loaded",
+      "mods": ["distractingtrims"]
+    }
+  ],
   "title": {
     "text": "Tip",
     "underlined": true,
@@ -8,11 +14,5 @@
   "text": {
     "text": "When you wear any gold-trimmed armor, piglins won’t become hostile towards you anymore!",
     "color": "white"
-  },
-  "fabric:load_conditions": [
-    {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["distractingtrims"]
-    }
-  ]
+  }
 }

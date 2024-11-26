@@ -1,4 +1,10 @@
 {
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:mod_loaded",
+      "mods": ["sit"]
+    }
+  ],
   "title": {
     "text": "Tip",
     "underlined": true,
@@ -8,11 +14,5 @@
   "text": {
     "text": "You can now sit on stairs and slabs!",
     "color": "white"
-  },
-  "fabric:load_conditions": [
-    {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["sit"]
-    }
-  ]
+  }
 }

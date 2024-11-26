@@ -1,4 +1,10 @@
 {
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:mod_loaded",
+      "mods": ["rightclickharvest"]
+    }
+  ],
   "title": {
     "text": "Tip",
     "underlined": true,
@@ -8,11 +14,5 @@
   "text": {
     "text": "You can now right-click crops to harvest and automatically replant them, and using hoes allows you to harvest larger areas!",
     "color": "white"
-  },
-  "fabric:load_conditions": [
-    {
-      "condition": "fabric:all_mods_loaded",
-      "values": ["rightclickharvest"]
-    }
-  ]
+  }
 }
