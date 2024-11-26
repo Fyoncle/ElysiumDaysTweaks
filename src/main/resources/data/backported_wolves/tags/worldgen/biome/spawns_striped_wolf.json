@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "regions_unexplored:arid_mountains",
-    "regions_unexplored:dry_bushland",
-    "regions_unexplored:joshua_desert",
-    "regions_unexplored:outback"
-  ]
-}
