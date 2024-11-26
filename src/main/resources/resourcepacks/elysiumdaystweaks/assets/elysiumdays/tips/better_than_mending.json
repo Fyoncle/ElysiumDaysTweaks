@@ -1,10 +1,4 @@
 {
-  "bookshelf:load_conditions": [
-    {
-      "type": "bookshelf:mod_loaded",
-      "mods": ["betterthanmending"]
-    }
-  ],
   "title": {
     "text": "Tip",
     "underlined": true,
@@ -13,5 +7,11 @@
   "text": {
     "text": "You can sneak and right-click to repair tools that have Mending using your exp.",
     "color": "white"
-  }
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["betterthanmending"]
+    }
+  ]
 }
