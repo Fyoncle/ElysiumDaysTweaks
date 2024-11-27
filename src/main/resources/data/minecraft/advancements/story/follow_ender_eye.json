@@ -2,6 +2,7 @@
   "parent": "minecraft:story/enter_the_nether",
   "criteria": {
     "in_lostcastle": {
+      "trigger": "minecraft:location",
       "conditions": {
         "player": [
           {
@@ -14,8 +15,23 @@
             }
           }
         ]
-      },
-      "trigger": "minecraft:location"
+      }
+    },
+    "in_stronghold": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "minecraft:stronghold"
+              }
+            }
+          }
+        ]
+      }
     }
   },
   "display": {
@@ -34,8 +50,7 @@
     }
   },
   "requirements": [
-    [
-      "in_lostcastle"
-    ]
-  ]
+    ["in_lostcastle", "in_stronghold"]
+  ],
+  "replace": true
 }

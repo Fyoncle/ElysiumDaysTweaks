@@ -1,0 +1,25 @@
+{
+  "result": {
+    "item": "minecraft:golden_horse_armor"
+  },
+  "pattern": [
+    "  M",
+    "XWX",
+    "I I"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:white_wool"
+    },
+    "X": {
+      "item": "minecraft:gold_ingot"
+    },
+    "I": {
+      "item": "minecraft:golden_leggings"
+    },
+    "M": {
+      "item": "minecraft:golden_helmet"
+    }
+  }
+}
