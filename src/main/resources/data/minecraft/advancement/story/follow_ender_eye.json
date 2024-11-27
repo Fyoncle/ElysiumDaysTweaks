@@ -1,7 +1,8 @@
 {
   "parent": "minecraft:story/enter_the_nether",
   "criteria": {
-    "in_lostcastle": {
+    "in_lostcastle_or_stronghold": {
+      "trigger": "minecraft:location",
       "conditions": {
         "player": [
           {
@@ -9,13 +10,12 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "structure": "tlc:lost_castle"
+                "structures": ["tlc:lost_castle", "minecraft:stronghold"]
               }
             }
           }
         ]
-      },
-      "trigger": "minecraft:location"
+      }
     }
   },
   "display": {
@@ -26,7 +26,7 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:ender_eye"
+      "id": "minecraft:ender_eye"
     },
     "show_toast": true,
     "title": {
@@ -35,7 +35,8 @@
   },
   "requirements": [
     [
-      "in_lostcastle"
+      "in_lostcastle_or_stronghold"
     ]
-  ]
+  ],
+  "replace": true
 }

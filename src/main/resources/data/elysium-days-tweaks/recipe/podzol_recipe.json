@@ -1,11 +1,10 @@
 {
   "result": {
-    "item": "minecraft:sponge"
+    "id": "minecraft:podzol"
   },
   "pattern": [
-    "WWW",
-    "WXW",
-    "WWW"
+    "XW",
+    "WX"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -13,7 +12,7 @@
       "item": "minecraft:sand"
     },
     "X": {
-      "item": "minecraft:wheat_seeds"
+      "item": "minecraft:dirt"
     }
   }
 }
