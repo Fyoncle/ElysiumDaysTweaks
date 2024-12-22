@@ -1,0 +1,25 @@
+{
+  "result": {
+    "item": "minecraft:iron_horse_armor"
+  },
+  "pattern": [
+    "  M",
+    "XWX",
+    "I I"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:white_wool"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "I": {
+      "item": "minecraft:iron_leggings"
+    },
+    "M": {
+      "item": "minecraft:iron_helmet"
+    }
+  }
+}

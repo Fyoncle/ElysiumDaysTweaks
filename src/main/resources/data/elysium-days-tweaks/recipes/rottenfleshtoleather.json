@@ -1,8 +1,8 @@
 {
+  "type": "minecraft:smoking",
   "group": "misc",
-  "type": "minecraft:smelting",
-  "experience": 0,
-  "cookingtime": 275,
+  "experience": 1.0,
+  "cookingtime": 200,
   "ingredient": {
     "item": "minecraft:rotten_flesh"
   },
