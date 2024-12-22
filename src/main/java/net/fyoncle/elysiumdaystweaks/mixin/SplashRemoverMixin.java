@@ -10,8 +10,8 @@ import org.spongepowered.asm.mixin.Overwrite;
 public class SplashRemoverMixin {
 
     /**
-     * @author Fyoncle
-     * @reason I have no damn idea why.
+     * @author VipCoder
+     * @reason Removing Splash text for better visibility of menu logo.
      */
     @Overwrite
     public void render(DrawContext context, int screenWidth, TextRenderer textRenderer, int alpha) {}
