@@ -11,7 +11,7 @@ public class Constants {
     }
 
     public static class Core {
-        public static final String CURRENT_ED_VERSION = "7.0.0";
+        public static final String CURRENT_ED_VERSION = "7.1.0";
         public static final String CURRENT_MINECRAFT_VERSION = MinecraftVersion.CURRENT.getName();
         public static final String ELYSIUM_DAYS_WINDOW_TITLE = "Minecraft " + CURRENT_MINECRAFT_VERSION + " - Elysium Days";
         public static class Paths {
@@ -45,7 +45,7 @@ public class Constants {
             public static final String MINIMUM_RAM = "5";
             public static class WidgetsText {
                 public static final String IGNORE_TEXT = "Ignore";
-                public static final String SHOW_GUIDE_TEXT = "Show Guide";
+                public static final String SHOW_GUIDE_TEXT = "Open Guide";
                 public static final String DONT_SHOW_AGAIN_TEXT = "Don't Show Again";
                 public static final String[] RAM_SCREEN_WARNING_MESSAGE = new String[] {
                         "You have allocated §c",

@@ -17,65 +17,55 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 
 ### Main Content
 
-- Elysium Days Logo For Main Menu [With Christmas & Halloween Variant!]
-
+- Main Menu Elysium Days Logo & App Icon *(Includes Christmas & Halloween Variants!)*
 - Main Menu Discord Button
-
 - Modpack Update Notifier
-
 - Ram Warning Screen
-
-- App Icon
-
-- Toggle Button For [Neat](https://modrinth.com/mod/neat) Mod
-
+- Toggle Button for [Neat](https://modrinth.com/mod/neat) Mod
+***
 ### Recipes
-- Netherite Horse Armor Recipe For [Simple Netherite Horse Armor](https://modrinth.com/mod/simple-netherite-horse-armor) Mod
-
+- Netherite Horse Armor Recipe for [Simple Netherite Horse Armor](https://modrinth.com/mod/simple-netherite-horse-armor) Mod
 - Podzol Recipe
-
-- Rotten Flesh To Leather Smelting Recipe
-
+- Rotten Flesh to Leather Smelting Recipe
 - Sponge Recipe
-
+***
 ### Compatibilities
-- [Backported Wolves](https://modrinth.com/mod/backported-wolves) Compatibility for [Regions Unexplored](https://modrinth.com/mod/regions-unexplored)
-
-- [The Lost Castle](https://modrinth.com/mod/the-lost-castle) Mod Eye Spy Advancement Compatibility
-
-- [Spawn Animations](https://modrinth.com/mod/spawn-animations) Compatibility for [Creeper Overhaul](https://modrinth.com/mod/creeper-overhaul), [Enderman Overhaul](https://modrinth.com/mod/enderman-overhaul), [Deeper and Darker](https://modrinth.com/mod/deeperdarker) and [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric) Mod
-
-- [Icons](https://modrinth.com/resourcepack/icons) Compatibility for **Frosty Snig** Music Disc of [Snow Pig](https://modrinth.com/mod/snowpig-fabric) Mod
-
-- [Icons](https://modrinth.com/resourcepack/icons) Compatibility for **Heave Ho!** Music Disc of [Supplementaries](https://modrinth.com/mod/supplementaries) Mod
-
-- [Icons](https://modrinth.com/resourcepack/icons) Compatibility for **Incarnated Evil** Music Disc of [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric) Mod
-
+- [Backported Wolves](https://modrinth.com/mod/backported-wolves) Compatibility for:
+    - [Regions Unexplored](https://modrinth.com/mod/regions-unexplored)
+#
+- [Spawn Animations](https://modrinth.com/mod/spawn-animations) Compatibility for:
+    - [Creeper Overhaul](https://modrinth.com/mod/creeper-overhaul)
+    - [Enderman Overhaul](https://modrinth.com/mod/enderman-overhaul)
+    - [Deeper and Darker](https://modrinth.com/mod/deeperdarker)
+    - [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric)
+#
+- [Icons](https://modrinth.com/resourcepack/icons) Compatibility for:
+    - **Frosty Snig** Music Disc of [Snow Pig](https://modrinth.com/mod/snowpig-fabric) Mod
+    - **Heave Ho!** Music Disc of [Supplementaries](https://modrinth.com/mod/supplementaries) Mod
+    - **Incarnated Evil** Music Disc of [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric) Mod
+***
 ### Other Tweaks
-- Custom Translations for Eye Of Ender warning message in the [End Remastered](https://modrinth.com/mod/endrem) Mod
-
+- Fixes an issue where [The Lost Castle](https://modrinth.com/mod/the-lost-castle) mod doesn't grant the Eye Spy advancement
+- Custom Translations for Eye of Ender Warning Message in [End Remastered](https://modrinth.com/mod/endrem) Mod
 - [Icons](https://modrinth.com/resourcepack/icons) Advertisement Logo Replacement
-
-- Removal Of [Icons](https://modrinth.com/resourcepack/icons) Food tooltips which is extra alongside [AppleSkin](https://modrinth.com/mod/appleskin)
-
+- Removal of [Icons](https://modrinth.com/resourcepack/icons) Food Tooltips (due to it being extra alongside [AppleSkin](https://modrinth.com/mod/appleskin)'s tooltips)
 - Removing Splash Texts & Edition Logo of Minecraft
-
 - New Panorama
-
-- New Map Icon Designs! (Thanks to Vixel!)
-
+- New Map Icon Designs! *(Thanks to Vixel!)*
 - 11 More Tips with Mod Support for the [Tips](https://modrinth.com/mod/tips) Mod
 
 </details>
 <div align="center">
 
 ***
+
 ### Special Thanks
 <div align="center">
   <a href="https://modrinth.com/user/shizotoaster" rel="noopener nofollow ugc">
     <img src="https://wsrv.nl/?url=https://i.ibb.co/fdYNX3K/Heart.png" alt="Heart">
   </a>
 </div>
+
 
 **Special thanks to [VipCoder](https://github.com/VipCoder8) and [Shizotoaster](https://github.com/shizotoaster) for their contributions while making this mod, without them, it wouldn't be possible :)**
 
