@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "regions_unexplored:baobab_savanna",
-    "regions_unexplored:steppe",
-    "regions_unexplored:dry_bushland"
+    {"id": "regions_unexplored:baobab_savanna", "required": false},
+    {"id": "regions_unexplored:steppe", "required": false},
+    {"id": "regions_unexplored:dry_bushland", "required": false}
   ]
 }

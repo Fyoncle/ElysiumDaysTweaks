@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "regions_unexplored:blackwood_taiga",
-    "regions_unexplored:mountains",
-    "regions_unexplored:old_growth_bayou",
-    "regions_unexplored:pine_slopes",
-    "regions_unexplored:pine_taiga"
+    {"id": "regions_unexplored:blackwood_taiga", "required": false},
+    {"id": "regions_unexplored:mountains", "required": false},
+    {"id": "regions_unexplored:old_growth_bayou", "required": false},
+    {"id": "regions_unexplored:pine_slopes", "required": false},
+    {"id": "regions_unexplored:pine_taiga", "required": false}
   ]
 }

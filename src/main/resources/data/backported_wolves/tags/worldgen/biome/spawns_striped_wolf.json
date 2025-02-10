@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "regions_unexplored:arid_mountains",
-    "regions_unexplored:dry_bushland",
-    "regions_unexplored:joshua_desert",
-    "regions_unexplored:outback"
+    {"id": "regions_unexplored:arid_mountains", "required": false},
+    {"id": "regions_unexplored:dry_bushland", "required": false},
+    {"id": "regions_unexplored:joshua_desert", "required": false},
+    {"id": "regions_unexplored:outback", "required": false}
   ]
 }

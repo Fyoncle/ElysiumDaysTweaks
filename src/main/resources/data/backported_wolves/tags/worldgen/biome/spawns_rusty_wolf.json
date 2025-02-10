@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "regions_unexplored:bamboo_forest",
-    "regions_unexplored:rainforest",
-    "regions_unexplored:sparse_rainforest",
-    "regions_unexplored:tropics"
+    {"id": "regions_unexplored:bamboo_forest", "required": false},
+    {"id": "regions_unexplored:rainforest", "required": false},
+    {"id": "regions_unexplored:sparse_rainforest", "required": false},
+    {"id": "regions_unexplored:tropics", "required": false}
   ]
 }

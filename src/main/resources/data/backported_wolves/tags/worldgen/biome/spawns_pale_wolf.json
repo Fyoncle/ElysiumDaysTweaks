@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "regions_unexplored:blackwood_taiga",
-    "regions_unexplored:cold_boreal_taiga",
-    "regions_unexplored:cold_deciduous_forest",
-    "regions_unexplored:golden_boreal_taiga",
-    "regions_unexplored:grassland",
-    "regions_unexplored:shrubland"
+    {"id": "regions_unexplored:blackwood_taiga", "required": false},
+    {"id": "regions_unexplored:cold_boreal_taiga", "required": false},
+    {"id": "regions_unexplored:cold_deciduous_forest", "required": false},
+    {"id": "regions_unexplored:golden_boreal_taiga", "required": false},
+    {"id": "regions_unexplored:grassland", "required": false},
+    {"id": "regions_unexplored:shrubland", "required": false}
   ]
 }
