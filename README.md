@@ -7,7 +7,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 
 <a href="https://discord.gg/WFpDr7zY8Z" rel="noopener nofollow ugc">
 <img src="https://wsrv.nl/?url=https://i.ibb.co/V9DmRdC/discordicon.png" alt="Discord Icon"></a>
-<a href="https://github.com/Fyoncle/Elysium-Days/issues" rel="noopener nofollow ugc">
+<a href="https://github.com/Fyoncle/ElysiumDaysTweaks" rel="noopener nofollow ugc">
 <img src="https://wsrv.nl/?url=https://i.ibb.co/N9s5hz1/github.png" alt="GitHub"></a>
 
 ***
