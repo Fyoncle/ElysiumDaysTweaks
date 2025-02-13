@@ -30,15 +30,6 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - Sponge Recipe
 ***
 ### Compatibilities
-- [Backported Wolves](https://modrinth.com/mod/backported-wolves) Compatibility for:
-    - [Regions Unexplored](https://modrinth.com/mod/regions-unexplored)
-#
-- [Spawn Animations](https://modrinth.com/mod/spawn-animations) Compatibility for:
-    - [Creeper Overhaul](https://modrinth.com/mod/creeper-overhaul)
-    - [Enderman Overhaul](https://modrinth.com/mod/enderman-overhaul)
-    - [Deeper and Darker](https://modrinth.com/mod/deeperdarker)
-    - [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric)
-#
 - [Icons](https://modrinth.com/resourcepack/icons) Compatibility for:
     - **Frosty Snig** Music Disc of [Snow Pig](https://modrinth.com/mod/snowpig-fabric) Mod
     - **Heave Ho!** Music Disc of [Supplementaries](https://modrinth.com/mod/supplementaries) Mod
