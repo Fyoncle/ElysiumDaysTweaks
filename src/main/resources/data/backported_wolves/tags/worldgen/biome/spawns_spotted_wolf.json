@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    {"id": "regions_unexplored:baobab_savanna", "required": false},
-    {"id": "regions_unexplored:steppe", "required": false},
-    {"id": "regions_unexplored:dry_bushland", "required": false}
-  ]
-}

@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    {"id": "regions_unexplored:blackwood_taiga", "required": false},
-    {"id": "regions_unexplored:boreal_taiga", "required": false},
-    {"id": "regions_unexplored:old_growth_bayou", "required": false},
-    {"id": "regions_unexplored:towering_cliffs", "required": false}
-  ]
-}
