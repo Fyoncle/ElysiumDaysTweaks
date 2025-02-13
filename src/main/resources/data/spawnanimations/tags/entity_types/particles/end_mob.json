@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    {"id": "endermanoverhaul:end_enderman", "required": false},
-    {"id": "endermanoverhaul:end_islands_enderman", "required": false}
-  ]
-}
