@@ -1,6 +1,7 @@
 {
   "title": {
     "text": "Tip",
+    "bold": true,
     "underlined": true,
     "color": "gold"
   },
