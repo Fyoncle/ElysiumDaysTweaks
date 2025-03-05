@@ -12,7 +12,7 @@
     "color": "yellow"
   },
   "tip": {
-    "text": "Right-clicking crops lets you harvest and replant them automatically, and hoes help you cover larger areas.",
+    "text": "Right-clicking crops lets you harvest and replant them automatically, and hoes help you harvest larger areas.",
     "color": "white"
   }
 }
