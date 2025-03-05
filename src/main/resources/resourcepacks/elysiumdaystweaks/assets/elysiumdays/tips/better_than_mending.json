@@ -12,7 +12,7 @@
     "color": "green"
   },
   "tip": {
-    "text": "You can sneak and right-click to repair tools that have Mending using your exp.",
+    "text": "When you sneak and right-click when holding a tool with mending it will repair it using your EXP.",
     "color": "white"
   }
 }

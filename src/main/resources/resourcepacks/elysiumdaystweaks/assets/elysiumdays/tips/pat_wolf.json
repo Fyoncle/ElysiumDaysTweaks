@@ -12,7 +12,7 @@
     "color": "red"
   },
   "tip": {
-    "text": "You can sneak and right-click to pat your wolf and calm them!",
+    "text": "Sneaking and right-clicking will pat your wolf to calm it down.",
     "color": "white"
   }
 }
