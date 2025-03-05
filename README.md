@@ -43,7 +43,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - Removing Splash Texts & Edition Logo of Minecraft
 - New Panorama
 - New Map Icon Designs! *(Thanks to Vixel!)*
-- 11 More Tips with Mod Support for the [Tips](https://modrinth.com/mod/tips) Mod
+- 12 More Tips with Mod Support for the [Tips](https://modrinth.com/mod/tips) Mod
 
 </details>
 <div align="center">
