@@ -21,7 +21,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(TitleScreen.class)
 public class MainMenuMixin extends Screen {
     @Mutable
-    @Shadow @Final private static Identifier PANORAMA_OVERLAY;
+    @Shadow
+    @Final
+    private static Identifier PANORAMA_OVERLAY;
 
     protected MainMenuMixin(Text title) {
         super(title);
@@ -32,7 +34,7 @@ public class MainMenuMixin extends Screen {
         for (int i = 0; i < this.children().size(); i++) {
             ButtonWidget button = ((ButtonWidget) this.children().get(i));
             if (button.getMessage().getString().equals(Text.translatable("menu.quit").getString())) {
-                addDiscordButton(((ButtonWidget) this.children().get(i+1)));
+                addDiscordButton(((ButtonWidget) this.children().get(i + 1)));
                 addNewUpdateButton(Flags.IS_LATEST_VERSION, button);
             }
         }
@@ -41,12 +43,12 @@ public class MainMenuMixin extends Screen {
 
     @Unique
     private void changePanoramaBasedOnDate() {
-        if(HolidayChecker.isHalloween()) {
+        if (HolidayChecker.isHalloween()) {
             PANORAMA_OVERLAY = Textures.ED_HALLOWEEN_PANORAMA;
-        } else if(HolidayChecker.isChristmas()) {
+        } else if (HolidayChecker.isChristmas()) {
             PANORAMA_OVERLAY = Textures.ED_CHRISTMAS_PANORAMA;
         }
-        if(!HolidayChecker.isChristmas() && !HolidayChecker.isHalloween()) {
+        if (!HolidayChecker.isChristmas() && !HolidayChecker.isHalloween()) {
             PANORAMA_OVERLAY = Textures.ED_DEFAULT_PANORAMA;
         }
     }
@@ -57,7 +59,7 @@ public class MainMenuMixin extends Screen {
         int yPos = startButton.getY();
         int width = startButton.getWidth();
         this.addDrawableChild(new HoverableButton(x + width + 4, yPos, 20,
-                20, 0,0, 0, 20, 20,
+                20, 0, 0, 0, 20, 20,
                 Textures.DISCORD_BUTTON_UNFOCUSED_TEXTURE,
                 Textures.DISCORD_BUTTON_FOCUSED_TEXTURE,
                 button -> Util.getOperatingSystem().open(Constants.Links.DISCORD_LINK)));
@@ -65,10 +67,10 @@ public class MainMenuMixin extends Screen {
 
     @Unique
     private void addNewUpdateButton(boolean isLatestVersion, ButtonWidget startButton) {
-        if(!isLatestVersion) {
-            this.addDrawableChild(new HoverableTextButton(this.width/2-200/2,
-                    startButton.getY()+30,
-                    200, 20,0, 0, 0, 200, 20,
+        if (!isLatestVersion) {
+            this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
+                    startButton.getY() + 30,
+                    200, 20, 0, 0, 0, 200, 20,
                     "Modpack Update Available " + "(" + Strings.LATEST_ED_VERSION + ")",
                     Textures.GREEN_BUTTON_UNFOCUSED_TEXTURE,
                     Textures.GREEN_BUTTON_FOCUSED_TEXTURE,

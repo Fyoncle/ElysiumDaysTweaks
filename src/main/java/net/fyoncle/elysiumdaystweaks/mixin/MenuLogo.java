@@ -20,14 +20,14 @@ public class MenuLogo {
                                                  int i, int j, float f,
                                                  float g, int k,
                                                  int l, int m, int n, Operation<Void> original) {
-        if(HolidayChecker.isHalloween()) {
+        if (HolidayChecker.isHalloween()) {
             resourceLocation = Textures.ED_HALLOWEEN_LOGO;
             original.call(instance, resourceLocation, i, j, 0f, 0f, 256, 70, 256, 70);
-        } else if(HolidayChecker.isChristmas()) {
+        } else if (HolidayChecker.isChristmas()) {
             resourceLocation = Textures.ED_CHRISTMAS_LOGO;
             original.call(instance, resourceLocation, i, j, 0f, 0f, 256, 70, 256, 70);
         }
-        if(!HolidayChecker.isChristmas() && !HolidayChecker.isHalloween()) {
+        if (!HolidayChecker.isChristmas() && !HolidayChecker.isHalloween()) {
             resourceLocation = Textures.ED_DEFAULT_LOGO;
             original.call(instance, resourceLocation, i, j, 0f, 0f, 256, 70, 256, 70);
         }
