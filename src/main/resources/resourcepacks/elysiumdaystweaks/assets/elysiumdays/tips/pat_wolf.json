@@ -2,9 +2,7 @@
   "bookshelf:load_conditions": [
     {
       "type": "bookshelf:mod_loaded",
-      "mods": [
-        "calmdowndog"
-      ]
+      "mods": ["calmdowndog"]
     }
   ],
   "title": {

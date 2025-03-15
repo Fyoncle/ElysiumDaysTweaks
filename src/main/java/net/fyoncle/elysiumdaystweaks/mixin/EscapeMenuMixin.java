@@ -34,11 +34,11 @@ public class EscapeMenuMixin extends Screen {
             String widgetText = widget.getMessage().getString();
             if (widget instanceof TextWidget) {
                 if (widgetText.equals(Text.translatable("menu.returnToMenu").getString())) {
-                    addHealthBarTogglingButton(this.width / 2 - 100 / 2, widget.getY());
+                    addHealthBarTogglingButton(this.width/2 - 100/2, widget.getY());
                 }
             } else if (widget instanceof ButtonWidget) {
                 if (widgetText.equals(Text.translatable("menu.returnToMenu").getString())) {
-                    addHealthBarTogglingButton(this.width / 2 - 100 / 2, widget.getY());
+                    addHealthBarTogglingButton(this.width/2 - 100/2, widget.getY());
                 }
             }
         }
@@ -60,7 +60,6 @@ public class EscapeMenuMixin extends Screen {
             this.addDrawableChild(healthBarStatusButton);
         }
     }
-
     @Unique
     private void restoreHealthBarToggleStates() {
         if (!ElysiumDaysTweaks.serviceLoaders.NEAT_CONFIG_SERVICE.getDraw()) {
@@ -71,7 +70,6 @@ public class EscapeMenuMixin extends Screen {
             healthBarStatusButton.isToggled = true;
         }
     }
-
     @Unique
     private void toggleHealthBar() {
         if (!Flags.IS_HEALTH_BAR_TOGGLED) {

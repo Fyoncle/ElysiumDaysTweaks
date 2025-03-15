@@ -2,9 +2,7 @@
   "bookshelf:load_conditions": [
     {
       "type": "bookshelf:mod_loaded",
-      "mods": [
-        "armorable-skeleton-horses"
-      ]
+      "mods": ["armorable-skeleton-horses"]
     }
   ],
   "title": {

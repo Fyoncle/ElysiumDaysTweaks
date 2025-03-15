@@ -50,10 +50,7 @@
     }
   },
   "requirements": [
-    [
-      "in_lostcastle",
-      "in_stronghold"
-    ]
+    ["in_lostcastle", "in_stronghold"]
   ],
   "replace": true
 }

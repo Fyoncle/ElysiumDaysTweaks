@@ -1,6 +1,7 @@
 package net.fyoncle.elysiumdaystweaks.mixin;
 
 import net.minecraft.resource.ResourcePackProfile;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -14,9 +15,7 @@ public abstract class ResourcePackLock {
             ED_RESOURCE_PACK,
             "__moremcmeta-internal__"
     };
-
-    @Shadow
-    public abstract String getName();
+    @Shadow public abstract String getName();
 
     @Inject(at = @At("RETURN"), method = "getInitialPosition", cancellable = true)
     public void getInitialPosition(CallbackInfoReturnable<ResourcePackProfile.InsertionPosition> cir) {
@@ -29,8 +28,8 @@ public abstract class ResourcePackLock {
 
     @Inject(at = @At("RETURN"), method = "isPinned", cancellable = true)
     public void isPinned(CallbackInfoReturnable<Boolean> cir) {
-        for (int i = 0; i < EXCLUDE_FROM_UNPIN_RPS.length; i++) {
-            if (this.getName().equals(EXCLUDE_FROM_UNPIN_RPS[i])) {
+        for(int i = 0; i < EXCLUDE_FROM_UNPIN_RPS.length; i++) {
+            if(this.getName().equals(EXCLUDE_FROM_UNPIN_RPS[i])) {
                 cir.setReturnValue(true);
             }
         }

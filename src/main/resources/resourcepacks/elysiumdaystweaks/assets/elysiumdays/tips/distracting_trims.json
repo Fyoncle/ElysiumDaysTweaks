@@ -2,9 +2,7 @@
   "bookshelf:load_conditions": [
     {
       "type": "bookshelf:mod_loaded",
-      "mods": [
-        "distractingtrims"
-      ]
+      "mods": ["distractingtrims"]
     }
   ],
   "title": {

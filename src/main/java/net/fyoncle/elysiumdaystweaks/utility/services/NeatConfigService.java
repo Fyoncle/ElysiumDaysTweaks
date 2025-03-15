@@ -5,13 +5,13 @@ import vazkii.neat.NeatConfig;
 
 public class NeatConfigService implements INeatConfigService {
     @Override
-    public boolean getDraw() {
-        return NeatConfig.draw;
-
+    public void setDraw(boolean draw) {
+        NeatConfig.draw = draw;
     }
 
     @Override
-    public void setDraw(boolean draw) {
-        NeatConfig.draw = draw;
+    public boolean getDraw() {
+        return NeatConfig.draw;
+
     }
 }

@@ -25,9 +25,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": [
-        "netherite_horse_armor"
-      ]
+      "values": ["netherite_horse_armor"]
     }
   ]
 }

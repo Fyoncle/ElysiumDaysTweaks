@@ -12,12 +12,10 @@ public class RequestSender {
             HttpURLConnection connection = (HttpURLConnection) new URL(urlString).openConnection();
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String result;
-            while ((result = reader.readLine()) != null) {
+            while((result = reader.readLine()) != null) {
                 return result;
             }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        } catch (IOException e) {throw new RuntimeException(e);}
         return "invalid_result";
     }
 }
