@@ -23,12 +23,12 @@ public class HoverableButton extends TexturedButtonWidget {
 
     @Override
     public void renderButton(DrawContext context, int mouseX, int mouseY, float delta) {
-        if(isHovered()) {
+        if (isHovered()) {
             context.drawTexture(focused, this.getX(), this.getY(), this.u, this.v,
-                    this.width, this.height, this.textureWidth,this.textureHeight);
+                    this.width, this.height, this.textureWidth, this.textureHeight);
         } else {
             context.drawTexture(unfocused, this.getX(), this.getY(), this.u, this.v,
-                    this.width, this.height, this.textureWidth,this.textureHeight);
+                    this.width, this.height, this.textureWidth, this.textureHeight);
         }
     }
 }

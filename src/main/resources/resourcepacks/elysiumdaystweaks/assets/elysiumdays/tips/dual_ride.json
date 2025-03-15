@@ -2,7 +2,9 @@
   "bookshelf:load_conditions": [
     {
       "type": "bookshelf:mod_loaded",
-      "mods": ["kaffees_dual_ride"]
+      "mods": [
+        "kaffees_dual_ride"
+      ]
     }
   ],
   "title": {

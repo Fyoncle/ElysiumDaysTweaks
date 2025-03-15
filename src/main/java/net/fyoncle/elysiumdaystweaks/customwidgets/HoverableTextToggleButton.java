@@ -37,8 +37,8 @@ public class HoverableTextToggleButton extends TexturedButtonWidget {
 
     @Override
     public void renderButton(DrawContext context, int mouseX, int mouseY, float delta) {
-        if(isToggled) {
-            if(isHovered()) {
+        if (isToggled) {
+            if (isHovered()) {
                 context.drawTexture(focusedToggled, this.getX(), this.getY(), this.u, this.v,
                         this.width, this.height, this.width, this.height);
             } else {
@@ -46,11 +46,11 @@ public class HoverableTextToggleButton extends TexturedButtonWidget {
                         this.width, this.height, this.width, this.height);
             }
             context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,
-                    this.textToggled, this.getX() + this.getWidth()/2 - 1,
-                    this.getY() + this.getHeight()/2-4,
+                    this.textToggled, this.getX() + this.getWidth() / 2 - 1,
+                    this.getY() + this.getHeight() / 2 - 4,
                     Colors.WHITE);
         } else {
-            if(isHovered()) {
+            if (isHovered()) {
                 context.drawTexture(focusedUnToggled, this.getX(), this.getY(), this.u, this.v,
                         this.width, this.height, this.width, this.height);
             } else {
@@ -58,8 +58,8 @@ public class HoverableTextToggleButton extends TexturedButtonWidget {
                         this.width, this.height, this.width, this.height);
             }
             context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,
-                    this.textUnToggled, this.getX() + this.getWidth()/2 + 1,
-                    this.getY() + this.getHeight()/2-4,
+                    this.textUnToggled, this.getX() + this.getWidth() / 2 + 1,
+                    this.getY() + this.getHeight() / 2 - 4,
                     Colors.WHITE);
         }
     }

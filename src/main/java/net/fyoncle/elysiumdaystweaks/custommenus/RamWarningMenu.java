@@ -49,27 +49,27 @@ public class RamWarningMenu extends Screen {
                                 + minimumRam + Constants.Other.Ram.WidgetsText.RAM_SCREEN_WARNING_MESSAGE[3]),
                         Text.literal(Constants.Other.Ram.WidgetsText.RAM_SCREEN_WARNING_MESSAGE[4]
                                 + recommendedRam + Constants.Other.Ram.WidgetsText.RAM_SCREEN_WARNING_MESSAGE[5]))
-                .drawCenterWithShadow(context, this.width/2, this.height/2-80, 20, Colors.WHITE);
+                .drawCenterWithShadow(context, this.width / 2, this.height / 2 - 80, 20, Colors.WHITE);
     }
 
     private void addIgnoreButton() {
-        this.addDrawableChild(new HoverableTextButton(this.width/2-200/2,
-                this.height/2-20, 200, 20, 0, 0, 0, 200, 20,
+        this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
+                this.height / 2 - 20, 200, 20, 0, 0, 0, 200, 20,
                 Constants.Other.Ram.WidgetsText.IGNORE_TEXT,
                 Textures.DEFAULT_BUTTON_UNFOCUSED, Textures.DEFAULT_BUTTON_FOCUSED, button -> this.close()));
     }
 
     private void addGuideButton() {
-        this.addDrawableChild(new HoverableTextButton(this.width/2-200/2,
-                this.height/2+5, 200, 20, 0, 0, 0, 200, 20,
+        this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
+                this.height / 2 + 5, 200, 20, 0, 0, 0, 200, 20,
                 Constants.Other.Ram.WidgetsText.SHOW_GUIDE_TEXT,
                 Textures.GUIDE_BUTTON_UNFOCUSED, Textures.GUIDE_BUTTON_FOCUSED,
                 button -> Util.getOperatingSystem().open(Constants.Links.RAM_GUIDE_LINK)));
     }
 
     private void addStopShowingButton() {
-        this.addDrawableChild(new HoverableTextButton(this.width/2-200/2,
-                this.height/2+30, 200, 20, 0, 0, 0, 200, 20,
+        this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
+                this.height / 2 + 30, 200, 20, 0, 0, 0, 200, 20,
                 Constants.Other.Ram.WidgetsText.DONT_SHOW_AGAIN_TEXT, Textures.RED_BUTTON_UNFOCUSED,
                 Textures.RED_BUTTON_FOCUSED, button -> {
             client.configSaver.saveData("true", Constants.Other.Configs.DISABLED_RAM_SCREEN_CONFIG_TYPE);

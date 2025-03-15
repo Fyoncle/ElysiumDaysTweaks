@@ -18,65 +18,63 @@ import net.minecraft.util.Identifier;
 
 public class ElysiumDaysTweaks implements ClientModInitializer {
 
-	//Config
-	public ConfigSaver configSaver;
-	public ConfigReader configReader;
+    public final static ServiceLoaders serviceLoaders = new ServiceLoaders();
+    //Other
+    private final VersionChecking versionChecking = new VersionChecking();
+    //Config
+    public ConfigSaver configSaver;
+    public ConfigReader configReader;
+    //Screens
+    private RamWarningMenu ramWarningMenu;
 
-	//Other
-	private final VersionChecking versionChecking = new VersionChecking();
-	public final static ServiceLoaders serviceLoaders = new ServiceLoaders();
+    @Override
+    public void onInitializeClient() {
+        versionChecking.checkEDVersion();
+        initConfigs();
+        initEvents();
+        initCustomScreens();
+        registerBuiltinResourcePacks();
+    }
 
-	//Screens
-	private RamWarningMenu ramWarningMenu;
+    private void initConfigs() {
+        configReader = new ConfigReader(
+                FabricLoader.getInstance().getConfigDir().toFile().getAbsolutePath() + "/",
+                Constants.Other.Configs.CONFIG_FILE_NAME);
+        configSaver = new ConfigSaver(
+                FabricLoader.getInstance().getConfigDir().toFile().getAbsolutePath() + "/",
+                Constants.Other.Configs.CONFIG_FILE_NAME);
 
-	@Override
-	public void onInitializeClient() {
-		versionChecking.checkEDVersion();
-		initConfigs();
-		initEvents();
-		initCustomScreens();
-		registerBuiltinResourcePacks();
-	}
+        if (configReader.readData().isEmpty()) {
+            configSaver.saveData("false", Constants.Other.Configs.DISABLED_RAM_SCREEN_CONFIG_TYPE);
+        }
+    }
 
-	private void initConfigs() {
-		configReader = new ConfigReader(
-				FabricLoader.getInstance().getConfigDir().toFile().getAbsolutePath() + "/",
-				Constants.Other.Configs.CONFIG_FILE_NAME);
-		configSaver = new ConfigSaver(
-				FabricLoader.getInstance().getConfigDir().toFile().getAbsolutePath() + "/",
-				Constants.Other.Configs.CONFIG_FILE_NAME);
+    private void initEvents() {
+        ClientLifecycleEvents.CLIENT_STARTED.register(client -> {
+            if (configReader.readData().get("disableRamScreen").equals("false")) {
+                if (Ram.getAllocatedRam() < 4.5) {
+                    if (client.currentScreen instanceof TitleScreen) {
+                        client.setScreen(ramWarningMenu);
+                    }
+                }
+            }
+        });
+    }
 
-		if (configReader.readData().isEmpty()) {
-			configSaver.saveData("false", Constants.Other.Configs.DISABLED_RAM_SCREEN_CONFIG_TYPE);
-		}
-	}
+    private void initCustomScreens() {
+        ramWarningMenu = new RamWarningMenu(this, Text.empty(),
+                String.valueOf(Ram.getAllocatedRam()).substring(0, 3),
+                Constants.Other.Ram.RECOMMENDED_RAM, Constants.Other.Ram.MINIMUM_RAM);
+    }
 
-	private void initEvents() {
-		ClientLifecycleEvents.CLIENT_STARTED.register(client -> {
-			if(configReader.readData().get("disableRamScreen").equals("false")) {
-				if(Ram.getAllocatedRam() < 4.5) {
-					if (client.currentScreen instanceof TitleScreen) {
-						client.setScreen(ramWarningMenu);
-					}
-				}
-			}
-		});
-	}
-
-	private void initCustomScreens() {
-		ramWarningMenu = new RamWarningMenu(this, Text.empty(),
-				String.valueOf(Ram.getAllocatedRam()).substring(0, 3),
-				Constants.Other.Ram.RECOMMENDED_RAM, Constants.Other.Ram.MINIMUM_RAM);
-	}
-
-	private void registerBuiltinResourcePacks() {
-		FabricLoader.getInstance().getModContainer("elysium-days-tweaks").ifPresent(modContainer -> {
-			ResourceManagerHelper.registerBuiltinResourcePack(
+    private void registerBuiltinResourcePacks() {
+        FabricLoader.getInstance().getModContainer("elysium-days-tweaks").ifPresent(modContainer -> {
+            ResourceManagerHelper.registerBuiltinResourcePack(
                     new Identifier("elysium-days-tweaks", "elysiumdaystweaks"),
                     modContainer,
                     Text.literal("§fElysium §6Days §cTweaks"),
                     ResourcePackActivationType.ALWAYS_ENABLED);
-		});
-	}
+        });
+    }
 
 }
