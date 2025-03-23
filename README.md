@@ -61,5 +61,4 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 **Special thanks to [VipCoder](https://github.com/VipCoder8) and [Shizotoaster](https://github.com/shizotoaster) for their contributions while making this mod, without them, it wouldn't be possible :)**
 
 And many thanks to [Vixel](https://modrinth.com/user/Vixel) for letting me use his pixel arts in this mod!
-***
 </div>
