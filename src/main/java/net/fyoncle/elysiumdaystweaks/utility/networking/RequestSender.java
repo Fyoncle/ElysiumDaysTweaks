@@ -16,7 +16,8 @@ public class RequestSender {
                 return result;
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+            return "request_failed";
         }
         return "invalid_result";
     }
