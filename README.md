@@ -36,6 +36,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
     - **Incarnated Evil** Music Disc of [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric) Mod
 ***
 ### Other Tweaks
+- Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 - Fixes an issue where [The Lost Castle](https://modrinth.com/mod/the-lost-castle) mod doesn't grant the Eye Spy advancement
 - Custom Translations for Eye of Ender Warning Message in [End Remastered](https://modrinth.com/mod/endrem) Mod
 - [Icons](https://modrinth.com/resourcepack/icons) Advertisement Logo Replacement
