@@ -1,7 +1,7 @@
 ![Banner](https://cdn.modrinth.com/data/cached_images/5b10cef83a9e5708683dc7ca3f88cf5b657f9333_0.webp)
 <div align="center">
 
-This mod is made for tweaking numerous parts of the [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack while providing compatibility between mods.
+This mod is made for tweaking many parts of the [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack while providing compatibility between mods.
 
 Incompatibilities will not be fixed unless they affect the Elysium Days modpack, as this mod is not intended for standalone use.
 
@@ -34,17 +34,21 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
     - **Frosty Snig** Music Disc of [Snow Pig](https://modrinth.com/mod/snowpig-fabric) Mod
     - **Heave Ho!** Music Disc of [Supplementaries](https://modrinth.com/mod/supplementaries) Mod
     - **Incarnated Evil** Music Disc of [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric) Mod
+    - Custom Translations for Eye of Ender Warning Message in [End Remastered](https://modrinth.com/mod/endrem) Mod for compatibility with [The Lost Castle](https://modrinth.com/mod/the-lost-castle)
 ***
 ### Other Tweaks
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 - Fixes an issue where [The Lost Castle](https://modrinth.com/mod/the-lost-castle) mod doesn't grant the Eye Spy advancement
-- Custom Translations for Eye of Ender Warning Message in [End Remastered](https://modrinth.com/mod/endrem) Mod
 - [Icons](https://modrinth.com/resourcepack/icons) Advertisement Logo Replacement
 - Removal of [Icons](https://modrinth.com/resourcepack/icons) Food Tooltips (due to it being extra alongside [AppleSkin](https://modrinth.com/mod/appleskin)'s tooltips)
+- Removal of [Icons](https://modrinth.com/resourcepack/icons) Game Menu Logo
 - Removing Splash Texts & Edition Logo of Minecraft
 - New Panorama
 - New Map Icon Designs! *(Thanks to Vixel!)*
-- 12 More Tips with Mod Support for the [Tips](https://modrinth.com/mod/tips) Mod
+- 13 More Tips with Mod Support for the [Tips](https://modrinth.com/mod/tips) Mod
+- Removing Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
+- Removing ghast.jem from [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) to ensure compatibility with [Happy Ghast](https://modrinth.com/mod/happy-ghast) Mod
+- Overriding vanilla elytra item and entity textures to modify [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) without directly modifying their pack
 
 </details>
 <div align="center">
