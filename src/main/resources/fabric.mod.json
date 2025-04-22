@@ -15,7 +15,7 @@
     "sources": "https://github.com/Fyoncle/ElysiumDaysTweaks",
     "issues": "https://github.com/Fyoncle/ElysiumDaysTweaks/issues"
   },
-  "license": "ARR",
+  "license": "Fyoncle-Custom-License",
   "icon": "assets/elysium-days-tweaks/icon.png",
   "environment": "client",
   "entrypoints": {
