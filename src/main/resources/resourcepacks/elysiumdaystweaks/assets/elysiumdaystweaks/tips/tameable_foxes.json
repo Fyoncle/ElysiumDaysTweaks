@@ -1,0 +1,20 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:mod_loaded",
+      "mods": [
+        "tameable-foxes"
+      ]
+    }
+  ],
+  "title": {
+    "text": "Tip",
+    "bold": true,
+    "underlined": true,
+    "color": "gold"
+  },
+  "tip": {
+    "text": "You can tame foxes with glow berries and feed them with sweet berries!",
+    "color": "white"
+  }
+}
