@@ -17,7 +17,7 @@
   },
   "license": "Fyoncle-Custom-License",
   "icon": "assets/elysium-days-tweaks/icon.png",
-  "environment": "client",
+  "environment": "*",
   "entrypoints": {
     "client": [
       "net.fyoncle.elysiumdaystweaks.ElysiumDaysTweaks"
