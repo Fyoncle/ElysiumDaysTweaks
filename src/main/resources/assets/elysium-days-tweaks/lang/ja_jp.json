@@ -1,0 +1,8 @@
+{
+  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fこのモッドパックに割り当てたメモリーが %s GB §fなので、正常に実行できません。.",
+  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§f§n最低§r §65 GB §fをRAMに割り当ててください。.",
+  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§f最高の体験をするためには、 §a§l6 GB §fまたはそれ以上を§l推奨します。§f.",
+  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "ガイドを開く",
+  "elysiumdaystweaks.ramwarningscreen.button_ignore": "無視",
+  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "再度表示しない"
+}

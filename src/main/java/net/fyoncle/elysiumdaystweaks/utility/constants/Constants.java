@@ -7,7 +7,7 @@ public class Constants {
         public static final String MODRINTH_API_LINK = "https://api.modrinth.com/";
         public static final String ELYSIUM_DAYS_PAGE_LINK = "https://modrinth.com/modpack/elysium-days/versions";
         public static final String DISCORD_LINK = "https://discord.gg/WFpDr7zY8Z";
-        public static final String RAM_GUIDE_LINK = "https://github.com/Fyoncle/Elysium-Days/wiki/How-to-allocate-more-RAM";
+        public static final String RAM_GUIDE_LINK = "https://moddedmc.wiki/en/project/elysium-days/docs/guides/memory_allocation";
     }
 
     public static class Core {
@@ -39,25 +39,6 @@ public class Constants {
         public static class Configs {
             public static final int DISABLED_RAM_SCREEN_CONFIG_TYPE = 0;
             public static final String CONFIG_FILE_NAME = "elysiumdaystweaks.toml";
-        }
-
-        public static class Ram {
-            public static final String RECOMMENDED_RAM = "6";
-            public static final String MINIMUM_RAM = "5";
-
-            public static class WidgetsText {
-                public static final String IGNORE_TEXT = "Ignore";
-                public static final String SHOW_GUIDE_TEXT = "Open Guide";
-                public static final String DONT_SHOW_AGAIN_TEXT = "Don't Show Again";
-                public static final String[] RAM_SCREEN_WARNING_MESSAGE = new String[]{
-                        "You have allocated §c",
-                        " GB §fof memory to the modpack which is not enough to run.",
-                        "Please, allocate a §nminimum§f of §6",
-                        " GB §fof RAM.",
-                        "For the best experience, §a§l",
-                        " GB §for more is §lrecommended§f."
-                };
-            }
         }
     }
 }

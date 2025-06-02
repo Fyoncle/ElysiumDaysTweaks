@@ -3,23 +3,17 @@
     "item": "minecraft:diamond_horse_armor"
   },
   "pattern": [
-    "  M",
+    "  X",
     "XWX",
-    "I I"
+    "X X"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "W": {
-      "item": "minecraft:white_wool"
-    },
     "X": {
       "item": "minecraft:diamond"
     },
-    "I": {
-      "item": "minecraft:diamond_leggings"
-    },
-    "M": {
-      "item": "minecraft:diamond_helmet"
+    "W": {
+      "tag": "minecraft:wool"
     }
   }
 }

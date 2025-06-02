@@ -1,0 +1,12 @@
+{
+  "title": {
+    "text": "Tip",
+    "bold": true,
+    "underlined": true,
+    "color": "yellow"
+  },
+  "tip": {
+    "text": "You can actually craft saddles and horse armors on Elysium Days!",
+    "color": "white"
+  }
+}

@@ -3,7 +3,8 @@
   "package": "net.fyoncle.elysiumdaystweaks.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "PlayerEntityMixin"
+    "PlayerEntityMixin",
+    "WitherSkeletonHorseModifier"
   ],
   "client": [
     "CustomIconMixin",
@@ -12,7 +13,7 @@
     "MainMenuMixin",
     "MenuLogo",
     "ResourcePackLock",
-    "SplashRemoverMixin"
+    "SplashRemovalMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -3,23 +3,17 @@
     "item": "minecraft:golden_horse_armor"
   },
   "pattern": [
-    "  M",
+    "  X",
     "XWX",
-    "I I"
+    "X X"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "W": {
-      "item": "minecraft:white_wool"
-    },
     "X": {
       "item": "minecraft:gold_ingot"
     },
-    "I": {
-      "item": "minecraft:golden_leggings"
-    },
-    "M": {
-      "item": "minecraft:golden_helmet"
+    "W": {
+      "tag": "minecraft:wool"
     }
   }
 }

@@ -1,26 +1,16 @@
 {
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:diamond_horse_armor"
+  },
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
   "result": {
     "item": "netherite_horse_armor:netherite_horse_armor"
-  },
-  "pattern": [
-    "  M",
-    "XWX",
-    "I I"
-  ],
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "W": {
-      "item": "minecraft:red_wool"
-    },
-    "X": {
-      "item": "minecraft:gold_ingot"
-    },
-    "I": {
-      "item": "minecraft:netherite_ingot"
-    },
-    "M": {
-      "item": "minecraft:netherite_ingot"
-    }
   },
   "fabric:load_conditions": [
     {

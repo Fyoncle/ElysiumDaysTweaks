@@ -11,70 +11,86 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
 import net.minecraft.util.Colors;
 import net.minecraft.util.Util;
+import org.lwjgl.glfw.GLFW;
 
 public class RamWarningMenu extends Screen {
 
     private final String currentRam;
-    private final String recommendedRam;
-    private final String minimumRam;
 
     private final ElysiumDaysTweaks client;
 
-    public RamWarningMenu(ElysiumDaysTweaks client, Text title, String currentRam,
-                          String recommendedRam, String minimumRam) {
+    public RamWarningMenu(ElysiumDaysTweaks client, Text title, String currentRam) {
         super(title);
         this.client = client;
         this.currentRam = currentRam;
-        this.recommendedRam = recommendedRam;
-        this.minimumRam = minimumRam;
     }
 
     @Override
     protected void init() {
         super.init();
-        addIgnoreButton();
         addGuideButton();
-        addStopShowingButton();
+        addIgnoreButton();
+        addDontShowAgainButton();
+        addQuitGameButton();
     }
+
+    @Override
+    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
+        if (keyCode == GLFW.GLFW_KEY_ESCAPE) {
+            return true;
+        }
+        return super.keyPressed(keyCode, scanCode, modifiers);
+    }
+
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         renderBackground(context);
         super.render(context, mouseX, mouseY, delta);
         MultilineText.create(
-                        MinecraftClient.getInstance().textRenderer,
-                        Text.literal(Constants.Other.Ram.WidgetsText.RAM_SCREEN_WARNING_MESSAGE[0]
-                                + currentRam + Constants.Other.Ram.WidgetsText.RAM_SCREEN_WARNING_MESSAGE[1]),
-                        Text.literal(Constants.Other.Ram.WidgetsText.RAM_SCREEN_WARNING_MESSAGE[2]
-                                + minimumRam + Constants.Other.Ram.WidgetsText.RAM_SCREEN_WARNING_MESSAGE[3]),
-                        Text.literal(Constants.Other.Ram.WidgetsText.RAM_SCREEN_WARNING_MESSAGE[4]
-                                + recommendedRam + Constants.Other.Ram.WidgetsText.RAM_SCREEN_WARNING_MESSAGE[5]))
-                .drawCenterWithShadow(context, this.width / 2, this.height / 2 - 80, 20, Colors.WHITE);
-    }
-
-    private void addIgnoreButton() {
-        this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
-                this.height / 2 - 20, 200, 20, 0, 0, 0, 200, 20,
-                Constants.Other.Ram.WidgetsText.IGNORE_TEXT,
-                Textures.DEFAULT_BUTTON_UNFOCUSED, Textures.DEFAULT_BUTTON_FOCUSED, button -> this.close()));
+                MinecraftClient.getInstance().textRenderer,
+                Text.translatable("elysiumdaystweaks.ramwarningscreen.warning_line1", currentRam),
+                Text.translatable("elysiumdaystweaks.ramwarningscreen.warning_line2"),
+                Text.translatable("elysiumdaystweaks.ramwarningscreen.warning_line3")
+        ).drawCenterWithShadow(context, this.width / 2, this.height / 2 - 80, 20, Colors.RED);
     }
 
     private void addGuideButton() {
         this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
-                this.height / 2 + 5, 200, 20, 0, 0, 0, 200, 20,
-                Constants.Other.Ram.WidgetsText.SHOW_GUIDE_TEXT,
-                Textures.GUIDE_BUTTON_UNFOCUSED, Textures.GUIDE_BUTTON_FOCUSED,
-                button -> Util.getOperatingSystem().open(Constants.Links.RAM_GUIDE_LINK)));
+                this.height / 2 - 20, 200, 20, 0, 0, 0, 200, 20,
+                Text.translatable("elysiumdaystweaks.ramwarningscreen.button_open_guide").getString(),
+                Textures.OPEN_GUIDE_BUTTON_UNFOCUSED, Textures.OPEN_GUIDE_BUTTON_FOCUSED,
+                button -> {
+                    Util.getOperatingSystem().open(Constants.Links.RAM_GUIDE_LINK);
+                    MinecraftClient.getInstance().scheduleStop();
+                }
+        ));
     }
 
-    private void addStopShowingButton() {
+    private void addIgnoreButton() {
         this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
-                this.height / 2 + 30, 200, 20, 0, 0, 0, 200, 20,
-                Constants.Other.Ram.WidgetsText.DONT_SHOW_AGAIN_TEXT, Textures.RED_BUTTON_UNFOCUSED,
-                Textures.RED_BUTTON_FOCUSED, button -> {
-            client.configSaver.saveData("true", Constants.Other.Configs.DISABLED_RAM_SCREEN_CONFIG_TYPE);
-            this.close();
-        }));
+                this.height / 2 + 25, 200, 20, 0, 0, 0, 200, 20,
+                Text.translatable("elysiumdaystweaks.ramwarningscreen.button_ignore").getString(),
+                Textures.IGNORE_BUTTON_UNFOCUSED, Textures.IGNORE_BUTTON_FOCUSED, button -> this.close()));
+    }
+
+    private void addDontShowAgainButton() {
+        this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
+                this.height / 2 + 50, 200, 20, 0, 0, 0, 200, 20,
+                Text.translatable("elysiumdaystweaks.ramwarningscreen.button_dont_show_again").getString(),
+                Textures.DONT_SHOW_AGAIN_BUTTON_UNFOCUSED, Textures.DONT_SHOW_AGAIN_BUTTON_FOCUSED,
+                button -> {
+                    client.configSaver.saveData("true", Constants.Other.Configs.DISABLED_RAM_SCREEN_CONFIG_TYPE);
+                    this.close();
+                }));
+    }
+
+    private void addQuitGameButton() {
+        this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
+                this.height / 2 + 75, 200, 20, 0, 0, 0, 200, 20,
+                Text.translatable("menu.quit").getString(),
+                Textures.DEFAULT_BUTTON_UNFOCUSED, Textures.DEFAULT_BUTTON_FOCUSED, button -> MinecraftClient.getInstance().scheduleStop()
+        ));
     }
 
     @Override

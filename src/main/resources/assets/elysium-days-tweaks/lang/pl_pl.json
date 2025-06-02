@@ -1,0 +1,8 @@
+{
+  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fPrzydzieliłeś %s GB §fpamięci paczce modów, to nie wystarczy, żeby działała poprawnie.",
+  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fProszę przeznacz §nminimum§r §65 GB §fRAMu.",
+  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fDla najlepszych doświadczeń zaleca się §a§l6 GB §flub §lwięcej§f.",
+  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "Otwórz przewodnik",
+  "elysiumdaystweaks.ramwarningscreen.button_ignore": "Zignoruj",
+  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "Nie pokazuj ponownie"
+}

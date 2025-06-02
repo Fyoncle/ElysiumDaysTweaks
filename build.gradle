@@ -36,6 +36,9 @@ dependencies {
 	// Neat
 	modImplementation "maven.modrinth:neat:1.20.1-41-fabric"
 	implementation "me.zeroeightsix:fiber:0.23.0-2"
+
+	// Bygone Nether
+	modImplementation "maven.modrinth:bygone-nether:S8KkpB4v"
 }
 
 processResources {

@@ -1,0 +1,8 @@
+{
+  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fJe hebt maar %s GB §fgeheugen toegekend aan de modpack, dit is niet genoeg.",
+  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fReserveer §nminimaal§r §65 GB §fRAM geheugen.",
+  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fVoor de beste ervaring wordt §a§l6 GB §fof meer §laanbevolen§f.",
+  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "Open Gids",
+  "elysiumdaystweaks.ramwarningscreen.button_ignore": "Negeren",
+  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "Niet meer weergeven"
+}

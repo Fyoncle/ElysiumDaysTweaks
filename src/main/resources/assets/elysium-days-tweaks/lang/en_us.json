@@ -1,0 +1,8 @@
+{
+  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fYou have allocated %s GB §fof memory to the modpack which is not enough to run it.",
+  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fPlease, allocate a §nminimum§r §fof §65 GB §fof RAM.",
+  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fFor the best experience, §a§l6 GB §for more is §lrecommended§f.",
+  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "Open Guide",
+  "elysiumdaystweaks.ramwarningscreen.button_ignore": "Ignore",
+  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "Don't Show Again"
+}

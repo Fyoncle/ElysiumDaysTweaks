@@ -63,8 +63,7 @@ public class ElysiumDaysTweaks implements ClientModInitializer {
 
     private void initCustomScreens() {
         ramWarningMenu = new RamWarningMenu(this, Text.empty(),
-                String.valueOf(Ram.getAllocatedRam()).substring(0, 3),
-                Constants.Other.Ram.RECOMMENDED_RAM, Constants.Other.Ram.MINIMUM_RAM);
+                String.valueOf(Ram.getAllocatedRam()).substring(0, 3));
     }
 
     private void registerBuiltinResourcePacks() {
@@ -76,5 +75,4 @@ public class ElysiumDaysTweaks implements ClientModInitializer {
                     ResourcePackActivationType.ALWAYS_ENABLED);
         });
     }
-
 }

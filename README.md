@@ -24,9 +24,11 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - Toggle Button for [Neat](https://modrinth.com/mod/neat) Mod
 ***
 ### Recipes
-- Netherite Horse Armor Recipe for [Simple Netherite Horse Armor](https://modrinth.com/mod/simple-netherite-horse-armor) Mod
+- Horse Armor Recipes
+  - Netherite Horse Armor Recipe for [Simple Netherite Horse Armor](https://modrinth.com/mod/simple-netherite-horse-armor) Mod
+- Saddle Recipe
 - Podzol Recipe
-- Rotten Flesh to Leather Smelting Recipe
+- Rotten Flesh to Leather Smelting, Smoking and Campfire Recipes
 - Sponge Recipe
 ***
 ### Compatibilities
@@ -46,10 +48,11 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - Removing Splash Texts & Edition Logo of Minecraft
 - New Panorama
 - New Map Icon Designs! *(Thanks to Vixel!)*
-- 14 More Tips with Mod Support for the [Tips](https://modrinth.com/mod/tips) Mod
+- 15 More Tips with Mod Support for the [Tips](https://modrinth.com/mod/tips) Mod
 - Removing Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
 - Removing ghast.jem from [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) to ensure compatibility with [Happy Ghast](https://modrinth.com/mod/happy-ghast) Mod
-- Overriding vanilla elytra item and entity textures to modify [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) without directly modifying their pack
+- 2 Loot Tables for End Remastered eyes getting injected to Elysium Days using [Loot Patcher](https://modrinth.com/mod/loot-patcher)
+- Less Distracting Spyglass Lens Texture
 
 </details>
 <div align="center">
