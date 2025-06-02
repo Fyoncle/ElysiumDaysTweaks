@@ -14,8 +14,6 @@
 - Fixed an issue where the mod fails to pin the resource pack to the top as intended.
 - Fixed an issue with the update checker crashing the game if Modrinth is down
 - Fixed MC-220390
-- Nerf Bygone Nether's Wither Skeleton Horses through a mixin
-- Rename isVersionBigger to isVersionGreater
 
 </details>
 
@@ -68,6 +66,7 @@
 <details>
 <summary>⚙️ Other:</summary>
 
+- Nerf Bygone Nether's Wither Skeleton Horses through a mixin (VipCoder)
 - Update License to [Fyoncle's Custom License](https://github.com/Fyoncle/ElysiumDaysTweaks/blob/1.20.1/LICENSE)
 - Rewrote a part of the RAM Warning Screen to make it translatable
 - Bump Version To 8.0.0
@@ -77,6 +76,7 @@
 - Separated Backported Wolves Compat to another mod
 - Remove Iceologers from [Drodi's Illagers x Fresh Animations](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) resource pack
 - Remove game menu logo from [Icons](https://modrinth.com/resourcepack/icons) with a 1x1 texture to remove it completely and reduce file size
+- Rename `isVersionBigger` to `isVersionGreater`
 - Rename `elysiumdays` directory to `elysiumdaystweaks`
 - Add dragon.jem to override the vanilla model and achieve resource pack compatibility on Elysium Days with AL' Boss Rush combined with Better Ender Dragon
 - Add Fancy Menu as incompatible
