@@ -8,10 +8,10 @@
   ],
   "client": [
     "CustomIconMixin",
+    "CustomMenuLogo",
     "CustomTitleMixin",
     "EscapeMenuMixin",
     "MainMenuMixin",
-    "MenuLogo",
     "ResourcePackLock",
     "SplashRemovalMixin"
   ],

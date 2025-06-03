@@ -34,8 +34,8 @@
     "java": ">=17",
     "fabric-api": "*"
   },
-    "breaks": {
-      "fancymenu": "*"
+  "breaks": {
+    "fancymenu": "*"
   },
   "custom": {
     "modmenu": {

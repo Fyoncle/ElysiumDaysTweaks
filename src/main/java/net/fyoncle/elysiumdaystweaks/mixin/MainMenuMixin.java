@@ -30,7 +30,7 @@ public class MainMenuMixin extends Screen {
     }
 
     @Inject(at = @At("RETURN"), method = "init")
-    private void addModsButton(CallbackInfo ci) {
+    private void addButtons(CallbackInfo ci) {
         for (int i = 0; i < this.children().size(); i++) {
             ButtonWidget button = ((ButtonWidget) this.children().get(i));
             if (button.getMessage().getString().equals(Text.translatable("menu.quit").getString())) {

@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(LogoDrawer.class)
-public class MenuLogo {
+public class CustomMenuLogo {
     @WrapOperation(
             method = "draw(Lnet/minecraft/client/gui/DrawContext;IFI)V",
             at = @At(value = "INVOKE", ordinal = 0, target = "Lnet/minecraft/client/gui/DrawContext;drawTexture(Lnet/minecraft/util/Identifier;IIFFIIII)V")
@@ -32,5 +32,4 @@ public class MenuLogo {
             original.call(instance, resourceLocation, i, j, 0f, 0f, 256, 70, 256, 70);
         }
     }
-
 }

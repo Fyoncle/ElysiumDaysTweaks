@@ -77,6 +77,7 @@
 - Remove Iceologers from [Drodi's Illagers x Fresh Animations](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) resource pack
 - Remove game menu logo from [Icons](https://modrinth.com/resourcepack/icons) with a 1x1 texture to remove it completely and reduce file size
 - Rename `isVersionBigger` to `isVersionGreater`
+- Rename `addModsButton` to `addButtons`
 - Rename `elysiumdays` directory to `elysiumdaystweaks`
 - Add dragon.jem to override the vanilla model and achieve resource pack compatibility on Elysium Days with AL' Boss Rush combined with Better Ender Dragon
 - Add Fancy Menu as incompatible
