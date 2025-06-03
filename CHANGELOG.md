@@ -1,4 +1,4 @@
-# Elysium Days Tweaks 8.0.0 Update
+# <img src="https://cdn.modrinth.com/data/cached_images/2de4b8628d72b2cdebcc8310ff7e69a542faed0c.png" width="60"> 8.0.0 Update
 
 <details>  
 <summary>🛠️ What's Fixed:</summary>
