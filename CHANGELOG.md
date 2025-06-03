@@ -43,6 +43,7 @@
 - Updated End Remastered Eye Translations
   - Improved French Translations (Thanks to weebinsomniaque! <3)
   - Improved Polish Translations (Thanks to vstankav! <3)
+  - Improved Catalan Translations (Thanks to PuffyMaria! <3)
 - Tips Compat:
   - Added tip for the Saddle recipe and Horse Armor recipes
   - Added tip for [Armorable Skeleton Horses](https://modrinth.com/mod/armorable-skeleton-horses) mod!
