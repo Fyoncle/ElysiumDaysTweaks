@@ -1,0 +1,8 @@
+{
+  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fNaglaan ka ng %s GB §fof memory sa modpack na hindi sapat para patakbuhin ito.",
+  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fMangyaring, maglaan ng §nminimum§r §fof §65 GB §fof RAM.",
+  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fPara sa pinakamagandang ng karanasan, §a§l6 GB §fpara sa ihigit pa ay §linirerekomenda§f.",
+  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "Bukas na bagay",
+  "elysiumdaystweaks.ramwarningscreen.button_ignore": "Huwag pansinin",
+  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "Wag mo nang ipakita mo ulit"
+}

@@ -40,8 +40,10 @@
   - Dutch (nl_nl) by Jzody
   - Norwegian Bokmål (no_no) by Aprilamnm
   - Norwegian Nynorsk (nn_no) by Aprilamnm
+  - Filipino (fil_ph) by Astronaut
   - Persian (fa_ir)
 - Updated End Remastered Eye Translations
+  - Add Filipino Translations (fil_ph) (Thanks to Astronaut)
   - Improved French Translations (Thanks to weebinsomniaque! <3)
   - Improved Polish Translations (Thanks to vstankav! <3)
   - Improved Catalan Translations (Thanks to PuffyMaria! <3)
