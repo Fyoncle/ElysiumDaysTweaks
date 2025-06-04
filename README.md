@@ -45,7 +45,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - [Icons](https://modrinth.com/resourcepack/icons) Advertisement Logo Replacement
 - Removal of [Icons](https://modrinth.com/resourcepack/icons) Food Tooltips (due to it being extra alongside [AppleSkin](https://modrinth.com/mod/appleskin)'s tooltips)
 - Removal of [Icons](https://modrinth.com/resourcepack/icons) Game Menu Logo
-- Removing Splash Texts & Edition Logo of Minecraft
+- Removing Splash Text & Edition Logo of Minecraft Logo Renderer
 - New Panorama
 - New Map Icon Designs! *(Thanks to Vixel!)*
 - 15 More Tips with Mod Support for the [Tips](https://modrinth.com/mod/tips) Mod
