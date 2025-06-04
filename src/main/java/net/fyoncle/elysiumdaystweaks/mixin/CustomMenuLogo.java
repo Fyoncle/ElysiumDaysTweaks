@@ -32,4 +32,14 @@ public class CustomMenuLogo {
             original.call(instance, resourceLocation, i, j, 0f, 0f, 256, 70, 256, 70);
         }
     }
+
+    @WrapOperation(
+            method = "draw(Lnet/minecraft/client/gui/DrawContext;IFI)V",
+            at = @At(value = "INVOKE", ordinal = 1, target = "Lnet/minecraft/client/gui/DrawContext;drawTexture(Lnet/minecraft/util/Identifier;IIFFIIII)V")
+    )
+    public void elysiumDaysTweaks$removeEditionLogo(DrawContext instance, Identifier resourceLocation,
+                                                    int i, int j, float f,
+                                                    float g, int k,
+                                                    int l, int m, int n, Operation<Void> original) {
+    }
 }
