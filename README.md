@@ -19,6 +19,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 
 - Main Menu Elysium Days Logo & App Icon *(Includes Christmas & Halloween Variants!)*
 - Main Menu Discord Button
+- Mian Menu Wiki Button
 - Modpack Update Notifier
 - Ram Warning Screen
 - Toggle Button for [Neat](https://modrinth.com/mod/neat) Mod
@@ -41,6 +42,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 ***
 ### Other Tweaks
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
+- Nerfing [Bygone Nether](https://modrinth.com/mod/bygone-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
 - Fixes an issue where [The Lost Castle](https://modrinth.com/mod/the-lost-castle) mod doesn't grant the Eye Spy advancement
 - [Icons](https://modrinth.com/resourcepack/icons) Advertisement Logo Replacement
 - Removal of [Icons](https://modrinth.com/resourcepack/icons) Food Tooltips (due to it being extra alongside [AppleSkin](https://modrinth.com/mod/appleskin)'s tooltips)

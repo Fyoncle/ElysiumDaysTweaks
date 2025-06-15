@@ -22,7 +22,6 @@ public class WitherSkeletonHorseModifier extends SkeletonHorseEntity {
     public void initAttributes(Random random, CallbackInfo ci) {
         this.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(32.0F);
         this.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).setBaseValue(0.21);
-        EntityAttributeInstance horseJumpStrength = this.getAttributeInstance(EntityAttributes.HORSE_JUMP_STRENGTH);
-        horseJumpStrength.setBaseValue(getChildJumpStrengthBonus(random::nextDouble));
+        this.getAttributeInstance(EntityAttributes.HORSE_JUMP_STRENGTH).setBaseValue(0.8F);
     }
 }

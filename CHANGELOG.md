@@ -70,6 +70,8 @@
 <details>
 <summary>⚙️ Other:</summary>
 
+- Add a Wiki button in the main menu
+- Fix a few wrong pixels on the focused Discord Button
 - Nerf Bygone Nether's Wither Skeleton Horses through a mixin (VipCoder)
 - Update License to [Fyoncle's Custom License](https://github.com/Fyoncle/ElysiumDaysTweaks/blob/1.20.1/LICENSE)
 - Rewrote a part of the RAM Warning Screen to make it translatable

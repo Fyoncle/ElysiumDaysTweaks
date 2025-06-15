@@ -46,6 +46,13 @@ public class Textures {
     public static Identifier DISCORD_BUTTON_FOCUSED_TEXTURE = new Identifier(
             "elysium-days-tweaks",
             "textures/gui/discord_button_focused.png");
+    // - Wiki Button Textures -
+    public static Identifier WIKI_BUTTON_UNFOCUSED_TEXTURE = new Identifier(
+            "elysium-days-tweaks",
+            "textures/gui/wiki_button_unfocused.png");
+    public static Identifier WIKI_BUTTON_FOCUSED_TEXTURE = new Identifier(
+            "elysium-days-tweaks",
+            "textures/gui/wiki_button_focused.png");
 
 
     // - Ram Warning Screen Textures -

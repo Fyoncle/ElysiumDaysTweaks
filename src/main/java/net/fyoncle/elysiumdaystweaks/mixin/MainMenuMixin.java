@@ -7,6 +7,7 @@ import net.fyoncle.elysiumdaystweaks.utility.constants.Textures;
 import net.fyoncle.elysiumdaystweaks.utility.other.Flags;
 import net.fyoncle.elysiumdaystweaks.utility.other.HolidayChecker;
 import net.fyoncle.elysiumdaystweaks.utility.other.Strings;
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
@@ -25,6 +26,11 @@ public class MainMenuMixin extends Screen {
     @Final
     private static Identifier PANORAMA_OVERLAY;
 
+    @Unique
+    private ButtonWidget discordButton;
+    @Unique
+    private ButtonWidget wikiButton;
+
     protected MainMenuMixin(Text title) {
         super(title);
     }
@@ -36,6 +42,9 @@ public class MainMenuMixin extends Screen {
             if (button.getMessage().getString().equals(Text.translatable("menu.quit").getString())) {
                 addDiscordButton(((ButtonWidget) this.children().get(i + 1)));
                 addNewUpdateButton(Flags.IS_LATEST_VERSION, button);
+            }
+            if (button.getMessage().getString().equals(Text.translatable("menu.options").getString())) {
+                addWikiButton(((ButtonWidget) this.children().get(i + 1)));
             }
         }
         changePanoramaBasedOnDate();
@@ -58,11 +67,46 @@ public class MainMenuMixin extends Screen {
         int x = startButton.getX();
         int yPos = startButton.getY();
         int width = startButton.getWidth();
-        this.addDrawableChild(new HoverableButton(x + width + 4, yPos, 20,
+        discordButton = this.addDrawableChild(new HoverableButton(
+                x + width + 4, yPos, 20,
                 20, 0, 0, 0, 20, 20,
                 Textures.DISCORD_BUTTON_UNFOCUSED_TEXTURE,
                 Textures.DISCORD_BUTTON_FOCUSED_TEXTURE,
                 button -> Util.getOperatingSystem().open(Constants.Links.DISCORD_LINK)));
+    }
+
+    @Unique
+    private void addWikiButton(ButtonWidget startButton) {
+        int x = startButton.getX();
+        int yPos = startButton.getY();
+        int width = startButton.getWidth();
+        wikiButton = this.addDrawableChild(new HoverableButton(
+                x + width + -248, yPos, 20,
+                20, 0, 0, 0, 20, 20,
+                Textures.WIKI_BUTTON_UNFOCUSED_TEXTURE,
+                Textures.WIKI_BUTTON_FOCUSED_TEXTURE,
+                button -> Util.getOperatingSystem().open(Constants.Links.WIKI_LINK)));
+    }
+
+    @Inject(method = "render", at = @At("TAIL"))
+    private void renderTooltip(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {
+        if (discordButton != null && discordButton.isHovered()) {
+            context.drawTooltip(
+                    this.textRenderer,
+                    Text.of("Join our Discord!"),
+                    mouseX,
+                    mouseY
+            );
+        }
+
+        if (wikiButton != null && wikiButton.isHovered()) {
+            context.drawTooltip(
+                    this.textRenderer,
+                    Text.of("Visit the Wiki!"),
+                    mouseX,
+                    mouseY
+            );
+        }
     }
 
     @Unique
