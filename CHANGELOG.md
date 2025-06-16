@@ -8,7 +8,6 @@
 - Fixed Eye Spy Advancement Failing if Lost Castle structure not found. (1.21.1)
 - Fixed Ram Warning Screen can be closed with hitting ESC
 - Replaced @Overwrite with @Inject in SplashTextRendererMixin, injecting then canceling execution for removing splashes now to fix crashes with other mods.
-- Removed Edition text through @WrapOperation instead of overwriting the texture
 
 ### VipCoder:
 
@@ -54,6 +53,7 @@
   - Improved wording of the Tips
   - Updated Secret Story Tip
   - Rename Podzol and Sponge Tip
+- Added a Wiki button in the main menu
 - Redesigned the Ignore, Don't Show Again, and Open Guide Button!
 - Added Quit Game Button on RAM Warning Screen
 - Added End Remastered loot tables for Friends & Foes to add compat!
@@ -70,8 +70,10 @@
 <details>
 <summary>⚙️ Other:</summary>
 
-- Add a Wiki button in the main menu
+- Removed Edition text through @WrapOperation instead of overwriting the texture
 - Fix a few wrong pixels on the focused Discord Button
+- Separate Authors and Contributors in the fabric.mod.json
+- Add VixelCreates and Thanos1716 in the contributors on fabric.mod.json
 - Nerf Bygone Nether's Wither Skeleton Horses through a mixin (VipCoder)
 - Update License to [Fyoncle's Custom License](https://github.com/Fyoncle/ElysiumDaysTweaks/blob/1.20.1/LICENSE)
 - Rewrote a part of the RAM Warning Screen to make it translatable
