@@ -3,7 +3,7 @@
   "id": "elysium-core",
   "version": "${version}",
   "name": "Elysium Core",
-  "description": "This is the core mod of the Elysium Days modpack.",
+  "description": "Core mod for the Elysium Days modpack.",
   "authors": [
     "§2§lFyoncle§7",
     "§6§lVipCoder"
