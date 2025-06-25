@@ -1,13 +1,13 @@
-![Banner](https://cdn.modrinth.com/data/cached_images/5b10cef83a9e5708683dc7ca3f88cf5b657f9333_0.webp)
+![Banner](https://cdn.modrinth.com/data/cached_images/c4179ac9379eacfde76ce6d289ef07358ba29e78_0.webp)
 <div align="center">
 
-This mod is made for tweaking many parts of the [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack while providing compatibility between mods.
+This mod is the core mod of [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack for fixing vanilla bugs, bridging compatibility between mods, and fixing issues in the modpack alongside cosmetic features.
 
 Incompatibilities will not be fixed unless they affect the Elysium Days modpack, as this mod is not intended for standalone use.
 
 <a href="https://discord.gg/WFpDr7zY8Z" rel="noopener nofollow ugc">
 <img src="https://wsrv.nl/?url=https://i.ibb.co/V9DmRdC/discordicon.png" alt="Discord Icon"></a>
-<a href="https://github.com/Fyoncle/ElysiumDaysTweaks" rel="noopener nofollow ugc">
+<a href="https://github.com/Fyoncle/Elysium-Core" rel="noopener nofollow ugc">
 <img src="https://wsrv.nl/?url=https://i.ibb.co/N9s5hz1/github.png" alt="GitHub"></a>
 
 ***

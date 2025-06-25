@@ -1,0 +1,8 @@
+{
+  "elysiumcore.ramwarningscreen.warning_line1": "§fYou have allocated %s GB §fof memory to the modpack which is not enough to run it.",
+  "elysiumcore.ramwarningscreen.warning_line2": "§fPlease, allocate a §nminimum§r §fof §65 GB §fof RAM.",
+  "elysiumcore.ramwarningscreen.warning_line3": "§fFor the best experience, §a§l6 GB §for more is §lrecommended§f.",
+  "elysiumcore.ramwarningscreen.button_open_guide": "Open Guide",
+  "elysiumcore.ramwarningscreen.button_ignore": "Ignore",
+  "elysiumcore.ramwarningscreen.button_dont_show_again": "Don't Show Again"
+}

@@ -1,0 +1,8 @@
+{
+  "elysiumcore.ramwarningscreen.warning_line1": "§fDu har tildelt %s GB §fminne til modpakken som ikke er nok til å kjøre den.",
+  "elysiumcore.ramwarningscreen.warning_line2": "§fVennligst, tildel et §nminimum§r §fpå §65 GB §fRAM.",
+  "elysiumcore.ramwarningscreen.warning_line3": "§fFor best opplevelse, §a§l6 GB §feller mer er §lanbefalt§f.",
+  "elysiumcore.ramwarningscreen.button_open_guide": "Åpne veiledning",
+  "elysiumcore.ramwarningscreen.button_ignore": "Ignorer",
+  "elysiumcore.ramwarningscreen.button_dont_show_again": "Ikke vis igjen"
+}

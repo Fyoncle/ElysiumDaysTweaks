@@ -1,0 +1,8 @@
+{
+  "elysiumcore.ramwarningscreen.warning_line1": "§fModpaketine %s GB §fbellek verdiniz ve bu çalıştırmak için yeterli değil.",
+  "elysiumcore.ramwarningscreen.warning_line2": "§fLütfen, §nen az§r §65 GB §fRAM verin.",
+  "elysiumcore.ramwarningscreen.warning_line3": "§fEn iyi deneyim için, §a§l6 GB §fyada daha fazla §lönerilir§f.",
+  "elysiumcore.ramwarningscreen.button_open_guide": "Rehberi Aç",
+  "elysiumcore.ramwarningscreen.button_ignore": "Görmezden Gel",
+  "elysiumcore.ramwarningscreen.button_dont_show_again": "Tekrar Gösterme"
+}

@@ -1,8 +1,0 @@
-{
-  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fВы выделили %s GB §fоперативной памяти, что недостаточно для его работы.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fПожалуйста, выделите §nкак минимум§r §65 GB §fОЗУ.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fДля комфортной игры §lрекомендуется§f §a§l6 GB §fили больше.",
-  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "Открыть гайд",
-  "elysiumdaystweaks.ramwarningscreen.button_ignore": "Игнорировать",
-  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "Больше не показывать"
-}

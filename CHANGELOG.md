@@ -1,4 +1,6 @@
-# <img src="https://cdn.modrinth.com/data/cached_images/2de4b8628d72b2cdebcc8310ff7e69a542faed0c.png" width="60"> 8.0.0 Update
+# <img src="https://cdn.modrinth.com/data/cached_images/8619ab1a6ad08dfa75916bd9917476e18ea83f57.png" width="60"> 8.0.0 Update
+
+# Rebranded to Elysium Core
 
 <details>  
 <summary>🛠️ What's Fixed:</summary>
@@ -75,7 +77,7 @@
 - Separate Authors and Contributors in the fabric.mod.json
 - Add VixelCreates and Thanos1716 in the contributors on fabric.mod.json
 - Nerf Bygone Nether's Wither Skeleton Horses through a mixin (VipCoder)
-- Update License to [Fyoncle's Custom License](https://github.com/Fyoncle/ElysiumDaysTweaks/blob/1.20.1/LICENSE)
+- Update License to [Fyoncle's Custom License](https://github.com/Fyoncle/Elysium-Core/blob/1.20.1/LICENSE)
 - Rewrote a part of the RAM Warning Screen to make it translatable
 - Bump Version To 8.0.0
 - Bump Loader Version
@@ -86,9 +88,10 @@
 - Remove game menu logo from [Icons](https://modrinth.com/resourcepack/icons) with a 1x1 texture to remove it completely and reduce file size
 - Rename `isVersionBigger` to `isVersionGreater`
 - Rename `addModsButton` to `addButtons`
-- Rename `elysiumdays` directory to `elysiumdaystweaks`
 - Add dragon.jem to override the vanilla model and achieve resource pack compatibility on Elysium Days with AL' Boss Rush combined with Better Ender Dragon
 - Add Fancy Menu as incompatible
 - Remove Red Button (Replaced with DONT_SHOW_AGAIN_BUTTON)
+- Added an icon.png in the .idea directory to display EDT logo on the IDE
+- Renamed every directory to be Elysium Core
 
 </details>

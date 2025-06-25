@@ -1,8 +1,0 @@
-{
-  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fOlet jakanut %s GB §fmuistia modpackiin, mikä ei riitä sen suorittamiseen.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fJaa §nvähintään§r §65 GB §fRAM-muistia.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fParhaan kokemuksen saamiseksi käyttämällä §a§l6 GB §ftai enemmän on §lsuositeltavaa§f.",
-  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "Avaa Opas",
-  "elysiumdaystweaks.ramwarningscreen.button_ignore": "Jätä Huomioimatta",
-  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "Älä Näytä Uudelleen"
-}

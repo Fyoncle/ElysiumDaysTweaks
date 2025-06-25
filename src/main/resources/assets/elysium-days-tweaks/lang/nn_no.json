@@ -1,8 +1,0 @@
-{
-  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fDu har tildelt %s GB §fminne til modpakken, som ikkje er nok til å køyre den.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fVer venleg og tildel eit §nminimum§r §fpå §65 GB §fRAM.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fFor best oppleving, §a§l6 GB §feller meir er §ltilrådd§f.",
-  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "Opne rettleiinga",
-  "elysiumdaystweaks.ramwarningscreen.button_ignore": "Ignorer",
-  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "Ikkje vis igjen"
-}

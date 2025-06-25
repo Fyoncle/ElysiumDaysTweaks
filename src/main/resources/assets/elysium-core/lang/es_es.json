@@ -1,0 +1,8 @@
+{
+  "elysiumcore.ramwarningscreen.warning_line1": "§fHas dado %s GB §fde memoria al modpack lo qual no es lo sufieciente para que funcione.",
+  "elysiumcore.ramwarningscreen.warning_line2": "§fPor favor, da un §nmínimo§r §fde §65 GB §fde RAM.",
+  "elysiumcore.ramwarningscreen.warning_line3": "§fPara la mejor experiencia, §a§l6 GB §fo más es §lrecomendado§f.",
+  "elysiumcore.ramwarningscreen.button_open_guide": "Abrir guía",
+  "elysiumcore.ramwarningscreen.button_ignore": "Ignorar",
+  "elysiumcore.ramwarningscreen.button_dont_show_again": "No lo vuelvas a mostrar"
+}

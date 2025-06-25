@@ -1,8 +1,0 @@
-{
-  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fAnda telah mengalokasikan %s GB §fmemori ke modpack, yang dimana tidak cukup untuk menjalankannya.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fTolong alokasikan §nminimal§r §65 GB §fRAM.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fUntuk pengalaman terbaik, §a§l6 GB §fatau lebih §ldisarankan§f.",
-  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "Buka Panduan",
-  "elysiumdaystweaks.ramwarningscreen.button_ignore": "Abaikan",
-  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "Jangan Tampilkan Lagi"
-}

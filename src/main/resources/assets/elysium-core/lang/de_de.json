@@ -1,0 +1,8 @@
+{
+  "elysiumcore.ramwarningscreen.warning_line1": "§fDem Modpack wurden %s GB §f Arbeitsspeicher zugewiesen, was für die Ausführung nicht ausreichend ist.",
+  "elysiumcore.ramwarningscreen.warning_line2": "§fBitte weisen sie §nmindestens§r §65 GB §f Arbeitsspeicher zu.",
+  "elysiumcore.ramwarningscreen.warning_line3": "§fFür das beste Spielerlebnis werden, §a§l6 GB §foder mehr §lempfohlen§f.",
+  "elysiumcore.ramwarningscreen.button_open_guide": "Anleitung Öffnen",
+  "elysiumcore.ramwarningscreen.button_ignore": "Ignorieren",
+  "elysiumcore.ramwarningscreen.button_dont_show_again": "Nicht mehr Anzeigen"
+}

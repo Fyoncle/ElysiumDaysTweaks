@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "name": "eye_pool",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "tag",
+          "name": "elysium-core:cold_eye",
+          "expand": false,
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 80
+        }
+      ]
+    }
+  ]
+}

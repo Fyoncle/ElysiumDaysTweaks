@@ -1,8 +1,0 @@
-{
-  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fDem Modpack wurden %s GB §f Arbeitsspeicher zugewiesen, was für die Ausführung nicht ausreichend ist.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fBitte weisen sie §nmindestens§r §65 GB §f Arbeitsspeicher zu.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fFür das beste Spielerlebnis werden, §a§l6 GB §foder mehr §lempfohlen§f.",
-  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "Anleitung Öffnen",
-  "elysiumdaystweaks.ramwarningscreen.button_ignore": "Ignorieren",
-  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "Nicht mehr Anzeigen"
-}

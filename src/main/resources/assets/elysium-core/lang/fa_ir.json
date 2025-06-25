@@ -1,0 +1,8 @@
+{
+  "elysiumcore.ramwarningscreen.warning_line1": "§fشما %s گیگابایت رم§f به مودپک اختصاص داده‌اید که برای اجرای آن کافی نیست.",
+  "elysiumcore.ramwarningscreen.warning_line2": "§fلطفاً §nحداقل§r §65 گیگابایت رم§f اختصاص دهید.",
+  "elysiumcore.ramwarningscreen.warning_line3": "§fبرای بهترین تجربه، §a§l6 گیگابایت §a§lرم§f یا بیشتر §lتوصیه می‌شود§f.",
+  "elysiumcore.ramwarningscreen.button_open_guide": "باز کردن راهنما",
+  "elysiumcore.ramwarningscreen.button_ignore": "نادیده بگیر",
+  "elysiumcore.ramwarningscreen.button_dont_show_again": "دیگر نمایش نده"
+}

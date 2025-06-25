@@ -1,8 +1,0 @@
-{
-  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fVous avez alloué %s Go §fde mémoire au modpack, ce qui n'est pas assez pour le faire tourner.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fVeuillez allouer un §nminimum§r §fde §65 Go §fde RAM.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fPour une expérience optimale, §a§l6 Go §fou plus est §lrecommandé§f.",
-  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "Ouvrir le guide",
-  "elysiumdaystweaks.ramwarningscreen.button_ignore": "Ignorer",
-  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "Ne plus montrer"
-}

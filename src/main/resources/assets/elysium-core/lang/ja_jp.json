@@ -1,0 +1,8 @@
+{
+  "elysiumcore.ramwarningscreen.warning_line1": "§fこのモッドパックに割り当てたメモリーが %s GB §fなので、正常に実行できません。.",
+  "elysiumcore.ramwarningscreen.warning_line2": "§f§n最低§r §65 GB §fをRAMに割り当ててください。.",
+  "elysiumcore.ramwarningscreen.warning_line3": "§f最高の体験をするためには、 §a§l6 GB §fまたはそれ以上を§l推奨します。§f.",
+  "elysiumcore.ramwarningscreen.button_open_guide": "ガイドを開く",
+  "elysiumcore.ramwarningscreen.button_ignore": "無視",
+  "elysiumcore.ramwarningscreen.button_dont_show_again": "再度表示しない"
+}

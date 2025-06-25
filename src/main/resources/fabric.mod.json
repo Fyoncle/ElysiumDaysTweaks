@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "elysium-days-tweaks",
+  "id": "elysium-core",
   "version": "${version}",
-  "name": "Elysium Days Tweaks",
-  "description": "This mod is for tweaking the Elysium Days modpack.",
+  "name": "Elysium Core",
+  "description": "This is the core mod of the Elysium Days modpack.",
   "authors": [
     "§2§lFyoncle§7",
     "§6§lVipCoder"
@@ -14,20 +14,20 @@
     "Thanos1716"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/elysium-days-tweaks",
-    "sources": "https://github.com/Fyoncle/ElysiumDaysTweaks",
-    "issues": "https://github.com/Fyoncle/ElysiumDaysTweaks/issues"
+    "homepage": "https://modrinth.com/mod/elysium-core",
+    "sources": "https://github.com/Fyoncle/Elysium-Core",
+    "issues": "https://github.com/Fyoncle/Elysium-Core/issues"
   },
   "license": "Fyoncle-Custom-License",
-  "icon": "assets/elysium-days-tweaks/icon.png",
+  "icon": "assets/elysium-core/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "net.fyoncle.elysiumdaystweaks.ElysiumDaysTweaks"
+      "net.fyoncle.elysiumcore.ElysiumCore"
     ]
   },
   "mixins": [
-    "elysium-days-tweaks.mixins.json"
+    "elysium-core.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.16.10",

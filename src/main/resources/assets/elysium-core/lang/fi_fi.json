@@ -1,0 +1,8 @@
+{
+  "elysiumcore.ramwarningscreen.warning_line1": "§fOlet jakanut %s GB §fmuistia modpackiin, mikä ei riitä sen suorittamiseen.",
+  "elysiumcore.ramwarningscreen.warning_line2": "§fJaa §nvähintään§r §65 GB §fRAM-muistia.",
+  "elysiumcore.ramwarningscreen.warning_line3": "§fParhaan kokemuksen saamiseksi käyttämällä §a§l6 GB §ftai enemmän on §lsuositeltavaa§f.",
+  "elysiumcore.ramwarningscreen.button_open_guide": "Avaa Opas",
+  "elysiumcore.ramwarningscreen.button_ignore": "Jätä Huomioimatta",
+  "elysiumcore.ramwarningscreen.button_dont_show_again": "Älä Näytä Uudelleen"
+}

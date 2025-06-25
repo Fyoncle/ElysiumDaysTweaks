@@ -1,0 +1,8 @@
+{
+  "elysiumcore.ramwarningscreen.warning_line1": "§fلقد عينت§r %s GB§f من الذاكرة العشوائية للمودباك وهذا غير كافي لتشغيله.",
+  "elysiumcore.ramwarningscreen.warning_line2": "§fالرجاء تعيين §65 GB§f من الذاكرة §nكحد ادنى.",
+  "elysiumcore.ramwarningscreen.warning_line3": "§fلتجربة افضل، §lينصح باستعمال §a§l6 GB.",
+  "elysiumcore.ramwarningscreen.button_open_guide": "دليل الارشاد",
+  "elysiumcore.ramwarningscreen.button_ignore": "تجاهل",
+  "elysiumcore.ramwarningscreen.button_dont_show_again": "لا تظهر مرة اخرى"
+}

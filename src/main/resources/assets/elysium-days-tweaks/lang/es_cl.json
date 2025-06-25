@@ -1,8 +1,0 @@
-{
-  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fHas asignado %s GB §fde memoria al modpack, lo cual no es suficiente para ejecutarlo.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fPor favor, asigne un §nmínimo§r §fde §65 GB §fde RAM.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fPara una mejor experiencia, se §lrecomienda §fque asigne §a§l6 GB §fo más.",
-  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "Abrir Guía",
-  "elysiumdaystweaks.ramwarningscreen.button_ignore": "Ignorar",
-  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "No volver a mostrar"
-}

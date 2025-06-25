@@ -1,8 +1,0 @@
-{
-  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fModpaketine %s GB §fbellek verdiniz ve bu çalıştırmak için yeterli değil.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fLütfen, §nen az§r §65 GB §fRAM verin.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fEn iyi deneyim için, §a§l6 GB §fyada daha fazla §lönerilir§f.",
-  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "Rehberi Aç",
-  "elysiumdaystweaks.ramwarningscreen.button_ignore": "Görmezden Gel",
-  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "Tekrar Gösterme"
-}

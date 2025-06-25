@@ -1,8 +1,0 @@
-{
-  "elysiumdaystweaks.ramwarningscreen.warning_line1": "§fلقد عينت§r %s GB§f من الذاكرة العشوائية للمودباك وهذا غير كافي لتشغيله.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line2": "§fالرجاء تعيين §65 GB§f من الذاكرة §nكحد ادنى.",
-  "elysiumdaystweaks.ramwarningscreen.warning_line3": "§fلتجربة افضل، §lينصح باستعمال §a§l6 GB.",
-  "elysiumdaystweaks.ramwarningscreen.button_open_guide": "دليل الارشاد",
-  "elysiumdaystweaks.ramwarningscreen.button_ignore": "تجاهل",
-  "elysiumdaystweaks.ramwarningscreen.button_dont_show_again": "لا تظهر مرة اخرى"
-}
