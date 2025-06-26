@@ -1,4 +1,4 @@
-![Banner](https://cdn.modrinth.com/data/cached_images/c4179ac9379eacfde76ce6d289ef07358ba29e78_0.webp)
+![Banner](https://cdn.modrinth.com/data/cached_images/efe74abefee8954bbad0c9eb9fdf216fd56c528a_0.webp)
 <div align="center">
 
 This mod is the core mod of [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack for fixing vanilla bugs, bridging compatibility between mods, and fixing issues in the modpack alongside cosmetic features.
