@@ -93,5 +93,6 @@
 - Remove Red Button (Replaced with DONT_SHOW_AGAIN_BUTTON)
 - Added an icon.png in the .idea directory to display EDT logo on the IDE
 - Renamed every directory to be Elysium Core
+- Remove MoreMcmeta's internal pack from the Resource Pack Lock feature
 
 </details>

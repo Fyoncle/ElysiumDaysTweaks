@@ -11,8 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class ResourcePackLock {
     private final String ED_RESOURCE_PACK = "elysium-core:elysiumcore";
     private final String[] EXCLUDE_FROM_UNPIN_RPS = {
-            ED_RESOURCE_PACK,
-            "__moremcmeta-internal__"
+            ED_RESOURCE_PACK
     };
 
     @Shadow
