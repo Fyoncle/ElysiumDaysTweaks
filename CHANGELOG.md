@@ -82,8 +82,9 @@
 - Bump Version To 8.0.0
 - Bump Loader Version
 - Update Constants Wiki link
-- Separated Spawn Animations Compat to another mod
-- Separated Backported Wolves Compat to another mod
+- Separated Spawn Animations Compat to another datapack on Modrinth
+- Separated Backported Wolves Compat to another datapack on Modrinth
+- Separated Icons Compat to its own resource pack on Modrinth
 - Remove Iceologers from [Drodi's Illagers x Fresh Animations](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) resource pack
 - Remove game menu logo from [Icons](https://modrinth.com/resourcepack/icons) with a 1x1 texture to remove it completely and reduce file size
 - Rename `isVersionBigger` to `isVersionGreater`

@@ -31,15 +31,16 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - Podzol Recipe
 - Rotten Flesh to Leather Smelting, Smoking and Campfire Recipes
 - Sponge Recipe
+
 ***
+
 ### Compatibilities
 - [Icons](https://modrinth.com/resourcepack/icons) Compatibility for:
-    - **Frosty Snig** Music Disc of [Snow Pig](https://modrinth.com/mod/snowpig-fabric) Mod
-    - **Heave Ho!** Music Disc of [Supplementaries](https://modrinth.com/mod/supplementaries) Mod
-    - **Incarnated Evil** Music Disc of [The Graveyard](https://modrinth.com/mod/the-graveyard-fabric) Mod
     - Adding [End Remastered](https://modrinth.com/mod/endrem) compatibility to [Friends & Foes](https://modrinth.com/mod/friends-and-foes) Mod
     - Custom Translations for Eye of Ender Warning Message in [End Remastered](https://modrinth.com/mod/endrem) Mod for compatibility with [The Lost Castle](https://modrinth.com/mod/the-lost-castle)
+
 ***
+
 ### Other Tweaks
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 - Nerfing [Bygone Nether](https://modrinth.com/mod/bygone-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
