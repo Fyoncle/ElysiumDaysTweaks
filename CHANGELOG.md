@@ -79,6 +79,7 @@
 - Nerf Bygone Nether's Wither Skeleton Horses through a mixin (VipCoder)
 - Update License to [Fyoncle's Custom License](https://github.com/Fyoncle/Elysium-Core/blob/1.20.1/LICENSE)
 - Rewrote a part of the RAM Warning Screen to make it translatable
+- Made Update Button and Neat Toggle translatable
 - Bump Version To 8.0.0
 - Bump Loader Version
 - Update Constants Wiki link

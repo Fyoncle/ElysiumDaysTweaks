@@ -28,7 +28,7 @@ public class EscapeMenuMixin extends Screen {
     }
 
     @Inject(at = @At("RETURN"), method = "initWidgets")
-    private void addModsButton(CallbackInfo ci) {
+    private void addButtons(CallbackInfo ci) {
         for (int i = 0; i < this.children().size(); i++) {
             ClickableWidget widget = (ClickableWidget) this.children().get(i);
             String widgetText = widget.getMessage().getString();
@@ -47,12 +47,15 @@ public class EscapeMenuMixin extends Screen {
     @Unique
     private void addHealthBarTogglingButton(int x, int y) {
         if (ServiceLoaders.Flags.IS_NEAT_CONFIG_LOADED) {
+            String neatText = Text.translatable("elysiumcore.health_bar").getString();
+
             healthBarStatusButton = new HoverableTextToggleButton(x,
                     y + 20 + 5, 100, 20,
                     0, 0, Textures.FOCUSED_ON_HEALTHBAR_TEXTURE,
                     Textures.FOCUSED_OFF_HEALTHBAR_TEXTURE,
-                    Flags.IS_HEALTH_BAR_TOGGLED, Strings.HEALTH_BAR_TOGGLED_STATE,
-                    Strings.HEALTH_BAR_UNTOGGLED_STATE,
+                    Flags.IS_HEALTH_BAR_TOGGLED,
+                    neatText + ": ON",
+                    neatText + ": OFF",
                     Textures.UNFOCUSED_ON_HEALTHBAR_TEXTURE,
                     Textures.UNFOCUSED_OFF_HEALTHBAR_TEXTURE,
                     button -> toggleHealthBar());

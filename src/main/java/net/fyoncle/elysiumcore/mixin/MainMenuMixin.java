@@ -115,7 +115,7 @@ public class MainMenuMixin extends Screen {
             this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
                     startButton.getY() + 30,
                     200, 20, 0, 0, 0, 200, 20,
-                    "Modpack Update Available " + "(" + Strings.LATEST_ED_VERSION + ")",
+                    Text.translatable("elysiumcore.update_available", Strings.LATEST_ED_VERSION).getString(),
                     Textures.GREEN_BUTTON_UNFOCUSED_TEXTURE,
                     Textures.GREEN_BUTTON_FOCUSED_TEXTURE,
                     button -> Util.getOperatingSystem().open(Constants.Links.ELYSIUM_DAYS_PAGE_LINK)));
