@@ -47,7 +47,7 @@ public class EscapeMenuMixin extends Screen {
     @Unique
     private void addHealthBarTogglingButton(int x, int y) {
         if (ServiceLoaders.Flags.IS_NEAT_CONFIG_LOADED) {
-            String neatText = Text.translatable("elysiumcore.health_bar").getString();
+            String neatText = Text.translatable("elysiumcore.neat_health_bar").getString();
 
             healthBarStatusButton = new HoverableTextToggleButton(x,
                     y + 20 + 5, 100, 20,

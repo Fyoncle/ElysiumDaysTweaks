@@ -6,5 +6,5 @@
   "elysiumcore.ramwarningscreen.button_ignore": "Ignore",
   "elysiumcore.ramwarningscreen.button_dont_show_again": "Don't Show Again",
   "elysiumcore.update_available": "Modpack Update Available (%s)",
-  "elysiumcore.health_bar": "Health Bar"
+  "elysiumcore.neat_health_bar": "Health Bar"
 }
