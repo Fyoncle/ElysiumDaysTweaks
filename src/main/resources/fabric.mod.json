@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "elysium-core",
+  "id": "elysiumcore",
   "version": "${version}",
   "name": "Elysium Core",
   "description": "Core mod for the Elysium Days modpack.",
@@ -19,7 +19,7 @@
     "issues": "https://github.com/Fyoncle/Elysium-Core/issues"
   },
   "license": "Fyoncle-Custom-License",
-  "icon": "assets/elysium-core/icon.png",
+  "icon": "assets/elysiumcore/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
@@ -27,7 +27,7 @@
     ]
   },
   "mixins": [
-    "elysium-core.mixins.json"
+    "elysiumcore.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.16.10",

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "tag",
-          "name": "elysium-core:nether_eye",
+          "name": "elysiumcore:nether_eye",
           "expand": false,
           "weight": 40,
           "functions": [

@@ -18,6 +18,8 @@ import net.minecraft.util.Identifier;
 
 public class ElysiumCore implements ClientModInitializer {
 
+    public static final String MOD_ID = "elysiumcore";
+
     public final static ServiceLoaders serviceLoaders = new ServiceLoaders();
     //Other
     private final VersionChecking versionChecking = new VersionChecking();
@@ -67,9 +69,9 @@ public class ElysiumCore implements ClientModInitializer {
     }
 
     private void registerBuiltinResourcePacks() {
-        FabricLoader.getInstance().getModContainer("elysium-core").ifPresent(modContainer -> {
+        FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
             ResourceManagerHelper.registerBuiltinResourcePack(
-                    new Identifier("elysium-core", "elysiumcore"),
+                    new Identifier(MOD_ID, MOD_ID),
                     modContainer,
                     Text.literal("§fElysium §5Core"),
                     ResourcePackActivationType.ALWAYS_ENABLED);

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "tag",
-          "name": "elysium-core:cold_eye",
+          "name": "elysiumcore:cold_eye",
           "expand": false,
           "weight": 20,
           "functions": [
