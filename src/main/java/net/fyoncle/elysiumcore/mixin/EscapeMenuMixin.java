@@ -5,7 +5,6 @@ import net.fyoncle.elysiumcore.customwidgets.HoverableTextToggleButton;
 import net.fyoncle.elysiumcore.utility.constants.Textures;
 import net.fyoncle.elysiumcore.utility.other.Flags;
 import net.fyoncle.elysiumcore.utility.other.ServiceLoaders;
-import net.fyoncle.elysiumcore.utility.other.Strings;
 import net.minecraft.client.gui.screen.GameMenuScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;

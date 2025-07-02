@@ -17,9 +17,9 @@ public class CustomMenuLogo {
             at = @At(value = "INVOKE", ordinal = 0, target = "Lnet/minecraft/client/gui/DrawContext;drawTexture(Lnet/minecraft/util/Identifier;IIFFIIII)V")
     )
     public void elysiumCore$drawCustomLogo(DrawContext instance, Identifier resourceLocation,
-                                                 int i, int j, float f,
-                                                 float g, int k,
-                                                 int l, int m, int n, Operation<Void> original) {
+                                           int i, int j, float f,
+                                           float g, int k,
+                                           int l, int m, int n, Operation<Void> original) {
         if (HolidayChecker.isHalloween()) {
             resourceLocation = Textures.ED_HALLOWEEN_LOGO;
             original.call(instance, resourceLocation, i, j, 0f, 0f, 256, 70, 256, 70);
@@ -38,8 +38,8 @@ public class CustomMenuLogo {
             at = @At(value = "INVOKE", ordinal = 1, target = "Lnet/minecraft/client/gui/DrawContext;drawTexture(Lnet/minecraft/util/Identifier;IIFFIIII)V")
     )
     public void elysiumCore$removeEditionLogo(DrawContext instance, Identifier resourceLocation,
-                                                    int i, int j, float f,
-                                                    float g, int k,
-                                                    int l, int m, int n, Operation<Void> original) {
+                                              int i, int j, float f,
+                                              float g, int k,
+                                              int l, int m, int n, Operation<Void> original) {
     }
 }
