@@ -72,6 +72,7 @@
 <details>
 <summary>⚙️ Other:</summary>
 
+- <font color="#de3735">Changed MOD_ID from `elysium-days-tweaks` to `elysiumcore`</font>
 - Removed Edition text through @WrapOperation instead of overwriting the texture
 - Fix a few wrong pixels on the focused Discord Button
 - Separate Authors and Contributors in the fabric.mod.json
