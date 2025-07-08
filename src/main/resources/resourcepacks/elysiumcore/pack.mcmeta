@@ -2,13 +2,5 @@
   "pack": {
     "description": "",
     "pack_format": 15
-  },
-  "filter": {
-    "block": [
-      {
-        "namespace": "minecraft",
-        "path": "optifine/cem/ghast.jem"
-      }
-    ]
   }
 }
