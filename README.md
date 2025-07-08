@@ -53,7 +53,6 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - New Map Icon Designs! *(Thanks to Vixel!)*
 - 15 More Tips with Mod Support for the [Tips](https://modrinth.com/mod/tips) Mod
 - Removing Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
-- Removing ghast.jem from [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) to ensure compatibility with [Happy Ghast](https://modrinth.com/mod/happy-ghast) Mod
 - 2 Loot Tables for End Remastered eyes getting injected to Elysium Days using [Loot Patcher](https://modrinth.com/mod/loot-patcher)
 - Less Distracting Spyglass Lens Texture
 
