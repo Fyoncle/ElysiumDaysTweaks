@@ -23,14 +23,6 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - Modpack Update Notifier
 - Ram Warning Screen
 - Toggle Button for [Neat](https://modrinth.com/mod/neat) Mod
-***
-### Recipes
-- Horse Armor Recipes
-  - Netherite Horse Armor Recipe for [Simple Netherite Horse Armor](https://modrinth.com/mod/simple-netherite-horse-armor) Mod
-- Saddle Recipe
-- Podzol Recipe
-- Rotten Flesh to Leather Smelting, Smoking and Campfire Recipes
-- Sponge Recipe
 
 ***
 

@@ -84,9 +84,10 @@
 - Bump Version To 8.0.0
 - Bump Loader Version
 - Update Constants Wiki link
-- Separated Spawn Animations Compat to another datapack on Modrinth
-- Separated Backported Wolves Compat to another datapack on Modrinth
+- Separated Spawn Animations Compat to its own datapack on Modrinth
+- Separated Backported Wolves Compat to its own datapack on Modrinth
 - Separated Icons Compat to its own resource pack on Modrinth
+- Separated Horse Armor & Saddle Recipes with Simple Netherite Horse Armor to its own datapack on Modrinth
 - Remove Iceologers from [Drodi's Illagers x Fresh Animations](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) resource pack
 - Remove game menu logo from [Icons](https://modrinth.com/resourcepack/icons) with a 1x1 texture to remove it completely and reduce file size
 - Rename `isVersionBigger` to `isVersionGreater`
@@ -97,5 +98,7 @@
 - Added an icon.png in the .idea directory to display EDT logo on the IDE
 - Renamed every directory to be Elysium Core
 - Remove MoreMcmeta's internal pack from the Resource Pack Lock feature
+- Removed Sponge and Podzol recipe since they felt out of place, vanilla ways making them actually unique to get at least.
+- Remove Rotten Flesh to Leather recipes (Replaced with another mod in Elysium Days)
 
 </details>
