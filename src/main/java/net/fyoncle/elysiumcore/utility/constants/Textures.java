@@ -6,22 +6,22 @@ public class Textures {
     // - Menu Logos -
     // Default Logo
     public static final Identifier ED_DEFAULT_LOGO = new Identifier("elysiumcore",
-            "logos/eddefaultlogo.png");
+            "textures/logos/eddefaultlogo.png");
     // Halloween Logo
     public static final Identifier ED_HALLOWEEN_LOGO = new Identifier("elysiumcore",
-            "logos/edhalloweenlogo.png");
+            "textures/logos/edhalloweenlogo.png");
     // Christmas Logo
     public static final Identifier ED_CHRISTMAS_LOGO = new Identifier("elysiumcore",
-            "logos/edchristmaslogo.png");
+            "textures/logos/edchristmaslogo.png");
 
 
     // - Menu Panoramas -
     public static final Identifier ED_DEFAULT_PANORAMA = new Identifier("elysiumcore",
-            "panoramas/default_panorama.png");
+            "textures/panoramas/default_panorama.png");
     public static final Identifier ED_HALLOWEEN_PANORAMA = new Identifier("elysiumcore",
-            "panoramas/halloween_panorama.png");
+            "textures/panoramas/halloween_panorama.png");
     public static final Identifier ED_CHRISTMAS_PANORAMA = new Identifier("elysiumcore",
-            "panoramas/christmas_panorama.png");
+            "textures/panoramas/christmas_panorama.png");
 
 
     // - Health Bar Textures -

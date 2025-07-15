@@ -3,6 +3,8 @@
   "package": "net.fyoncle.elysiumcore.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AdvancementTrackerAccessor",
+    "EndGuideBookMixin",
     "PlayerEntityMixin",
     "WitherSkeletonHorseModifier"
   ],

@@ -17,7 +17,7 @@ public class Constants {
         public static final String ELYSIUM_DAYS_WINDOW_TITLE = "Minecraft " + CURRENT_MINECRAFT_VERSION + " - Elysium Days";
 
         public static class Paths {
-            public static final String ICONS_PATH = "assets/elysiumcore/icons/";
+            public static final String ICONS_PATH = "assets/elysiumcore/textures/icons/";
             public static final String[] DEFAULT_ED_ICONS_FILE_NAMES = new String[]{
                     "defaulticons/ed_default_icon_16x16.png", "defaulticons/ed_default_icon_32x32.png",
                     "defaulticons/ed_default_icon_48x48.png", "defaulticons/ed_default_icon_128x128.png",
