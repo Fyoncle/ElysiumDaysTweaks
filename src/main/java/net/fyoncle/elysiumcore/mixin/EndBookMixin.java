@@ -7,6 +7,7 @@ import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtList;
 import net.minecraft.nbt.NbtString;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -14,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(PlayerAdvancementTracker.class)
-public class EndGuideBookMixin {
+public class EndBookMixin {
 
     @Inject(method = "grantCriterion", at = @At("TAIL"))
     private void onGrantCriterion(Advancement advancement, String criterionName, CallbackInfoReturnable<Boolean> cir) {
@@ -30,8 +31,8 @@ public class EndGuideBookMixin {
 
                 NbtList pages = new NbtList();
                 String playerName = player.getName().getString();
-                String jsonPage = "{\"translate\":\"elysiumcore.end_book\",\"with\":[\"" + playerName + "\", \"" + playerName + "\"]}";
-                pages.add(NbtString.of(jsonPage));
+                Text translated = Text.translatable("elysiumcore.end_book", playerName, playerName);
+                pages.add(NbtString.of(Text.Serializer.toJson(translated)));
 
                 nbt.put("pages", pages);
 
