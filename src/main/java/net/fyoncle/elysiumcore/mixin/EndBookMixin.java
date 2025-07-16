@@ -19,28 +19,26 @@ public class EndBookMixin {
 
     @Inject(method = "grantCriterion", at = @At("TAIL"))
     private void onGrantCriterion(Advancement advancement, String criterionName, CallbackInfoReturnable<Boolean> cir) {
-        if (cir.getReturnValue()) {
-            ServerPlayerEntity player = ((AdvancementTrackerAccessor) this).getOwner();
+        ServerPlayerEntity player = ((AdvancementTrackerAccessor) this).getOwner();
 
-            Identifier id = advancement.getId();
-            if (id.equals(new Identifier("minecraft", "story/enter_the_end"))) {
-                ItemStack item = new ItemStack(Items.WRITTEN_BOOK);
-                var nbt = item.getOrCreateNbt();
-                nbt.putString("title", "The End");
-                nbt.putString("author", "§kFyoncle");
+        Identifier id = advancement.getId();
+        if (id.equals(new Identifier("minecraft", "story/enter_the_end"))) {
+            ItemStack item = new ItemStack(Items.WRITTEN_BOOK);
+            var nbt = item.getOrCreateNbt();
+            nbt.putString("title", "The End");
+            nbt.putString("author", "§kFyoncle");
 
-                NbtList pages = new NbtList();
-                String playerName = player.getName().getString();
-                Text translated = Text.translatable("elysiumcore.end_book", playerName, playerName);
-                pages.add(NbtString.of(Text.Serializer.toJson(translated)));
+            NbtList pages = new NbtList();
+            String playerName = player.getName().getString();
+            Text translated = Text.translatable("elysiumcore.end_book", playerName, playerName);
+            pages.add(NbtString.of(Text.Serializer.toJson(translated)));
 
-                nbt.put("pages", pages);
+            nbt.put("pages", pages);
 
-                nbt.putInt("CustomModelData", 1);
+            nbt.putInt("CustomModelData", 1);
 
-                if (!player.getInventory().insertStack(item)) {
-                    player.dropItem(item, true);
-                }
+            if (!player.getInventory().insertStack(item)) {
+                player.dropItem(item, true);
             }
         }
     }
