@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(ResourcePackProfile.class)
+@Mixin(value= ResourcePackProfile.class, priority = 9999)
 public abstract class ResourcePackLock {
     private final String ED_RESOURCE_PACK = "elysiumcore:elysiumcore";
     private final String[] EXCLUDE_FROM_UNPIN_RPS = {

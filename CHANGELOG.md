@@ -59,6 +59,7 @@
 - Redesigned the Ignore, Don't Show Again, and Open Guide Button!
 - Added Quit Game Button on RAM Warning Screen
 - Added End Remastered loot tables for Friends & Foes to add compat!
+- Added a new End Book to avoid confusions with End's Phantasm end island feature
 - Updated Recipes
   - Backported the official Saddle recipe
   - Rebalanced Rotten Flesh to Leather recipes and added normal furnace and smelting variants
@@ -100,5 +101,6 @@
 - Remove MoreMcmeta's internal pack from the Resource Pack Lock feature
 - Removed Sponge and Podzol recipe since they felt out of place, vanilla ways making them actually unique to get at least.
 - Remove Rotten Flesh to Leather recipes (Replaced with another mod in Elysium Days)
+- Removed Lost Castle Advancement compat since they fixed it by default
 
 </details>
