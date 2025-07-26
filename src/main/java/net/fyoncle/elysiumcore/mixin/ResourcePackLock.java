@@ -9,8 +9,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(ResourcePackProfile.class)
 public abstract class ResourcePackLock {
-    private final String[] EXCLUDE_FROM_UNPIN_RPS = {
-            "elysiumcore:elysiumcore"
+    private final String[] PIN_RPS = {
+            "elysiumcore:elysiumcore",
+            "tooltrims:tooltrims"
     };
 
     @Shadow
@@ -18,7 +19,7 @@ public abstract class ResourcePackLock {
 
     @Inject(method = "getInitialPosition", at = @At("HEAD"), cancellable = true)
     public void getInitialPosition(CallbackInfoReturnable<ResourcePackProfile.InsertionPosition> cir) {
-        for (String exclude : EXCLUDE_FROM_UNPIN_RPS) {
+        for (String exclude : PIN_RPS) {
             if (this.getName().equals(exclude)) {
                 cir.setReturnValue(ResourcePackProfile.InsertionPosition.TOP);
             }
@@ -27,7 +28,7 @@ public abstract class ResourcePackLock {
 
     @Inject(method = "isPinned", at = @At("HEAD"), cancellable = true)
     public void isPinned(CallbackInfoReturnable<Boolean> cir) {
-        for (String exclude : EXCLUDE_FROM_UNPIN_RPS) {
+        for (String exclude : PIN_RPS) {
             if (this.getName().equals(exclude)) {
                 cir.setReturnValue(true);
             }
