@@ -102,5 +102,6 @@
 - Removed Sponge and Podzol recipe since they felt out of place, vanilla ways making them actually unique to get at least.
 - Remove Rotten Flesh to Leather recipes (Replaced with another mod in Elysium Days)
 - Removed Lost Castle Advancement compat since they fixed it by default
+- Change Health Bar text to Health Bars
 
 </details>
