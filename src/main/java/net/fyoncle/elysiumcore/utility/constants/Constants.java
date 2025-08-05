@@ -14,7 +14,7 @@ public class Constants {
     public static class Core {
         public static final String CURRENT_ED_VERSION = "8.0.0";
         public static final String CURRENT_MINECRAFT_VERSION = MinecraftVersion.CURRENT.getName();
-        public static final String ELYSIUM_DAYS_WINDOW_TITLE = "Minecraft " + CURRENT_MINECRAFT_VERSION + " - Elysium Days";
+        public static final String ELYSIUM_DAYS_WINDOW_TITLE = "Minecraft " + CURRENT_MINECRAFT_VERSION + " - Elysium Days " + CURRENT_ED_VERSION;
 
         public static class Paths {
             public static final String ICONS_PATH = "assets/elysiumcore/textures/icons/";
