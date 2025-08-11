@@ -26,7 +26,7 @@ public class EndBookMixin {
             ItemStack item = new ItemStack(Items.WRITTEN_BOOK);
             var nbt = item.getOrCreateNbt();
             nbt.putString("title", "The End");
-            nbt.putString("author", "§kFyoncle");
+            nbt.putString("author", "§kHerobrine");
 
             NbtList pages = new NbtList();
             String playerName = player.getName().getString();
