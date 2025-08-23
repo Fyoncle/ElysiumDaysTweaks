@@ -14,7 +14,7 @@
     "CustomTitleMixin",
     "EscapeMenuMixin",
     "MainMenuMixin",
-    "ResourcePackLock",
+    "ResourcePackPin",
     "SplashRemovalMixin"
   ],
   "injectors": {
