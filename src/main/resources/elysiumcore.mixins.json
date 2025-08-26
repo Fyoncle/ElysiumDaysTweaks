@@ -5,6 +5,7 @@
   "mixins": [
     "AdvancementTrackerAccessor",
     "EndBookMixin",
+    "MultiNoiseBiomeSourceMixin",
     "PlayerEntityMixin",
     "WitherSkeletonHorseModifier"
   ],
