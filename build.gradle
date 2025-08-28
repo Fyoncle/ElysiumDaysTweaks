@@ -39,9 +39,6 @@ dependencies {
 
 	// Bygone Nether
 	modImplementation "maven.modrinth:bygone-nether:S8KkpB4v"
-
-	// End's Phantasm
-	modImplementation "maven.modrinth:ends-phantasm:1.0"
 }
 
 processResources {

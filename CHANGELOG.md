@@ -73,7 +73,6 @@
 <details>
 <summary>⚙️ Other:</summary>
 
-- Fixed a lag issue with [End's Phantasm](https://modrinth.com/mod/ends-phantasm)
 - <font color="#de3735">Changed MOD_ID from `elysium-days-tweaks` to `elysiumcore`</font>
 - Removed Edition text through @WrapOperation instead of overwriting the texture
 - Fix a few wrong pixels on the focused Discord Button
