@@ -6,7 +6,8 @@
     "AdvancementTrackerAccessor",
     "EndBookMixin",
     "PlayerEntityMixin",
-    "WitherSkeletonHorseModifier"
+    "WitherSkeletonHorseModifier",
+    "client.MixinClientPackSource"
   ],
   "client": [
     "CustomIconMixin",
