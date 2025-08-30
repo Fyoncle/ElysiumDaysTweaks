@@ -2,8 +2,6 @@ package net.fyoncle.elysiumcore;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
-import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
-import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fyoncle.elysiumcore.custommenus.RamWarningMenu;
 import net.fyoncle.elysiumcore.utility.configs.ConfigReader;
@@ -14,7 +12,6 @@ import net.fyoncle.elysiumcore.utility.other.ServiceLoaders;
 import net.fyoncle.elysiumcore.utility.other.VersionChecking;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 
 public class ElysiumCore implements ClientModInitializer {
 
@@ -35,7 +32,6 @@ public class ElysiumCore implements ClientModInitializer {
         initConfigs();
         initEvents();
         initCustomScreens();
-        registerBuiltinResourcePacks();
     }
 
     private void initConfigs() {
@@ -66,15 +62,5 @@ public class ElysiumCore implements ClientModInitializer {
     private void initCustomScreens() {
         ramWarningMenu = new RamWarningMenu(this, Text.empty(),
                 String.valueOf(Ram.getAllocatedRam()).substring(0, 3));
-    }
-
-    private void registerBuiltinResourcePacks() {
-        FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer -> {
-            ResourceManagerHelper.registerBuiltinResourcePack(
-                    new Identifier(MOD_ID, MOD_ID),
-                    modContainer,
-                    Text.literal("§fElysium §5Core"),
-                    ResourcePackActivationType.ALWAYS_ENABLED);
-        });
     }
 }
