@@ -13,7 +13,6 @@
 
 ### VipCoder:
 
-- Fixed an issue where the mod fails to pin the resource pack to the top as intended.
 - Fixed an issue with the update checker crashing the game if Modrinth is down
 - Fixed MC-220390
 
@@ -73,6 +72,7 @@
 <details>
 <summary>⚙️ Other:</summary>
 
+- Fixed an issue where the mod fails to pin the resource pack to the top as intended. (Pull Requested by [Lancet-crow](https://github.com/Lancet-crow))
 - <font color="#de3735">Changed MOD_ID from `elysium-days-tweaks` to `elysiumcore`</font>
 - Removed Edition text through @WrapOperation instead of overwriting the texture
 - Fix a few wrong pixels on the focused Discord Button
