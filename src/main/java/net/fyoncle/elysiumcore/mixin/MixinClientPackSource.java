@@ -1,4 +1,4 @@
-package net.fyoncle.elysiumcore.mixin.client;
+package net.fyoncle.elysiumcore.mixin;
 
 import net.fyoncle.elysiumcore.resource.ElysiumCorePackProvider;
 import net.minecraft.client.resource.DefaultClientResourcePackProvider;
