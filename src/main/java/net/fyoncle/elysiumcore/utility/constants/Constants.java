@@ -35,11 +35,4 @@ public class Constants {
             };
         }
     }
-
-    public static class Other {
-        public static class Configs {
-            public static final int DISABLED_RAM_SCREEN_CONFIG_TYPE = 0;
-            public static final String CONFIG_FILE_NAME = "elysiumcore.toml";
-        }
-    }
 }

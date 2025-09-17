@@ -22,6 +22,10 @@ repositories {
 			includeGroup "maven.modrinth"
 		}
 	}
+	maven {
+		name = "FzzyMaven"
+		url = "https://maven.fzzyhmstrs.me/"
+	}
 }
 
 dependencies {
@@ -39,6 +43,9 @@ dependencies {
 
 	// Bygone Nether
 	modImplementation "maven.modrinth:bygone-nether:S8KkpB4v"
+
+	// Fzzy Config
+	modImplementation "me.fzzyhmstrs:fzzy_config:${project.fzzyConfigVersion}"
 }
 
 processResources {
