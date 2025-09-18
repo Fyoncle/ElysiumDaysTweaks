@@ -10,6 +10,7 @@
 - Fixed Eye Spy Advancement Failing if Lost Castle structure not found. (1.21.1)
 - Fixed Ram Warning Screen can be closed with hitting ESC
 - Replaced @Overwrite with @Inject in SplashTextRendererMixin, injecting then canceling execution for removing splashes now to fix crashes with other mods.
+- Abandon the config system of Elysium Core and implement FzzyConfig
 
 ### VipCoder:
 

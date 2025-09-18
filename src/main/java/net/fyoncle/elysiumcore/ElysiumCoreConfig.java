@@ -13,4 +13,7 @@ public class ElysiumCoreConfig extends Config {
     }
 
     public boolean disableRamScreen = false;
+
+    public static void init() {
+    }
 }

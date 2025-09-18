@@ -29,7 +29,7 @@ public class ElysiumCore implements ClientModInitializer {
 
     private void initEvents() {
         ClientLifecycleEvents.CLIENT_STARTED.register(client -> {
-            if (configReader.readData().get("disableRamScreen").equals("false")) {
+            if (ElysiumCoreConfig.config.disableRamScreen == false) {
                 if (Ram.getAllocatedRam() < 4.5) {
                     if (client.currentScreen instanceof TitleScreen) {
                         client.setScreen(ramWarningMenu);

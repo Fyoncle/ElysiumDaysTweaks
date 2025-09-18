@@ -2,6 +2,7 @@ package net.fyoncle.elysiumcore.custommenus;
 
 import me.fzzyhmstrs.fzzy_config.config.Config;
 import net.fyoncle.elysiumcore.ElysiumCore;
+import net.fyoncle.elysiumcore.ElysiumCoreConfig;
 import net.fyoncle.elysiumcore.customwidgets.HoverableTextButton;
 import net.fyoncle.elysiumcore.utility.constants.Constants;
 import net.fyoncle.elysiumcore.utility.constants.Textures;
@@ -81,7 +82,7 @@ public class RamWarningMenu extends Screen {
                 Text.translatable("elysiumcore.ramwarningscreen.button_dont_show_again").getString(),
                 Textures.DONT_SHOW_AGAIN_BUTTON_UNFOCUSED, Textures.DONT_SHOW_AGAIN_BUTTON_FOCUSED,
                 button -> {
-                    Config.
+                    ElysiumCoreConfig.config.disableRamScreen = true;
                     this.close();
                 }));
     }
