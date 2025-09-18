@@ -1,6 +1,5 @@
 package net.fyoncle.elysiumcore.custommenus;
 
-import me.fzzyhmstrs.fzzy_config.config.Config;
 import net.fyoncle.elysiumcore.ElysiumCore;
 import net.fyoncle.elysiumcore.ElysiumCoreConfig;
 import net.fyoncle.elysiumcore.customwidgets.HoverableTextButton;
