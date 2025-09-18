@@ -81,7 +81,8 @@ public class RamWarningMenu extends Screen {
                 Text.translatable("elysiumcore.ramwarningscreen.button_dont_show_again").getString(),
                 Textures.DONT_SHOW_AGAIN_BUTTON_UNFOCUSED, Textures.DONT_SHOW_AGAIN_BUTTON_FOCUSED,
                 button -> {
-                    ElysiumCoreConfig.config.disableRamScreen = true;
+                    ElysiumCoreConfig.config.disableRamWarningScreen = true;
+                    ElysiumCoreConfig.config.save();
                     this.close();
                 }));
     }

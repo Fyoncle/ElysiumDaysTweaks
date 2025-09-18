@@ -7,7 +7,7 @@ import net.minecraft.util.Identifier;
 
 public class ElysiumCoreConfig extends Config {
     public static ElysiumCoreConfig config = ConfigApiJava.registerAndLoadConfig(ElysiumCoreConfig::new, RegisterType.CLIENT);
-    public boolean disableRamScreen = false;
+    public boolean disableRamWarningScreen = false;
 
     public ElysiumCoreConfig() {
         super(new Identifier(ElysiumCore.MOD_ID, "config"));
