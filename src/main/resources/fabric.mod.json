@@ -34,7 +34,7 @@
     "minecraft": "~1.20.1",
     "java": ">=17",
     "fabric-api": "*",
-    "fzzy_config": ">=0.7.2+1.20.1"
+    "fzzy_config": "*"
   },
   "breaks": {
     "fancymenu": "*"
