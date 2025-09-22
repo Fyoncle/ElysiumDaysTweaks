@@ -102,7 +102,8 @@
 - Added an icon.png in the .idea directory to display EDT logo on the IDE
 - Renamed every directory to be Elysium Core
 - Remove MoreMcmeta's internal pack from the Resource Pack Lock feature
-- Removed Sponge and Podzol recipe since they felt out of place, vanilla ways making them actually unique to get at least.
+- Removed Sponge and Podzol recipe since they felt out of place, vanilla ways making them actually unique to get at least
+- Removed the lang files for Icons to remove food tooltips as Icons Compats now handles this
 - Remove Rotten Flesh to Leather recipes (Replaced with another mod in Elysium Days)
 - Removed Lost Castle Advancement compat since they fixed it by default
 - Change Health Bar text to Health Bars
