@@ -7,7 +7,6 @@
 
 ### Fyoncle:
 
-- Fixed Eye Spy Advancement Failing if Lost Castle structure not found. (1.21.1)
 - Fixed RAM Warning Screen can be closed with hitting ESC
 - Fixed game freezing for a split second after clicking Don't Show Again on the RAM Warning Screen
 - Replaced @Overwrite with @Inject in SplashTextRendererMixin, injecting then canceling execution for removing splashes now to fix crashes with other mods.
@@ -104,6 +103,7 @@
 - Remove MoreMcmeta's internal pack from the Resource Pack Lock feature
 - Removed Sponge and Podzol recipe since they felt out of place, vanilla ways making them actually unique to get at least
 - Removed the lang files for Icons to remove food tooltips as Icons Compats now handles this
+- Removed files that removes Icons advertisement logo since Icons 1.12 already removed it
 - Remove Rotten Flesh to Leather recipes (Replaced with another mod in Elysium Days)
 - Removed Lost Castle Advancement compat since they fixed it by default
 - Change Health Bar text to Health Bars
