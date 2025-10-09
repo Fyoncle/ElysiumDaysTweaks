@@ -11,6 +11,7 @@
 - Fixed game freezing for a split second after clicking Don't Show Again on the RAM Warning Screen
 - Replaced @Overwrite with @Inject in SplashTextRendererMixin, injecting then canceling execution for removing splashes now to fix crashes with other mods.
 - Abandon the config system of Elysium Core and implement FzzyConfig
+- Removed Date-based panoramas
 
 ### VipCoder:
 
@@ -64,7 +65,6 @@
   - Backported the official Saddle recipe
   - Rebalanced Rotten Flesh to Leather recipes and added normal furnace and smelting variants
   - Rebalanced the Horse Armor recipes completely
-- Updated Christmas Panorama
 - Updated the Wiki link for the RAM guide
 - Change "Show Guide" text to "Open Guide"
 

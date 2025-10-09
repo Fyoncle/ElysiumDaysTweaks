@@ -5,26 +5,21 @@ import net.fyoncle.elysiumcore.customwidgets.HoverableTextButton;
 import net.fyoncle.elysiumcore.utility.constants.Constants;
 import net.fyoncle.elysiumcore.utility.constants.Textures;
 import net.fyoncle.elysiumcore.utility.other.Flags;
-import net.fyoncle.elysiumcore.utility.other.HolidayChecker;
 import net.fyoncle.elysiumcore.utility.other.Strings;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
-import org.spongepowered.asm.mixin.*;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(TitleScreen.class)
 public class MainMenuMixin extends Screen {
-    @Mutable
-    @Shadow
-    @Final
-    private static Identifier PANORAMA_OVERLAY;
 
     @Unique
     private ButtonWidget discordButton;
@@ -46,19 +41,6 @@ public class MainMenuMixin extends Screen {
             if (button.getMessage().getString().equals(Text.translatable("menu.options").getString())) {
                 addWikiButton(((ButtonWidget) this.children().get(i + 1)));
             }
-        }
-        changePanoramaBasedOnDate();
-    }
-
-    @Unique
-    private void changePanoramaBasedOnDate() {
-        if (HolidayChecker.isHalloween()) {
-            PANORAMA_OVERLAY = Textures.ED_HALLOWEEN_PANORAMA;
-        } else if (HolidayChecker.isChristmas()) {
-            PANORAMA_OVERLAY = Textures.ED_CHRISTMAS_PANORAMA;
-        }
-        if (!HolidayChecker.isChristmas() && !HolidayChecker.isHalloween()) {
-            PANORAMA_OVERLAY = Textures.ED_DEFAULT_PANORAMA;
         }
     }
 

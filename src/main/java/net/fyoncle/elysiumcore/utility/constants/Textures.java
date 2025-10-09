@@ -14,16 +14,6 @@ public class Textures {
     public static final Identifier ED_CHRISTMAS_LOGO = new Identifier("elysiumcore",
             "textures/logos/edchristmaslogo.png");
 
-
-    // - Menu Panoramas -
-    public static final Identifier ED_DEFAULT_PANORAMA = new Identifier("elysiumcore",
-            "textures/panoramas/default_panorama.png");
-    public static final Identifier ED_HALLOWEEN_PANORAMA = new Identifier("elysiumcore",
-            "textures/panoramas/halloween_panorama.png");
-    public static final Identifier ED_CHRISTMAS_PANORAMA = new Identifier("elysiumcore",
-            "textures/panoramas/christmas_panorama.png");
-
-
     // - Health Bar Textures -
     // OFF
     public static Identifier UNFOCUSED_OFF_HEALTHBAR_TEXTURE = new Identifier(
