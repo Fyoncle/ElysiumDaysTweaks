@@ -1,0 +1,20 @@
+{
+    "trim_pattern.minecraft.coast": "§f\uDBC7\uDF51§r Coast Armor Trim§r",
+    "trim_pattern.minecraft.dune": "§f\uDBC7\uDF52§r Dune Armor Trim§r",
+    "trim_pattern.minecraft.eye": "§f\uDBC7\uDF53§r Eye Armor Trim§r",
+    "trim_pattern.minecraft.host": "§f\uDBC7\uDF55§r Host Armor Trim§r",
+    "trim_pattern.minecraft.raiser": "§f\uDBC7\uDF56§r Raiser Armor Trim§r",
+    "trim_pattern.minecraft.rib": "§f\uDBC7\uDF57§r Rib Armor Trim§r",
+    "trim_pattern.minecraft.sentry": "§f\uDBC7\uDF58§r Sentry Armor Trim§r",
+    "trim_pattern.minecraft.shaper": "§f\uDBC7\uDF59§r Shaper Armor Trim§r",
+    "trim_pattern.minecraft.silence": "§f\uDBC7\uDF5A§r Silence Armor Trim§r",
+    "trim_pattern.minecraft.snout": "§f\uDBC7\uDF5B§r Snout Armor Trim§r",
+    "trim_pattern.minecraft.spire": "§f\uDBC7\uDF5C§r Spire Armor Trim§r",
+    "trim_pattern.minecraft.tide": "§f\uDBC7\uDF5D§r Tide Armor Trim§r",
+    "trim_pattern.minecraft.vex": "§f\uDBC7\uDF5E§r Vex Armor Trim§r",
+    "trim_pattern.minecraft.ward": "§f\uDBC7\uDF5F§r Ward Armor Trim§r",
+    "trim_pattern.minecraft.wild": "§f\uDBC7\uDF60§r Wild Armor Trim§r",
+    "trim_pattern.minecraft.wayfinder": "§f\uDBC7\uDF61§r Wayfinder Armor Trim§r",
+	"trim_pattern.minecraft.flow": "§f\uDBC7\uDF54§r Flow Armor Trim§r",
+	"trim_pattern.minecraft.bolt": "§f\uDBC7\uDF50§r Bolt Armor Trim§r"
+}
