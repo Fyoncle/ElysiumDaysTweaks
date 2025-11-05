@@ -107,5 +107,7 @@
 - Remove Rotten Flesh to Leather recipes (Replaced with another mod in Elysium Days)
 - Removed Lost Castle Advancement compat since they fixed it by default
 - Change Health Bar text to Health Bars
+- Change a translation line of Phantasm to add an Easter egg
+- Fix Enchantment Descriptions compatibility of Guarding
 
 </details>
