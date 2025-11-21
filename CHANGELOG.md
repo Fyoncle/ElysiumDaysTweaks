@@ -109,5 +109,6 @@
 - Change Health Bar text to Health Bars
 - Change a translation line of Phantasm to add an Easter egg
 - Fix Enchantment Descriptions compatibility of Guarding
+- Removing some recipes from EMI
 
 </details>
