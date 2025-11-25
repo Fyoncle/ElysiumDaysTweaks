@@ -1,6 +1,8 @@
 {
-  "filters": [
-    "/libraryferret:/",
+  "removed": [
     "moonlight:placeable_item"
+  ],
+  "filters": [
+    "/libraryferret:/"
   ]
 }
