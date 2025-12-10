@@ -44,7 +44,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - Removing Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
 - 2 Loot Tables for End Remastered eyes getting injected to Elysium Days using [Loot Patcher](https://modrinth.com/mod/loot-patcher)
 - Less Distracting Spyglass Lens Texture
-- Changes a language entry on Phantasm as an Easter egg
+- Changes a translation on [End's Phantasm](https://modrinth.com/mod/ends-phantasm) mod as an Easter egg
 
 </details>
 <div align="center">
