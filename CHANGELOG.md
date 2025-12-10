@@ -74,13 +74,12 @@
 <summary>⚙️ Other:</summary>
 
 - Fixed an issue where the mod fails to pin the resource pack to the top as intended. (Pull Requested by [Lancet-crow](https://github.com/Lancet-crow))
-- <font color="#de3735">Changed MOD_ID from `elysium-days-tweaks` to `elysiumcore`</font>
+- Changed MOD_ID from `elysium-days-tweaks` to `elysiumcore`
 - Removed Edition text through @WrapOperation instead of overwriting the texture
 - Fix a few wrong pixels on the focused Discord Button
 - Separate Authors and Contributors in the fabric.mod.json
 - Add VixelCreates in the contributors on fabric.mod.json
 - Nerf Bygone Nether's Wither Skeleton Horses through a mixin (VipCoder)
-- Update License to [Fyoncle's Custom License](https://github.com/Fyoncle/Elysium-Core/blob/1.20.1/LICENSE)
 - Rewrote a part of the RAM Warning Screen to make it translatable
 - Made Update Button and Neat Toggle translatable
 - Add Elysium Days version to the window title

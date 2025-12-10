@@ -1,5 +1,7 @@
 package net.fyoncle.elysiumcore.utility.other;
 
+import net.minecraft.entity.LivingEntity;
+
 import java.util.Calendar;
 
 public class HolidayChecker {
@@ -14,6 +16,6 @@ public class HolidayChecker {
     public static boolean isHalloween() {
         calendar = Calendar.getInstance();
         if (calendar.get(Calendar.MONTH) != Calendar.OCTOBER) return false;
-        return calendar.get(Calendar.DAY_OF_MONTH) <= 31;
+        return calendar.get(Calendar.DAY_OF_MONTH) == 31;
     }
 }
