@@ -1,7 +1,5 @@
 package net.fyoncle.elysiumcore.utility.other;
 
-import net.minecraft.entity.LivingEntity;
-
 import java.util.Calendar;
 
 public class HolidayChecker {
