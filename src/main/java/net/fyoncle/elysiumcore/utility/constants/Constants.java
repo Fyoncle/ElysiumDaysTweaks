@@ -5,10 +5,10 @@ import net.minecraft.MinecraftVersion;
 public class Constants {
     public static class Links {
         public static final String MODRINTH_API_LINK = "https://api.modrinth.com/";
-        public static final String ELYSIUM_DAYS_PAGE_LINK = "https://modrinth.com/modpack/elysium-days/versions";
+        public static final String ELYSIUM_DAYS_VERSIONS_PAGE_LINK = "https://modrinth.com/modpack/elysium-days/versions";
         public static final String DISCORD_LINK = "https://discord.gg/WFpDr7zY8Z";
-        public static final String WIKI_LINK = "https://fyoncle.gitbook.io/elysium-days";
-        public static final String RAM_GUIDE_LINK = "https://fyoncle.gitbook.io/elysium-days/guides/memory-allocation";
+        public static final String WIKI_LINK = "https://fyoncle.gitbook.io/elysium-days-wiki";
+        public static final String RAM_GUIDE_LINK = "https://fyoncle.gitbook.io/elysium-days-wiki/guides/memory-allocation";
     }
 
     public static class Core {

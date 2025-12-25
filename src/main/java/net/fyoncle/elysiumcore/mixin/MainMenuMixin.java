@@ -100,7 +100,7 @@ public class MainMenuMixin extends Screen {
                     Text.translatable("elysiumcore.update_available", Strings.LATEST_ED_VERSION).getString(),
                     Textures.GREEN_BUTTON_UNFOCUSED_TEXTURE,
                     Textures.GREEN_BUTTON_FOCUSED_TEXTURE,
-                    button -> Util.getOperatingSystem().open(Constants.Links.ELYSIUM_DAYS_PAGE_LINK)));
+                    button -> Util.getOperatingSystem().open(Constants.Links.ELYSIUM_DAYS_VERSIONS_PAGE_LINK)));
         }
     }
 
