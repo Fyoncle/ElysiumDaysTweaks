@@ -1,5 +1,6 @@
 package net.fyoncle.elysiumcore.mixin;
 
+import net.fabricmc.loader.api.FabricLoader;
 import net.fyoncle.elysiumcore.ElysiumCore;
 import net.fyoncle.elysiumcore.customwidgets.HoverableTextToggleButton;
 import net.fyoncle.elysiumcore.utility.constants.Textures;
@@ -31,13 +32,10 @@ public class EscapeMenuMixin extends Screen {
         for (int i = 0; i < this.children().size(); i++) {
             ClickableWidget widget = (ClickableWidget) this.children().get(i);
             String widgetText = widget.getMessage().getString();
-            if (widget instanceof TextWidget) {
+            int healthBarY = FabricLoader.getInstance().isModLoaded("replaymod") ? widget.getY() + widget.getHeight() + 1 : widget.getY();
+                if (widget instanceof ButtonWidget) {
                 if (widgetText.equals(Text.translatable("menu.returnToMenu").getString())) {
-                    addHealthBarTogglingButton(this.width / 2 - 100 / 2, widget.getY());
-                }
-            } else if (widget instanceof ButtonWidget) {
-                if (widgetText.equals(Text.translatable("menu.returnToMenu").getString())) {
-                    addHealthBarTogglingButton(this.width / 2 - 100 / 2, widget.getY());
+                    addHealthBarTogglingButton(this.width / 2 - 100 / 2, healthBarY);
                 }
             }
         }
