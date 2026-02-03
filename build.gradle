@@ -28,6 +28,9 @@ repositories {
 	maven {
 		name = 'Sponge / Mixin'
 		url = 'https://repo.spongepowered.org/repository/maven-public/'
+	maven {
+		name = "FzzyMaven"
+		url = "https://maven.fzzyhmstrs.me/"
 	}
 }
 
@@ -59,6 +62,8 @@ dependencies {
 	// Mixin Extras (library)
 	implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.5.3"))
 	include("io.github.llamalad7:mixinextras-fabric:0.5.3:slim")
+	// Fzzy Config
+	modImplementation "me.fzzyhmstrs:fzzy_config:${project.fzzyConfigVersion}"
 }
 
 processResources {

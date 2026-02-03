@@ -33,7 +33,8 @@
     "fabricloader": ">=0.16.10",
     "minecraft": "~1.20.1",
     "java": ">=17",
-    "fabric-api": "*"
+    "fabric-api": "*",
+    "fzzy_config": "*"
   },
   "breaks": {
     "fancymenu": "*"
@@ -43,6 +44,9 @@
       "links": {
         "modmenu.discord": "https://discord.gg/WFpDr7zY8Z"
       }
-    }
+    },
+    "fzzy_config": [
+      "elysiumcore"
+    ]
   }
 }

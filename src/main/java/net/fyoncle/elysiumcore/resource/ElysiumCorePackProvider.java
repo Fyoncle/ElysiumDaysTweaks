@@ -3,9 +3,13 @@ package net.fyoncle.elysiumcore.resource;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.fabric.impl.resource.loader.ModNioResourcePack;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.resource.*;
+import net.minecraft.resource.ResourcePackProfile;
+import net.minecraft.resource.ResourcePackProvider;
+import net.minecraft.resource.ResourcePackSource;
+import net.minecraft.resource.ResourceType;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+
 import java.nio.file.Path;
 import java.util.List;
 import java.util.function.Consumer;
@@ -16,7 +20,8 @@ import static net.fyoncle.elysiumcore.ElysiumCore.MOD_ID;
 public final class ElysiumCorePackProvider implements ResourcePackProvider {
     public static final String PACK_ID = "elysiumcore:elysiumcore";
 
-    public ElysiumCorePackProvider() {}
+    public ElysiumCorePackProvider() {
+    }
 
     @Override
     public void register(Consumer<ResourcePackProfile> profileAdder) {
@@ -39,7 +44,7 @@ public final class ElysiumCorePackProvider implements ResourcePackProvider {
                     ResourceType.CLIENT_RESOURCES,
                     ResourcePackProfile.InsertionPosition.TOP,
                     ResourcePackSource.BUILTIN
-                    );
+            );
             profileAdder.accept(pack);
         });
     }

@@ -7,9 +7,11 @@
 
 ### Fyoncle:
 
-- Fixed Eye Spy Advancement Failing if Lost Castle structure not found. (1.21.1)
-- Fixed Ram Warning Screen can be closed with hitting ESC
+- Fixed RAM Warning Screen can be closed with hitting ESC
+- Fixed game freezing for a split second after clicking Don't Show Again on the RAM Warning Screen
 - Replaced @Overwrite with @Inject in SplashTextRendererMixin, injecting then canceling execution for removing splashes now to fix crashes with other mods.
+- Abandon the config system of Elysium Core and implement FzzyConfig
+- Removed Date-based panoramas
 
 ### VipCoder:
 
@@ -63,7 +65,6 @@
   - Backported the official Saddle recipe
   - Rebalanced Rotten Flesh to Leather recipes and added normal furnace and smelting variants
   - Rebalanced the Horse Armor recipes completely
-- Updated Christmas Panorama
 - Updated the Wiki link for the RAM guide
 - Change "Show Guide" text to "Open Guide"
 
@@ -73,13 +74,12 @@
 <summary>⚙️ Other:</summary>
 
 - Fixed an issue where the mod fails to pin the resource pack to the top as intended. (Pull Requested by [Lancet-crow](https://github.com/Lancet-crow))
-- <font color="#de3735">Changed MOD_ID from `elysium-days-tweaks` to `elysiumcore`</font>
+- Changed MOD_ID from `elysium-days-tweaks` to `elysiumcore`
 - Removed Edition text through @WrapOperation instead of overwriting the texture
 - Fix a few wrong pixels on the focused Discord Button
 - Separate Authors and Contributors in the fabric.mod.json
 - Add VixelCreates in the contributors on fabric.mod.json
 - Nerf Bygone Nether's Wither Skeleton Horses through a mixin (VipCoder)
-- Update License to [Fyoncle's Custom License](https://github.com/Fyoncle/Elysium-Core/blob/1.20.1/LICENSE)
 - Rewrote a part of the RAM Warning Screen to make it translatable
 - Made Update Button and Neat Toggle translatable
 - Add Elysium Days version to the window title
@@ -100,9 +100,14 @@
 - Added an icon.png in the .idea directory to display EDT logo on the IDE
 - Renamed every directory to be Elysium Core
 - Remove MoreMcmeta's internal pack from the Resource Pack Lock feature
-- Removed Sponge and Podzol recipe since they felt out of place, vanilla ways making them actually unique to get at least.
+- Removed Sponge and Podzol recipe since they felt out of place, vanilla ways making them actually unique to get at least
+- Removed the lang files for Icons to remove food tooltips as Icons Compats now handles this
+- Removed files that removes Icons advertisement logo since Icons 1.12 already removed it
 - Remove Rotten Flesh to Leather recipes (Replaced with another mod in Elysium Days)
 - Removed Lost Castle Advancement compat since they fixed it by default
 - Change Health Bar text to Health Bars
+- Change a translation line of Phantasm to add an Easter egg
+- Fix Enchantment Descriptions compatibility of Guarding
+- Removing some recipes from EMI
 
 </details>

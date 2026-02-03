@@ -35,6 +35,7 @@ public class MixinClientPackSource {
         }
 
     }
+
     @Unique
     private boolean thisIsClientPackProvider(Object obj) {
         return obj instanceof DefaultClientResourcePackProvider;

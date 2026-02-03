@@ -28,7 +28,8 @@ public class VersionChecking {
             String[] latestVersionNums = Strings.LATEST_ED_VERSION.split("\\.");
 
             Flags.IS_LATEST_VERSION = isVersionGreater(currentVersionNums, latestVersionNums);
-        } catch (Exception e) {
+        } catch (IllegalStateException e) {
+            Flags.IS_LATEST_VERSION = true;
             e.printStackTrace();
         }
     }
