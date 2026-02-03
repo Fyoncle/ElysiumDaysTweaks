@@ -6,6 +6,7 @@
     "AdvancementTrackerAccessor",
     "EndBookMixin",
     "PlayerEntityMixin",
+    "SuperbSteedEntityAttributesMixin",
     "WitherSkeletonHorseModifier"
   ],
   "client": [
@@ -20,5 +21,8 @@
   ],
   "injectors": {
     "defaultRequire": 1
+  },
+  "mixinextras": {
+    "minVersion": "0.5.3"
   }
 }
