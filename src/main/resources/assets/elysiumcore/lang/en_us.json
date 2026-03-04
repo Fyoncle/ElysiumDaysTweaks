@@ -6,6 +6,5 @@
   "elysiumcore.ramwarningscreen.button_ignore": "Ignore",
   "elysiumcore.ramwarningscreen.button_dont_show_again": "Don't Show Again",
   "elysiumcore.update_available": "Modpack Update Available (%s)",
-  "elysiumcore.neat_health_bar": "Health Bars",
-  "elysiumcore.end_book": "So, you've reached the End... or so you believe, %s.\n\nIn this island, you'll need to find the End Gateway to reach the Dragon island.\n\nIt's around there. Good luck, %s."
+  "elysiumcore.neat_health_bar": "Health Bars"
 }
