@@ -7,6 +7,20 @@
     "advancednetherite:netherite_diamond_sword",
     "deeperdarker:warden_sword",
     "phantasm:crystalline_sword",
-    "endermanoverhaul:corrupted_blade"
+    "endermanoverhaul:corrupted_blade",
+    "medievalweapons:wooden_dagger",
+    "medievalweapons:stone_dagger",
+    "medievalweapons:iron_dagger",
+    "medievalweapons:golden_dagger",
+    "medievalweapons:diamond_dagger",
+    "medievalweapons:netherite_dagger",
+    "medievalweapons:warden_dagger",
+    "medievalweapons:wooden_ninjato",
+    "medievalweapons:stone_ninjato",
+    "medievalweapons:iron_ninjato",
+    "medievalweapons:golden_ninjato",
+    "medievalweapons:diamond_ninjato",
+    "medievalweapons:netherite_ninjato",
+    "medievalweapons:warden_ninjato"
   ]
 }
