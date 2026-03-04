@@ -4,8 +4,6 @@
   "compatibilityLevel": "JAVA_17",
   "plugin": "net.fyoncle.elysiumcore.mixin.ElysiumCoreMixinPlugin",
   "mixins": [
-    "AdvancementTrackerAccessor",
-    "EndBookMixin",
     "PlayerEntityMixin",
     "SuperbSteedEntityAttributesMixin",
     "WitherSkeletonHorseModifier"
