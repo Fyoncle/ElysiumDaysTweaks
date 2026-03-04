@@ -37,7 +37,6 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 - Nerf [Bygone Nether](https://modrinth.com/mod/bygone-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
 - Fixes Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
-- [Icons](https://modrinth.com/resourcepack/icons) Advertisement Logo Replacement
 - Removing Splash Text & Edition Logo of Minecraft Logo Renderer
 - New Panorama
 - New Map Icon Designs! *(Thanks to Vixel!)*
@@ -46,6 +45,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - 2 Loot Tables for End Remastered eyes getting injected to Elysium Days using [Loot Patcher](https://modrinth.com/mod/loot-patcher)
 - Less Distracting Spyglass Lens Texture
 - Changes a translation on [End's Phantasm](https://modrinth.com/mod/ends-phantasm) mod as an Easter egg
+- Fixes [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working with modded knives
 
 </details>
 <div align="center">

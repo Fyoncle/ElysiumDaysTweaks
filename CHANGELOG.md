@@ -72,6 +72,7 @@
 <summary>⚙️ Other:</summary>
 
 - Fixed Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
+- Fixed [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working with modded knives
 - Fixed an issue where the mod fails to pin the resource pack to the top as intended. (Pull Requested by [Lancet-crow](https://github.com/Lancet-crow))
 - Changed MOD_ID from `elysium-days-tweaks` to `elysiumcore`
 - Removed Edition text through @WrapOperation instead of overwriting the texture
