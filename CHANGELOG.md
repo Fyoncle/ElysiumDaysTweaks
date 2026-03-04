@@ -1,7 +1,5 @@
 # <img src="https://cdn.modrinth.com/data/cached_images/8619ab1a6ad08dfa75916bd9917476e18ea83f57.png" width="60"> 8.0.0 Update
 
-# Rebranded to Elysium Core
-
 <details>  
 <summary>🛠️ What's Fixed:</summary>
 
@@ -11,7 +9,7 @@
 - Fixed game freezing for a split second after clicking Don't Show Again on the RAM Warning Screen
 - Replaced @Overwrite with @Inject in SplashTextRendererMixin, injecting then canceling execution for removing splashes now to fix crashes with other mods.
 - Abandon the config system of Elysium Core and implement FzzyConfig
-- Removed Date-based panoramas
+- Removed holiday panoramas
 
 ### VipCoder:
 
@@ -23,6 +21,7 @@
 <details>
 <summary>✨ What's Changed:</summary>
 
+- Rebranded to Elysium Core
 - Added Translations For RAM Warning Screen:
   - English (en_us) by Fyoncle
   - Turkish (tr_tr) by Fyoncle
@@ -60,7 +59,6 @@
 - Redesigned the Ignore, Don't Show Again, and Open Guide Button!
 - Added Quit Game Button on RAM Warning Screen
 - Added End Remastered loot tables for Friends & Foes to add compat!
-- Added a new End Book to avoid confusions with End's Phantasm end island feature
 - Updated Recipes
   - Backported the official Saddle recipe
   - Rebalanced Rotten Flesh to Leather recipes and added normal furnace and smelting variants
@@ -112,3 +110,9 @@
 - Removing some recipes from EMI
 
 </details>
+
+---
+
+<img src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/1fd12c475756b54e467799d98eca7b406f109341/blockquotes/badge/dark-theme/info.svg" width="100">
+
+Due to the size of this release many changes are undocumented such as the fixes, or changes.
