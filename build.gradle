@@ -22,19 +22,22 @@ repositories {
 			includeGroup "maven.modrinth"
 		}
 	}
-	// Mixin Squared
-	maven { url = "https://maven.bawnorton.com/releases" }
-	// Mixins
-	maven {
-		name = 'Sponge / Mixin'
-		url = 'https://repo.spongepowered.org/repository/maven-public/'
-	}
-	maven {
-		name = "FzzyMaven"
-		url = "https://maven.fzzyhmstrs.me/"
-	}
-}
+    // Mixin Squared
+    maven {
+        url = "https://maven.bawnorton.com/releases"
+    }
 
+    // Mixins
+    maven {
+        name = "Sponge / Mixin"
+        url = "https://repo.spongepowered.org/repository/maven-public/"
+    }
+
+    maven {
+        name = "FzzyMaven"
+        url = "https://maven.fzzyhmstrs.me/"
+    }
+}
 
 dependencies {
 	// To change the versions see the gradle.properties file

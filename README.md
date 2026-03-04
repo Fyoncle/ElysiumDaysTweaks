@@ -36,6 +36,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 ### Other Tweaks
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 - Nerf [Bygone Nether](https://modrinth.com/mod/bygone-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
+- Fixes Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
 - [Icons](https://modrinth.com/resourcepack/icons) Advertisement Logo Replacement
 - Removing Splash Text & Edition Logo of Minecraft Logo Renderer
 - New Panorama
