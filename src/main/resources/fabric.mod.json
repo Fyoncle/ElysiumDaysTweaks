@@ -9,8 +9,8 @@
     "§6§lVipCoder"
   ],
   "contributors": [
-    "Shizotoaster",
     "Lancet_",
+    "Shizotoaster",
     "VixelCreates"
   ],
   "contact": {
@@ -18,7 +18,7 @@
     "sources": "https://github.com/Fyoncle/Elysium-Core",
     "issues": "https://github.com/Fyoncle/Elysium-Core/issues"
   },
-  "license": "Fyoncle-Custom-License",
+  "license": "ARR",
   "icon": "assets/elysiumcore/icon.png",
   "environment": "*",
   "entrypoints": {
