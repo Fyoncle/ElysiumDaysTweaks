@@ -78,7 +78,7 @@
 - Removed Edition text through @WrapOperation instead of overwriting the texture
 - Fix a few wrong pixels on the focused Discord Button
 - Separate Authors and Contributors in the fabric.mod.json
-- Add VixelCreates in the contributors on fabric.mod.json
+- Add VixelCreates and Lancet_ in the contributors on fabric.mod.json
 - Nerf Bygone Nether's Wither Skeleton Horses through a mixin (VipCoder)
 - Rewrote a part of the RAM Warning Screen to make it translatable
 - Made Update Button and Neat Toggle translatable
