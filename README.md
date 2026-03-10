@@ -26,14 +26,10 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 
 ***
 
-### Compatibilities
-- [Icons](https://modrinth.com/resourcepack/icons) Compatibility for:
-    - Adding [End Remastered](https://modrinth.com/mod/endrem) compatibility to [Friends & Foes](https://modrinth.com/mod/friends-and-foes) Mod
-    - Custom Translations for Eye of Ender Warning Message in [End Remastered](https://modrinth.com/mod/endrem) Mod for compatibility with [The Lost Castle](https://modrinth.com/mod/the-lost-castle)
-
-***
-
 ### Other Tweaks
+
+- Adding [End Remastered](https://modrinth.com/mod/endrem) compatibility to [Friends & Foes](https://modrinth.com/mod/friends-and-foes) Mod
+- Custom Translations for Eye of Ender Warning Message in [End Remastered](https://modrinth.com/mod/endrem) Mod for compatibility with [The Lost Castle](https://modrinth.com/mod/the-lost-castle)
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 - Nerf [Bygone Nether](https://modrinth.com/mod/bygone-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
 - Fixes Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
@@ -46,6 +42,7 @@ Incompatibilities will not be fixed unless they affect the Elysium Days modpack,
 - Less Distracting Spyglass Lens Texture
 - Changes a translation on [End's Phantasm](https://modrinth.com/mod/ends-phantasm) mod as an Easter egg
 - Fixes [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working with modded knives
+- Adds prettier banners for [Modern World Creation](https://modrinth.com/mod/modern-world-creation)
 
 </details>
 <div align="center">

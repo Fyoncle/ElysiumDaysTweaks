@@ -109,6 +109,7 @@
 - Change a translation line of Phantasm to add an Easter egg
 - Fix Enchantment Descriptions compatibility of Guarding
 - Removing some recipes from EMI
+- Added prettier banners for [Modern World Creation](https://modrinth.com/mod/modern-world-creation)
 
 </details>
 
