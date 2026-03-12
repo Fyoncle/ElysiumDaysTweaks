@@ -4,5 +4,5 @@
   "elysiumcore.ramwarningscreen.warning_line3": "§fParhaan kokemuksen saamiseksi käyttämällä §a§l6 GB §ftai enemmän on §lsuositeltavaa§f.",
   "elysiumcore.ramwarningscreen.button_open_guide": "Avaa Opas",
   "elysiumcore.ramwarningscreen.button_ignore": "Jätä Huomioimatta",
-  "elysiumcore.ramwarningscreen.button_dont_show_again": "Älä Näytä Uudelleen"
+  "elysiumcore.ramwarningscreen.button_dont_warn_again": "Älä Näytä Uudelleen"
 }

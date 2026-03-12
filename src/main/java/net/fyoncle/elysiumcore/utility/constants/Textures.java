@@ -61,12 +61,12 @@ public class Textures {
             "elysiumcore",
             "textures/gui/ignore_button_focused.png");
     // Don't Show Again Button
-    public static Identifier DONT_SHOW_AGAIN_BUTTON_UNFOCUSED = new Identifier(
+    public static Identifier DONT_WARN_AGAIN_BUTTON_UNFOCUSED = new Identifier(
             "elysiumcore",
-            "textures/gui/dont_show_again_button_unfocused.png");
-    public static Identifier DONT_SHOW_AGAIN_BUTTON_FOCUSED = new Identifier(
+            "textures/gui/dont_warn_again_button_unfocused.png");
+    public static Identifier DONT_WARN_AGAIN_BUTTON_FOCUSED = new Identifier(
             "elysiumcore",
-            "textures/gui/dont_show_again_button_focused.png");
+            "textures/gui/dont_warn_again_button_focused.png");
 
 
     // - Other -

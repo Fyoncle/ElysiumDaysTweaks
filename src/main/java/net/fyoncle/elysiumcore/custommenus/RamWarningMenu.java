@@ -34,7 +34,7 @@ public class RamWarningMenu extends Screen {
         super.init();
         addGuideButton();
         addIgnoreButton();
-        addDontShowAgainButton();
+        addDontWarnAgainButton();
         addQuitGameButton();
         addLanguageButton();
     }
@@ -79,11 +79,11 @@ public class RamWarningMenu extends Screen {
                 Textures.IGNORE_BUTTON_UNFOCUSED, Textures.IGNORE_BUTTON_FOCUSED, button -> this.close()));
     }
 
-    private void addDontShowAgainButton() {
+    private void addDontWarnAgainButton() {
         this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
                 this.height / 2 + 50, 200, 20, 0, 0, 0, 200, 20,
-                Text.translatable("elysiumcore.ramwarningscreen.button_dont_show_again").getString(),
-                Textures.DONT_SHOW_AGAIN_BUTTON_UNFOCUSED, Textures.DONT_SHOW_AGAIN_BUTTON_FOCUSED,
+                Text.translatable("elysiumcore.ramwarningscreen.button_dont_warn_again").getString(),
+                Textures.DONT_WARN_AGAIN_BUTTON_UNFOCUSED, Textures.DONT_WARN_AGAIN_BUTTON_FOCUSED,
                 button -> {
                     ElysiumCoreConfig.config.disableRamWarningScreen = true;
                     ElysiumCoreConfig.config.save();

@@ -4,5 +4,5 @@
   "elysiumcore.ramwarningscreen.warning_line3": "§fFör bästa upplevelse, §a§l6 GB §feller mer är §lrekommenderat§f.",
   "elysiumcore.ramwarningscreen.button_open_guide": "Öppna guide",
   "elysiumcore.ramwarningscreen.button_ignore": "Ignorera",
-  "elysiumcore.ramwarningscreen.button_dont_show_again": "Visa inte igen"
+  "elysiumcore.ramwarningscreen.button_dont_warn_again": "Visa inte igen"
 }

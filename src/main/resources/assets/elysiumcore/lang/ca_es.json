@@ -4,5 +4,5 @@
   "elysiumcore.ramwarningscreen.warning_line3": "§fPer a la millor experiència, §a§l6 GB §fo més és §lrecomenat§f.",
   "elysiumcore.ramwarningscreen.button_open_guide": "Obrir guia",
   "elysiumcore.ramwarningscreen.button_ignore": "Ignorar",
-  "elysiumcore.ramwarningscreen.button_dont_show_again": "No ho tornis a ensenyar"
+  "elysiumcore.ramwarningscreen.button_dont_warn_again": "No ho tornis a ensenyar"
 }

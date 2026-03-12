@@ -4,5 +4,5 @@
   "elysiumcore.ramwarningscreen.warning_line3": "§fसबसे अच्छा अनुभव के लिए, §a§l6 जीबी §fया ज़्यादा §lअच्छा §fहै।.",
   "elysiumcore.ramwarningscreen.button_open_guide": "गाइड खोलो",
   "elysiumcore.ramwarningscreen.button_ignore": "ध्यान न दे",
-  "elysiumcore.ramwarningscreen.button_dont_show_again": "फिर से मत दिखाओ"
+  "elysiumcore.ramwarningscreen.button_dont_warn_again": "फिर से मत दिखाओ"
 }

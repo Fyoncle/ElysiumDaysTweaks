@@ -4,5 +4,5 @@
   "elysiumcore.ramwarningscreen.warning_line3": "§fPara sa pinakamagandang ng karanasan, §a§l6 GB §fpara sa ihigit pa ay §linirerekomenda§f.",
   "elysiumcore.ramwarningscreen.button_open_guide": "Bukas na bagay",
   "elysiumcore.ramwarningscreen.button_ignore": "Huwag pansinin",
-  "elysiumcore.ramwarningscreen.button_dont_show_again": "Wag mo nang ipakita mo ulit"
+  "elysiumcore.ramwarningscreen.button_dont_warn_again": "Wag mo nang ipakita mo ulit"
 }

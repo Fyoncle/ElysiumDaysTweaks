@@ -4,7 +4,7 @@
   "elysiumcore.ramwarningscreen.warning_line3": "§fFor the best experience, §a§l6 GB §for more is §lrecommended§f.",
   "elysiumcore.ramwarningscreen.button_open_guide": "Open Guide",
   "elysiumcore.ramwarningscreen.button_ignore": "Ignore",
-  "elysiumcore.ramwarningscreen.button_dont_show_again": "Don't Show Again",
+  "elysiumcore.ramwarningscreen.button_dont_warn_again": "Don't Show Again",
   "elysiumcore.update_available": "Modpack Update Available (%s)",
   "elysiumcore.neat_health_bar": "Health Bars"
 }

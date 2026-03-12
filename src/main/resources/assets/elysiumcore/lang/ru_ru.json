@@ -4,5 +4,5 @@
   "elysiumcore.ramwarningscreen.warning_line3": "§fДля комфортной игры §lрекомендуется§f §a§l6 GB §fили больше.",
   "elysiumcore.ramwarningscreen.button_open_guide": "Открыть гайд",
   "elysiumcore.ramwarningscreen.button_ignore": "Игнорировать",
-  "elysiumcore.ramwarningscreen.button_dont_show_again": "Больше не показывать"
+  "elysiumcore.ramwarningscreen.button_dont_warn_again": "Больше не показывать"
 }
