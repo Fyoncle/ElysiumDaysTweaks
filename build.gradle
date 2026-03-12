@@ -80,14 +80,6 @@ jar {
 	}
 }
 
-loom {
-    runs {
-        client {
-            vmArgs "-Xmx2G"
-        }
-    }
-}
-
 // configure the maven publication
 publishing {
 	publications {
