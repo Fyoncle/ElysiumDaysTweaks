@@ -1,33 +1,117 @@
 {
   "replace": false,
   "values": [
-    "advancednetherite:netherite_iron_sword",
-    "advancednetherite:netherite_gold_sword",
-    "advancednetherite:netherite_emerald_sword",
-    "advancednetherite:netherite_diamond_sword",
-    "deeperdarker:warden_sword",
-    "phantasm:crystalline_sword",
-    "endermanoverhaul:corrupted_blade",
-    "medievalweapons:wooden_dagger",
-    "medievalweapons:stone_dagger",
-    "medievalweapons:iron_dagger",
-    "medievalweapons:golden_dagger",
-    "medievalweapons:diamond_dagger",
-    "medievalweapons:netherite_dagger",
-    "medievalweapons:warden_dagger",
-    "medievalweapons:wooden_ninjato",
-    "medievalweapons:stone_ninjato",
-    "medievalweapons:iron_ninjato",
-    "medievalweapons:golden_ninjato",
-    "medievalweapons:diamond_ninjato",
-    "medievalweapons:netherite_ninjato",
-    "medievalweapons:warden_ninjato",
-    "medievalweapons:wooden_rapier",
-    "medievalweapons:stone_rapier",
-    "medievalweapons:iron_rapier",
-    "medievalweapons:golden_rapier",
-    "medievalweapons:diamond_rapier",
-    "medievalweapons:netherite_rapier",
-    "medievalweapons:warden_rapier"
+    {
+      "id": "advancednetherite:netherite_iron_sword",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_gold_sword",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_emerald_sword",
+      "required": false
+    },
+    {
+      "id": "advancednetherite:netherite_diamond_sword",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_sword",
+      "required": false
+    },
+    {
+      "id": "phantasm:crystalline_sword",
+      "required": false
+    },
+    {
+      "id": "endermanoverhaul:corrupted_blade",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:wooden_dagger",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:stone_dagger",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:iron_dagger",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:golden_dagger",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:diamond_dagger",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:netherite_dagger",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:warden_dagger",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:wooden_ninjato",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:stone_ninjato",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:iron_ninjato",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:golden_ninjato",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:diamond_ninjato",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:netherite_ninjato",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:warden_ninjato",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:wooden_rapier",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:stone_rapier",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:iron_rapier",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:golden_rapier",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:diamond_rapier",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:netherite_rapier",
+      "required": false
+    },
+    {
+      "id": "medievalweapons:warden_rapier",
+      "required": false
+    }
   ]
 }

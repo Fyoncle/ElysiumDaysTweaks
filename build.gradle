@@ -11,52 +11,38 @@ base {
 }
 
 repositories {
-	exclusiveContent {
-		forRepository {
-			maven {
-				name = "Modrinth"
-				url = "https://api.modrinth.com/maven"
-			}
-		}
-		filter {
-			includeGroup "maven.modrinth"
-		}
-	}
-    // Mixin Squared
-    maven {
-        url = "https://maven.bawnorton.com/releases"
-    }
-
-    // Mixins
-    maven {
-        name = "Sponge / Mixin"
-        url = "https://repo.spongepowered.org/repository/maven-public/"
-    }
-
-    maven {
-        name = "FzzyMaven"
-        url = "https://maven.fzzyhmstrs.me/"
-    }
+            // Modrinth Maven
+			maven {url = "https://api.modrinth.com/maven"}
+            // MixinSquared
+            maven {url = "https://maven.bawnorton.com/releases"}
+            // Sponge / Mixin
+            maven {url = "https://repo.spongepowered.org/repository/maven-public/"}
+            // Fzzy Maven
+            maven {url = "https://maven.fzzyhmstrs.me/"}
+            // Lady Snake Maven
+            maven {url = "https://maven.ladysnake.org/releases"}
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
-	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
+    // Fzzy Config
+    modImplementation "me.fzzyhmstrs:fzzy_config:${project.fzzyConfigVersion}"
+
 	// Neat
-	modImplementation "maven.modrinth:neat:1.20.1-41-fabric"
-	implementation "me.zeroeightsix:fiber:0.23.0-2"
+	modImplementation "maven.modrinth:neat:${project.neatVersion}"
+	implementation "me.zeroeightsix:fiber:${project.fiberVersion}"
 
 	// Bygone Nether
-	modImplementation "maven.modrinth:bygone-nether:S8KkpB4v"
+	modImplementation "maven.modrinth:bygone-nether:${project.bygoneNetherVersion}"
 
 	// Superb Steeds
-	modImplementation "maven.modrinth:superb-steeds:1.20-4"
+	modImplementation "maven.modrinth:superb-steeds:${project.superbSteedsVersion}"
+    modApi include("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.ccaVersion}")
+    modApi include("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.ccaVersion}")
 
 	// Mixins
 	annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
@@ -67,8 +53,6 @@ dependencies {
 	// Mixin Extras (library)
 	implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.5.3"))
 	include("io.github.llamalad7:mixinextras-fabric:0.5.3:slim")
-	// Fzzy Config
-	modImplementation "me.fzzyhmstrs:fzzy_config:${project.fzzyConfigVersion}"
 }
 
 processResources {
@@ -84,9 +68,6 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 java {
-	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
-	// if it is present.
-	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 
 	sourceCompatibility = JavaVersion.VERSION_17
@@ -99,6 +80,14 @@ jar {
 	}
 }
 
+loom {
+    runs {
+        client {
+            vmArgs "-Xmx2G"
+        }
+    }
+}
+
 // configure the maven publication
 publishing {
 	publications {
@@ -109,10 +98,5 @@ publishing {
 	}
 
 	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
-	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
-	}
+	repositories {}
 }

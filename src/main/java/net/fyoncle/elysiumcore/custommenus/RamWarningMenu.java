@@ -9,8 +9,11 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.MultilineText;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.screen.option.LanguageOptionsScreen;
+import net.minecraft.client.gui.widget.TexturedButtonWidget;
 import net.minecraft.text.Text;
 import net.minecraft.util.Colors;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import org.lwjgl.glfw.GLFW;
 
@@ -33,6 +36,7 @@ public class RamWarningMenu extends Screen {
         addIgnoreButton();
         addDontShowAgainButton();
         addQuitGameButton();
+        addLanguageButton();
     }
 
     @Override
@@ -92,6 +96,25 @@ public class RamWarningMenu extends Screen {
                 this.height / 2 + 75, 200, 20, 0, 0, 0, 200, 20,
                 Text.translatable("menu.quit").getString(),
                 Textures.DEFAULT_BUTTON_UNFOCUSED, Textures.DEFAULT_BUTTON_FOCUSED, button -> MinecraftClient.getInstance().scheduleStop()
+        ));
+    }
+
+    private void addLanguageButton() {
+        this.addDrawableChild(new TexturedButtonWidget(
+                this.width / 2 - 10,
+                this.height / 2 + 100,
+                20, 20,
+                0, 106, 20,
+                new Identifier("textures/gui/widgets.png"),
+                256, 256,
+                button -> MinecraftClient.getInstance().setScreen(
+                        new LanguageOptionsScreen(
+                                this,
+                                MinecraftClient.getInstance().options,
+                                MinecraftClient.getInstance().getLanguageManager()
+                        )
+                ),
+                Text.translatable("narrator.button.language")
         ));
     }
 
