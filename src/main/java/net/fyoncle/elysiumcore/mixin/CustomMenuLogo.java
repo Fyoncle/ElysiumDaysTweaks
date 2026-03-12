@@ -20,17 +20,15 @@ public class CustomMenuLogo {
                                            int i, int j, float f,
                                            float g, int k,
                                            int l, int m, int n, Operation<Void> original) {
+        Identifier texture;
         if (HolidayChecker.isHalloween()) {
-            resourceLocation = Textures.ED_HALLOWEEN_LOGO;
-            original.call(instance, resourceLocation, i, j, 0f, 0f, 256, 70, 256, 70);
+            texture = Textures.ED_HALLOWEEN_LOGO;
         } else if (HolidayChecker.isChristmas()) {
-            resourceLocation = Textures.ED_CHRISTMAS_LOGO;
-            original.call(instance, resourceLocation, i, j, 0f, 0f, 256, 70, 256, 70);
+            texture = Textures.ED_CHRISTMAS_LOGO;
+        } else {
+            texture = Textures.ED_DEFAULT_LOGO;
         }
-        if (!HolidayChecker.isChristmas() && !HolidayChecker.isHalloween()) {
-            resourceLocation = Textures.ED_DEFAULT_LOGO;
-            original.call(instance, resourceLocation, i, j, 0f, 0f, 256, 70, 256, 70);
-        }
+        original.call(instance, texture, i, j, 0f, 0f, 256, 70, 256, 70);
     }
 
     @WrapOperation(

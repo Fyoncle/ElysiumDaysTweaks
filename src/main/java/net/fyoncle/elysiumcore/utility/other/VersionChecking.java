@@ -1,17 +1,20 @@
 package net.fyoncle.elysiumcore.utility.other;
 
 import com.google.gson.JsonParser;
+import net.fyoncle.elysiumcore.ElysiumCore;
 import net.fyoncle.elysiumcore.utility.constants.Constants;
 import net.fyoncle.elysiumcore.utility.networking.RequestSender;
 
 public class VersionChecking {
 
-    private boolean isVersionGreater(String[] version1, String[] version2) {
-        int greaterCount = 0;
-        for (int i = 0; i < version1.length; i++) {
-            greaterCount += (Integer.parseInt(version1[i]) >= Integer.parseInt(version2[i])) ? 1 : 0;
+    private boolean isVersionGreater(String[] current, String[] latest) {
+        int length = Math.min(current.length, latest.length);
+        for (int i = 0; i < length; i++) {
+            int c = Integer.parseInt(current[i]);
+            int l = Integer.parseInt(latest[i]);
+            if (c != l) return c >= l;
         }
-        return greaterCount == version1.length;
+        return true;
     }
 
     public void checkEDVersion() {
@@ -20,6 +23,12 @@ public class VersionChecking {
                 Constants.Links.MODRINTH_API_LINK
                         + "v2/project/lz3ryGPQ/version?game_versions=[%22"
                         + Constants.Core.CURRENT_MINECRAFT_VERSION + "%22]");
+
+        if (jsonString.equals("request_failed") || jsonString.equals("invalid_result")) {
+            Flags.IS_LATEST_VERSION = true;
+            return;
+        }
+
         try {
             Strings.LATEST_ED_VERSION = JsonParser.parseString(jsonString).getAsJsonArray().get(0)
                     .getAsJsonObject().get("version_number").getAsString();
@@ -28,9 +37,9 @@ public class VersionChecking {
             String[] latestVersionNums = Strings.LATEST_ED_VERSION.split("\\.");
 
             Flags.IS_LATEST_VERSION = isVersionGreater(currentVersionNums, latestVersionNums);
-        } catch (IllegalStateException e) {
+        } catch (Exception e) {
             Flags.IS_LATEST_VERSION = true;
-            e.printStackTrace();
+            ElysiumCore.LOGGER.error("Version check failed: {}", e.getMessage());
         }
     }
 }

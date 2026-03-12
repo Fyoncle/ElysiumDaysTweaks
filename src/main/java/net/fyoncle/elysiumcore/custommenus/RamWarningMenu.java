@@ -1,6 +1,5 @@
 package net.fyoncle.elysiumcore.custommenus;
 
-import net.fyoncle.elysiumcore.ElysiumCore;
 import net.fyoncle.elysiumcore.ElysiumCoreConfig;
 import net.fyoncle.elysiumcore.customwidgets.HoverableTextButton;
 import net.fyoncle.elysiumcore.utility.constants.Constants;
@@ -9,7 +8,9 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.MultilineText;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.screen.option.LanguageOptionsScreen;
+import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.gui.widget.TexturedButtonWidget;
 import net.minecraft.text.Text;
 import net.minecraft.util.Colors;
@@ -21,11 +22,8 @@ public class RamWarningMenu extends Screen {
 
     private final String currentRam;
 
-    private final ElysiumCore client;
-
-    public RamWarningMenu(ElysiumCore client, Text title, String currentRam) {
+    public RamWarningMenu(Text title, String currentRam) {
         super(title);
-        this.client = client;
         this.currentRam = currentRam;
     }
 
@@ -41,12 +39,9 @@ public class RamWarningMenu extends Screen {
 
     @Override
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
-        if (keyCode == GLFW.GLFW_KEY_ESCAPE) {
-            return true;
-        }
+        if (keyCode == GLFW.GLFW_KEY_ESCAPE) return true;
         return super.keyPressed(keyCode, scanCode, modifiers);
     }
-
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
@@ -60,9 +55,19 @@ public class RamWarningMenu extends Screen {
         ).drawCenterWithShadow(context, this.width / 2, this.height / 2 - 80, 20, Colors.RED);
     }
 
+    private HoverableTextButton createButton(int y, String label,
+                                             Identifier unfocused, Identifier focused,
+                                             ButtonWidget.PressAction action) {
+        return new HoverableTextButton(
+                this.width / 2 - 100, y,
+                200, 20, 0, 0, 0, 200, 20,
+                label, unfocused, focused, action
+        );
+    }
+
     private void addGuideButton() {
-        this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
-                this.height / 2 - 20, 200, 20, 0, 0, 0, 200, 20,
+        this.addDrawableChild(createButton(
+                this.height / 2 - 20,
                 Text.translatable("elysiumcore.ramwarningscreen.button_open_guide").getString(),
                 Textures.OPEN_GUIDE_BUTTON_UNFOCUSED, Textures.OPEN_GUIDE_BUTTON_FOCUSED,
                 button -> {
@@ -73,29 +78,33 @@ public class RamWarningMenu extends Screen {
     }
 
     private void addIgnoreButton() {
-        this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
-                this.height / 2 + 25, 200, 20, 0, 0, 0, 200, 20,
+        this.addDrawableChild(createButton(
+                this.height / 2 + 25,
                 Text.translatable("elysiumcore.ramwarningscreen.button_ignore").getString(),
-                Textures.IGNORE_BUTTON_UNFOCUSED, Textures.IGNORE_BUTTON_FOCUSED, button -> this.close()));
+                Textures.IGNORE_BUTTON_UNFOCUSED, Textures.IGNORE_BUTTON_FOCUSED,
+                button -> this.close()
+        ));
     }
 
     private void addDontWarnAgainButton() {
-        this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
-                this.height / 2 + 50, 200, 20, 0, 0, 0, 200, 20,
+        this.addDrawableChild(createButton(
+                this.height / 2 + 50,
                 Text.translatable("elysiumcore.ramwarningscreen.button_dont_warn_again").getString(),
                 Textures.DONT_WARN_AGAIN_BUTTON_UNFOCUSED, Textures.DONT_WARN_AGAIN_BUTTON_FOCUSED,
                 button -> {
                     ElysiumCoreConfig.config.disableRamWarningScreen = true;
                     ElysiumCoreConfig.config.save();
                     this.close();
-                }));
+                }
+        ));
     }
 
     private void addQuitGameButton() {
-        this.addDrawableChild(new HoverableTextButton(this.width / 2 - 200 / 2,
-                this.height / 2 + 75, 200, 20, 0, 0, 0, 200, 20,
+        this.addDrawableChild(createButton(
+                this.height / 2 + 75,
                 Text.translatable("menu.quit").getString(),
-                Textures.DEFAULT_BUTTON_UNFOCUSED, Textures.DEFAULT_BUTTON_FOCUSED, button -> MinecraftClient.getInstance().scheduleStop()
+                Textures.DEFAULT_BUTTON_UNFOCUSED, Textures.DEFAULT_BUTTON_FOCUSED,
+                button -> MinecraftClient.getInstance().scheduleStop()
         ));
     }
 
@@ -120,6 +129,6 @@ public class RamWarningMenu extends Screen {
 
     @Override
     public void close() {
-        super.close();
+        MinecraftClient.getInstance().setScreen(new TitleScreen());
     }
 }
