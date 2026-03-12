@@ -29,20 +29,14 @@ public class Textures {
     public static Identifier FOCUSED_ON_HEALTHBAR_TEXTURE = new Identifier(
             "elysiumcore",
             "textures/gui/neat_enabled_button_focused.png");
-    // - Discord Button Textures -
-    public static Identifier DISCORD_BUTTON_UNFOCUSED_TEXTURE = new Identifier(
+    // - Discord Button Texture -
+    public static Identifier DISCORD_BUTTON_TEXTURE = new Identifier(
             "elysiumcore",
-            "textures/gui/discord_button_unfocused.png");
-    public static Identifier DISCORD_BUTTON_FOCUSED_TEXTURE = new Identifier(
+            "textures/gui/discord_button.png");
+    // - Wiki Button Texture -
+    public static Identifier WIKI_BUTTON_TEXTURE = new Identifier(
             "elysiumcore",
-            "textures/gui/discord_button_focused.png");
-    // - Wiki Button Textures -
-    public static Identifier WIKI_BUTTON_UNFOCUSED_TEXTURE = new Identifier(
-            "elysiumcore",
-            "textures/gui/wiki_button_unfocused.png");
-    public static Identifier WIKI_BUTTON_FOCUSED_TEXTURE = new Identifier(
-            "elysiumcore",
-            "textures/gui/wiki_button_focused.png");
+            "textures/gui/wiki_button.png");
 
 
     // - Ram Warning Screen Textures -

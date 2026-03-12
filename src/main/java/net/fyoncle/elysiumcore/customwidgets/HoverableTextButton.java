@@ -9,10 +9,6 @@ import net.minecraft.util.Identifier;
 public class HoverableTextButton extends TexturedButtonWidget {
     private final Identifier unfocused;
     private final Identifier focused;
-
-    private final int textureWidth;
-    private final int textureHeight;
-
     private final String text;
 
     public HoverableTextButton(int x, int y, int width, int height,
@@ -20,23 +16,18 @@ public class HoverableTextButton extends TexturedButtonWidget {
                                String text,
                                Identifier textureUnFocused,
                                Identifier textureFocused, PressAction pressAction) {
-        super(x, y, width, height, u, v, offset, textureUnFocused, pressAction);
-        unfocused = textureUnFocused;
-        focused = textureFocused;
-        this.textureWidth = tw;
-        this.textureHeight = th;
+        super(x, y, width, height, u, v, offset, textureUnFocused, tw, th, pressAction);
+        this.unfocused = textureUnFocused;
+        this.focused = textureFocused;
         this.text = text;
     }
 
     @Override
     public void renderButton(DrawContext context, int mouseX, int mouseY, float delta) {
-        if (isHovered()) {
-            context.drawTexture(focused, this.getX(), this.getY(), this.u, this.v, this.width,
-                    this.height, this.textureWidth, this.textureHeight);
-        } else {
-            context.drawTexture(unfocused, this.getX(), this.getY(), this.u, this.v, this.width,
-                    this.height, this.textureWidth, this.textureHeight);
-        }
+        Identifier texture = isHovered() ? focused : unfocused;
+        context.drawTexture(texture, this.getX(), this.getY(), this.u, this.v,
+                this.width, this.height, this.textureWidth, this.textureHeight);
+
         if (text != null) {
             context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,
                     text, this.getX() + this.width / 2, this.getY() + 6, Colors.WHITE);

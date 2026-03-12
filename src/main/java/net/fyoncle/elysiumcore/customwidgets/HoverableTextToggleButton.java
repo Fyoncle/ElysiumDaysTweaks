@@ -10,7 +10,6 @@ public class HoverableTextToggleButton extends TexturedButtonWidget {
 
     private final Identifier focusedToggled;
     private final Identifier focusedUnToggled;
-
     private final Identifier unfocusedToggled;
     private final Identifier unfocusedUnToggled;
 
@@ -24,44 +23,35 @@ public class HoverableTextToggleButton extends TexturedButtonWidget {
                                      String textToggled,
                                      String textUnToggled,
                                      Identifier uft, Identifier ufut, PressAction pressAction) {
-        super(x, y, width, height, u, v, null, pressAction);
+        super(x, y, width, height, u, v, 0, ufut, width, height, pressAction);
         this.isToggled = isToggled;
         this.textToggled = textToggled;
         this.textUnToggled = textUnToggled;
-
-        focusedToggled = ft;
-        focusedUnToggled = fut;
-        unfocusedToggled = uft;
-        unfocusedUnToggled = ufut;
+        this.focusedToggled = ft;
+        this.focusedUnToggled = fut;
+        this.unfocusedToggled = uft;
+        this.unfocusedUnToggled = ufut;
     }
 
     @Override
     public void renderButton(DrawContext context, int mouseX, int mouseY, float delta) {
-        if (isToggled) {
-            if (isHovered()) {
-                context.drawTexture(focusedToggled, this.getX(), this.getY(), this.u, this.v,
-                        this.width, this.height, this.width, this.height);
-            } else {
-                context.drawTexture(unfocusedToggled, this.getX(), this.getY(), this.u, this.v,
-                        this.width, this.height, this.width, this.height);
-            }
-            context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,
-                    this.textToggled, this.getX() + this.getWidth() / 2 - 1,
-                    this.getY() + this.getHeight() / 2 - 4,
-                    Colors.WHITE);
-        } else {
-            if (isHovered()) {
-                context.drawTexture(focusedUnToggled, this.getX(), this.getY(), this.u, this.v,
-                        this.width, this.height, this.width, this.height);
-            } else {
-                context.drawTexture(unfocusedUnToggled, this.getX(), this.getY(), this.u, this.v,
-                        this.width, this.height, this.width, this.height);
-            }
-            context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,
-                    this.textUnToggled, this.getX() + this.getWidth() / 2 + 1,
-                    this.getY() + this.getHeight() / 2 - 4,
-                    Colors.WHITE);
-        }
-    }
+        Identifier texture;
+        String label;
+        int textX;
 
+        if (isToggled) {
+            texture = isHovered() ? focusedToggled : unfocusedToggled;
+            label = textToggled;
+            textX = this.getX() + this.getWidth() / 2 - 1;
+        } else {
+            texture = isHovered() ? focusedUnToggled : unfocusedUnToggled;
+            label = textUnToggled;
+            textX = this.getX() + this.getWidth() / 2 + 1;
+        }
+
+        context.drawTexture(texture, this.getX(), this.getY(), this.u, this.v,
+                this.width, this.height, this.width, this.height);
+        context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,
+                label, textX, this.getY() + this.getHeight() / 2 - 4, Colors.WHITE);
+    }
 }

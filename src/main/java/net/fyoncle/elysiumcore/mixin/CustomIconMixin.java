@@ -23,7 +23,7 @@ import java.util.Map;
 @Mixin(Icons.class)
 public class CustomIconMixin {
     @Unique
-    private final Map<String, byte[]> STORAGE = new HashMap<>();
+    private final Map<String, byte[]> iconStorage = new HashMap<>();
     @Unique
     private final List<InputSupplier<InputStream>> icons = new ArrayList<>();
     @Unique
@@ -36,17 +36,16 @@ public class CustomIconMixin {
     private void init() {
         if (!isInitialized) {
             if (HolidayChecker.isChristmas()) {
-                for (int i = 0; i < Constants.Core.Paths.CHRISTMAS_ED_ICONS_FILE_NAMES.length; i++) {
-                    loadResource(Constants.Core.Paths.CHRISTMAS_ED_ICONS_FILE_NAMES[i]);
+                for (String name : Constants.Core.Paths.CHRISTMAS_ED_ICONS_FILE_NAMES) {
+                    loadResource(name);
                 }
             } else if (HolidayChecker.isHalloween()) {
-                for (int i = 0; i < Constants.Core.Paths.HALLOWEEN_ED_ICONS_FILE_NAMES.length; i++) {
-                    loadResource(Constants.Core.Paths.HALLOWEEN_ED_ICONS_FILE_NAMES[i]);
+                for (String name : Constants.Core.Paths.HALLOWEEN_ED_ICONS_FILE_NAMES) {
+                    loadResource(name);
                 }
-            }
-            if (!HolidayChecker.isChristmas() && !HolidayChecker.isHalloween()) {
-                for (int i = 0; i < Constants.Core.Paths.DEFAULT_ED_ICONS_FILE_NAMES.length; i++) {
-                    loadResource(Constants.Core.Paths.DEFAULT_ED_ICONS_FILE_NAMES[i]);
+            } else {
+                for (String name : Constants.Core.Paths.DEFAULT_ED_ICONS_FILE_NAMES) {
+                    loadResource(name);
                 }
             }
             isInitialized = true;
@@ -58,9 +57,9 @@ public class CustomIconMixin {
         String fullPath = Constants.Core.Paths.ICONS_PATH + path;
         ClassLoader classLoader = CustomIconMixin.class.getClassLoader();
         try (InputStream stream = classLoader.getResourceAsStream(fullPath)) {
-            assert stream != null;
+            if (stream == null) throw new RuntimeException("Resource not found: " + fullPath);
             byte[] data = IOUtils.toByteArray(stream);
-            STORAGE.put(path, data);
+            iconStorage.put(path, data);
             icons.add(getResource(path));
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -68,11 +67,9 @@ public class CustomIconMixin {
     }
 
     @Unique
-    public InputSupplier<InputStream> getResource(String path) {
-        byte[] data = STORAGE.get(path);
-        if (data == null) {
-            throw new RuntimeException("Unexpected resource path " + path);
-        }
+    private InputSupplier<InputStream> getResource(String path) {
+        byte[] data = iconStorage.get(path);
+        if (data == null) throw new RuntimeException("Unexpected resource path: " + path);
         return () -> new ByteArrayInputStream(data);
     }
 

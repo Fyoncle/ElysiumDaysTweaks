@@ -29,12 +29,15 @@ public class EscapeMenuMixin extends Screen {
     @Inject(at = @At("RETURN"), method = "initWidgets")
     private void addButtons(CallbackInfo ci) {
         for (int i = 0; i < this.children().size(); i++) {
-            ClickableWidget widget = (ClickableWidget) this.children().get(i);
+            if (!(this.children().get(i) instanceof ClickableWidget widget)) continue;
+
             String widgetText = widget.getMessage().getString();
             int healthBarY = FabricLoader.getInstance().isModLoaded("replaymod") ? widget.getY() + widget.getHeight() + 3 : widget.getY();
+
             if (widget instanceof ButtonWidget) {
                 if (widgetText.equals(Text.translatable("menu.returnToMenu").getString())) {
                     addHealthBarTogglingButton(this.width / 2 - 100 / 2, healthBarY);
+                    break;
                 }
             }
         }
@@ -47,7 +50,8 @@ public class EscapeMenuMixin extends Screen {
 
             healthBarStatusButton = new HoverableTextToggleButton(x,
                     y + 20 + 5, 100, 20,
-                    0, 0, Textures.FOCUSED_ON_HEALTHBAR_TEXTURE,
+                    0, 0,
+                    Textures.FOCUSED_ON_HEALTHBAR_TEXTURE,
                     Textures.FOCUSED_OFF_HEALTHBAR_TEXTURE,
                     Flags.IS_HEALTH_BAR_TOGGLED,
                     neatText + ": ON",
@@ -62,25 +66,16 @@ public class EscapeMenuMixin extends Screen {
 
     @Unique
     private void restoreHealthBarToggleStates() {
-        if (!ElysiumCore.serviceLoaders.NEAT_CONFIG_SERVICE.getDraw()) {
-            Flags.IS_HEALTH_BAR_TOGGLED = false;
-            healthBarStatusButton.isToggled = false;
-        } else {
-            Flags.IS_HEALTH_BAR_TOGGLED = true;
-            healthBarStatusButton.isToggled = true;
-        }
+        boolean draw = ElysiumCore.serviceLoaders.NEAT_CONFIG_SERVICE.getDraw();
+        Flags.IS_HEALTH_BAR_TOGGLED = draw;
+        healthBarStatusButton.isToggled = draw;
     }
 
     @Unique
     private void toggleHealthBar() {
-        if (!Flags.IS_HEALTH_BAR_TOGGLED) {
-            Flags.IS_HEALTH_BAR_TOGGLED = true;
-            healthBarStatusButton.isToggled = true;
-            ElysiumCore.serviceLoaders.NEAT_CONFIG_SERVICE.setDraw(true);
-        } else {
-            Flags.IS_HEALTH_BAR_TOGGLED = false;
-            healthBarStatusButton.isToggled = false;
-            ElysiumCore.serviceLoaders.NEAT_CONFIG_SERVICE.setDraw(false);
-        }
+        boolean newState = !Flags.IS_HEALTH_BAR_TOGGLED;
+        Flags.IS_HEALTH_BAR_TOGGLED = newState;
+        healthBarStatusButton.isToggled = newState;
+        ElysiumCore.serviceLoaders.NEAT_CONFIG_SERVICE.setDraw(newState);
     }
 }
