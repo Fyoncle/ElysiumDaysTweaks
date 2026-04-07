@@ -3,16 +3,9 @@ package net.fyoncle.elysiumcore.utility.constants;
 import net.minecraft.util.Identifier;
 
 public class Textures {
-    // - Menu Logos -
-    // Default Logo
-    public static final Identifier ED_DEFAULT_LOGO = new Identifier("elysiumcore",
-            "textures/logos/eddefaultlogo.png");
-    // Halloween Logo
-    public static final Identifier ED_HALLOWEEN_LOGO = new Identifier("elysiumcore",
-            "textures/logos/edhalloweenlogo.png");
-    // Christmas Logo
-    public static final Identifier ED_CHRISTMAS_LOGO = new Identifier("elysiumcore",
-            "textures/logos/edchristmaslogo.png");
+    // Menu Logo
+    public static final Identifier ED_MENU_LOGO = new Identifier("elysiumcore",
+            "textures/logo/edlogo.png");
 
     // - Health Bar Textures -
     // OFF

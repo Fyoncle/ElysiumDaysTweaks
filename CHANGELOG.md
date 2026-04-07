@@ -5,11 +5,13 @@
 
 ### Fyoncle:
 
+- Redesigned the ED Logo
 - Fixed RAM Warning Screen can be closed with hitting ESC
 - Fixed game freezing for a split second after clicking Don't Show Again on the RAM Warning Screen
-- Replaced @Overwrite with @Inject in SplashTextRendererMixin, injecting then canceling execution for removing splashes now to fix crashes with other mods.
+- Replaced @Overwrite with @Inject in SplashTextRendererMixin, injecting then canceling execution for removing splashes
+  now to fix crashes with other mods.
 - Abandon the config system of Elysium Core and implement FzzyConfig
-- Removed holiday panoramas
+- Removed all the holiday-based logo variants
 
 ### VipCoder:
 
@@ -23,46 +25,46 @@
 
 - Rebranded to Elysium Core
 - Added Translations For RAM Warning Screen:
-  - English (en_us) by Fyoncle
-  - Turkish (tr_tr) by Fyoncle
-  - Spanish (es_es) by puffymaria
-  - Catalan (ca_es) by puffymaria
-  - Chilean Spanish (es_cl) by AstroLazuli
-  - French (fr_fr) by weebinsomniaque
-  - Russian (ru_ru) by shizotoaster
-  - German (de_de) by JustDragonGirl
-  - Swedish (sv_se) by Aprilamnm
-  - Finnish (fi_fi) by Tofuzki
-  - Hindi (hi_in) by Rox
-  - Polish (pl_pl) by Bedwarsowiec
-  - Arabic (ar_sa) by APZi
-  - Japanese (ja_jp) by Historia
-  - Indonesian (id_id) by Endertainer007
-  - Dutch (nl_nl) by Jzody
-  - Norwegian Bokmål (no_no) by Aprilamnm
-  - Norwegian Nynorsk (nn_no) by Aprilamnm
-  - Filipino (fil_ph) by Astronaut
-  - Persian (fa_ir)
+    - English (en_us) by Fyoncle
+    - Turkish (tr_tr) by Fyoncle
+    - Spanish (es_es) by PuffyMaria
+    - Catalan (ca_es) by PuffyMaria
+    - Chilean Spanish (es_cl) by AstroLazuli
+    - French (fr_fr) by weebinsomniaque
+    - Russian (ru_ru) by shizotoaster
+    - German (de_de) by JustDragonGirl
+    - Swedish (sv_se) by Aprilamnm
+    - Finnish (fi_fi) by Tofuzki
+    - Hindi (hi_in) by Rox
+    - Polish (pl_pl) by Bedwarsowiec
+    - Arabic (ar_sa) by APZi
+    - Japanese (ja_jp) by Historia
+    - Indonesian (id_id) by Endertainer007
+    - Dutch (nl_nl) by Jzody
+    - Norwegian Bokmål (no_no) by Aprilamnm
+    - Norwegian Nynorsk (nn_no) by Aprilamnm
+    - Filipino (fil_ph) by Astronaut
+    - Persian (fa_ir)
 - Updated End Remastered Eye Translations
-  - Add Filipino Translations (fil_ph) (Thanks to Astronaut)
-  - Improved French Translations (Thanks to weebinsomniaque! <3)
-  - Improved Polish Translations (Thanks to vstankav! <3)
-  - Improved Catalan Translations (Thanks to PuffyMaria! <3)
+    - Add Filipino Translations (fil_ph) (Thanks to Astronaut)
+    - Improved French Translations (Thanks to weebinsomniaque! <3)
+    - Improved Polish Translations (Thanks to vstankav! <3)
+    - Improved Catalan Translations (Thanks to PuffyMaria! <3)
 - Tips Compat:
-  - Added tip for the Saddle recipe and Horse Armor recipes
-  - Added tip for [Armorable Skeleton Horses](https://modrinth.com/mod/armorable-skeleton-horses) mod!
-  - Added tip for [Tameable Foxes](https://modrinth.com/mod/tameable-foxes) mod!
-  - Improved wording of the Tips
-  - Updated Secret Story Tip
-  - Rename Podzol and Sponge Tip
+    - Added tip for the Saddle recipe and Horse Armor recipes
+    - Added tip for [Armorable Skeleton Horses](https://modrinth.com/mod/armorable-skeleton-horses) mod!
+    - Added tip for [Tameable Foxes](https://modrinth.com/mod/tameable-foxes) mod!
+    - Improved wording of the Tips
+    - Updated Secret Story Tip
+    - Rename Podzol and Sponge Tip
 - Added a Wiki button in the main menu
 - Redesigned the Ignore, Don't Show Again, and Open Guide Button!
 - Added Quit Game Button on RAM Warning Screen
 - Added End Remastered loot tables for Friends & Foes to add compat!
 - Updated Recipes
-  - Backported the official Saddle recipe
-  - Rebalanced Rotten Flesh to Leather recipes and added normal furnace and smelting variants
-  - Rebalanced the Horse Armor recipes completely
+    - Backported the official Saddle recipe
+    - Rebalanced Rotten Flesh to Leather recipes and added normal furnace and smelting variants
+    - Rebalanced the Horse Armor recipes completely
 - Updated the Wiki link for the RAM guide
 - Change "Show Guide" text to "Open Guide"
 
@@ -72,8 +74,10 @@
 <summary>⚙️ Other:</summary>
 
 - Fixed Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
-- Fixed [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working with modded knives
-- Fixed an issue where the mod fails to pin the resource pack to the top as intended. (Pull Requested by [Lancet-crow](https://github.com/Lancet-crow))
+- Fixed [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working
+  with modded knives
+- Fixed an issue where the mod fails to pin the resource pack to the top as intended. (Pull Requested
+  by [Lancet-crow](https://github.com/Lancet-crow))
 - Changed MOD_ID from `elysium-days-tweaks` to `elysiumcore`
 - Removed Edition text through @WrapOperation instead of overwriting the texture
 - Fix a few wrong pixels on the focused Discord Button
@@ -90,17 +94,22 @@
 - Separated Backported Wolves Compat to its own datapack on Modrinth
 - Separated Icons Compat to its own resource pack on Modrinth
 - Separated Horse Armor & Saddle Recipes with Simple Netherite Horse Armor to its own datapack on Modrinth
-- Remove Iceologers from [Drodi's Illagers x Fresh Animations](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) resource pack
-- Remove game menu logo from [Icons](https://modrinth.com/resourcepack/icons) with a 1x1 texture to remove it completely and reduce file size
+- Remove Iceologers
+  from [Drodi's Illagers x Fresh Animations](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) resource
+  pack
+- Remove game menu logo from [Icons](https://modrinth.com/resourcepack/icons) with a 1x1 texture to remove it completely
+  and reduce file size
 - Rename `isVersionBigger` to `isVersionGreater`
 - Rename `addModsButton` to `addButtons`
-- Add dragon.jem to override the vanilla model and achieve resource pack compatibility on Elysium Days with AL' Boss Rush combined with Better Ender Dragon
+- Add dragon.jem to override the vanilla model and achieve resource pack compatibility on Elysium Days with AL' Boss
+  Rush combined with Better Ender Dragon
 - Add Fancy Menu as incompatible
 - Remove Red Button (Replaced with DONT_SHOW_AGAIN_BUTTON)
 - Added an icon.png in the .idea directory to display EDT logo on the IDE
 - Renamed every directory to be Elysium Core
 - Remove MoreMcmeta's internal pack from the Resource Pack Lock feature
-- Removed Sponge and Podzol recipe since they felt out of place, vanilla ways making them actually unique to get at least
+- Removed Sponge and Podzol recipe since they felt out of place, vanilla ways making them actually unique to get at
+  least
 - Removed the lang files for Icons to remove food tooltips as Icons Compats now handles this
 - Removed files that removes Icons advertisement logo since Icons 1.12 already removed it
 - Remove Rotten Flesh to Leather recipes (Replaced with another mod in Elysium Days)

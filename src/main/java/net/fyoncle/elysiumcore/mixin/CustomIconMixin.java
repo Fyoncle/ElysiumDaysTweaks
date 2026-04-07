@@ -1,7 +1,6 @@
 package net.fyoncle.elysiumcore.mixin;
 
 import net.fyoncle.elysiumcore.utility.constants.Constants;
-import net.fyoncle.elysiumcore.utility.other.HolidayChecker;
 import net.minecraft.client.util.Icons;
 import net.minecraft.resource.InputSupplier;
 import org.apache.commons.io.IOUtils;
@@ -35,18 +34,8 @@ public class CustomIconMixin {
     @Unique
     private void init() {
         if (!isInitialized) {
-            if (HolidayChecker.isChristmas()) {
-                for (String name : Constants.Core.Paths.CHRISTMAS_ED_ICONS_FILE_NAMES) {
-                    loadResource(name);
-                }
-            } else if (HolidayChecker.isHalloween()) {
-                for (String name : Constants.Core.Paths.HALLOWEEN_ED_ICONS_FILE_NAMES) {
-                    loadResource(name);
-                }
-            } else {
-                for (String name : Constants.Core.Paths.DEFAULT_ED_ICONS_FILE_NAMES) {
-                    loadResource(name);
-                }
+            for (String name : Constants.Core.Paths.ED_ICONS_FILE_NAMES) {
+                loadResource(name);
             }
             isInitialized = true;
         }

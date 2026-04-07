@@ -1,94 +1,94 @@
 plugins {
-	id 'fabric-loom' version '1.8-SNAPSHOT'
-	id 'maven-publish'
+    id 'fabric-loom' version '1.8-SNAPSHOT'
+    id 'maven-publish'
 }
 
 version = project.mod_version
 group = project.maven_group
 
 base {
-	archivesName = project.archives_base_name
+    archivesName = project.archives_base_name
 }
 
 repositories {
-            // Modrinth Maven
-			maven {url = "https://api.modrinth.com/maven"}
-            // MixinSquared
-            maven {url = "https://maven.bawnorton.com/releases"}
-            // Sponge / Mixin
-            maven {url = "https://repo.spongepowered.org/repository/maven-public/"}
-            // Fzzy Maven
-            maven {url = "https://maven.fzzyhmstrs.me/"}
-            // Lady Snake Maven
-            maven {url = "https://maven.ladysnake.org/releases"}
+    // Modrinth Maven
+    maven { url = "https://api.modrinth.com/maven" }
+    // MixinSquared
+    maven { url = "https://maven.bawnorton.com/releases" }
+    // Sponge / Mixin
+    maven { url = "https://repo.spongepowered.org/repository/maven-public/" }
+    // Fzzy Maven
+    maven { url = "https://maven.fzzyhmstrs.me/" }
+    // Lady Snake Maven
+    maven { url = "https://maven.ladysnake.org/releases" }
 }
 
 dependencies {
-	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
-	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // Fzzy Config
     modImplementation "me.fzzyhmstrs:fzzy_config:${project.fzzyConfigVersion}"
 
-	// Neat
-	modImplementation "maven.modrinth:neat:${project.neatVersion}"
-	implementation "me.zeroeightsix:fiber:${project.fiberVersion}"
+    // Neat
+    modImplementation "maven.modrinth:neat:${project.neatVersion}"
+    implementation "me.zeroeightsix:fiber:${project.fiberVersion}"
 
-	// Bygone Nether
-	modImplementation "maven.modrinth:bygone-nether:${project.bygoneNetherVersion}"
+    // Bygone Nether
+    modImplementation "maven.modrinth:bygone-nether:${project.bygoneNetherVersion}"
 
-	// Superb Steeds
-	modImplementation "maven.modrinth:superb-steeds:${project.superbSteedsVersion}"
+    // Superb Steeds
+    modImplementation "maven.modrinth:superb-steeds:${project.superbSteedsVersion}"
     modApi include("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.ccaVersion}")
     modApi include("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.ccaVersion}")
 
-	// Mixins
-	annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    // Mixins
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
-	// Mixin Squared (library)
-	include(implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.3.7-beta.1")))
+    // Mixin Squared (library)
+    include(implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.3.7-beta.1")))
 
-	// Mixin Extras (library)
-	implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.5.3"))
-	include("io.github.llamalad7:mixinextras-fabric:0.5.3:slim")
+    // Mixin Extras (library)
+    implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.5.3"))
+    include("io.github.llamalad7:mixinextras-fabric:0.5.3:slim")
 }
 
 processResources {
-	inputs.property "version", project.version
+    inputs.property "version", project.version
 
-	filesMatching("fabric.mod.json") {
-		expand "version": project.version
-	}
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 17
+    it.options.release = 17
 }
 
 java {
-	withSourcesJar()
+    withSourcesJar()
 
-	sourceCompatibility = JavaVersion.VERSION_17
-	targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 jar {
-	from("LICENSE") {
-		rename { "${it}_${project.base.archivesName.get()}"}
-	}
+    from("LICENSE") {
+        rename { "${it}_${project.base.archivesName.get()}" }
+    }
 }
 
 // configure the maven publication
 publishing {
-	publications {
-		create("mavenJava", MavenPublication) {
-			artifactId = project.archives_base_name
-			from components.java
-		}
-	}
+    publications {
+        create("mavenJava", MavenPublication) {
+            artifactId = project.archives_base_name
+            from components.java
+        }
+    }
 
-	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
-	repositories {}
+    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+    repositories {}
 }
