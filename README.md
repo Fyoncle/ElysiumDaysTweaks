@@ -66,7 +66,7 @@ standalone use.
 </div>
 
 
-**Special thanks to [VipCoder](https://github.com/VipCoder8) and [Shizotoaster](https://github.com/shizotoaster) for
+**Special thanks to [VipCoder](https://github.com/VipCoder8), [Shizotoaster](https://github.com/shizotoaster) and [Lancet-crow](https://github.com/Lancet-crow) for
 their contributions while making this mod, without them, it wouldn't be possible :)**
 
 And many thanks to [Vixel](https://modrinth.com/user/Vixel) for letting me use his pixel arts in this mod!
