@@ -19,7 +19,7 @@ public class CustomMenuLogo {
                                            int i, int j, float f,
                                            float g, int k,
                                            int l, int m, int n, Operation<Void> original) {
-        original.call(instance, Textures.ED_MENU_LOGO, i, j + 5, 0f, 0f, 256, 70, 256, 70);
+        original.call(instance, Textures.ED_MENU_LOGO, i, j, 0f, 0f, 257, 87, 257, 87);
     }
 
     @WrapOperation(
