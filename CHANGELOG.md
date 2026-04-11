@@ -1,7 +1,13 @@
-# <img src="https://cdn.modrinth.com/data/cached_images/8619ab1a6ad08dfa75916bd9917476e18ea83f57.png" width="60"> 8.0.0 Update
+<div align="center">
+
+<img src="https://cdn.modrinth.com/data/cached_images/d40adbf6cf2abc56c43341e893a47de9250ec4d8.png" width="70%">
+
+#
+
+</div>
 
 <details>  
-<summary>🛠️ What's Fixed:</summary>
+<summary>🛠️ What's Fixed</summary>
 
 ### Fyoncle:
 
@@ -21,7 +27,7 @@
 </details>
 
 <details>
-<summary>✨ What's Changed:</summary>
+<summary>✨ What's Changed</summary>
 
 - Rebranded to Elysium Core
 - Added Translations For RAM Warning Screen:
@@ -71,7 +77,7 @@
 </details>
 
 <details>
-<summary>⚙️ Other:</summary>
+<summary>⚙️ Other</summary>
 
 - Fixed Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
 - Fixed [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working
