@@ -17,7 +17,9 @@
 - Replaced @Overwrite with @Inject in SplashTextRendererMixin, injecting then canceling execution for removing splashes
   now to fix crashes with other mods.
 - Abandon the config system of Elysium Core and implement FzzyConfig
-- Removed all the holiday-based logo variants
+- Removed all the holiday-based logo & panorama variants
+- The custom icon being blurry on some setups or distros, specially was seen on Windows when icon scale was manipulated with Windhawk or MyDocKFinder
+- Fixed the icon not showing up on MacOS
 
 ### VipCoder:
 

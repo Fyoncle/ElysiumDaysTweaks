@@ -3,9 +3,14 @@ package net.fyoncle.elysiumcore.utility.constants;
 import net.minecraft.util.Identifier;
 
 public class Textures {
+    // App Icon
+    public static final String APP_ICON = "assets/elysiumcore/textures/icon/ed_icon.png";
+    public static final String APP_ICON_MAC = "assets/elysiumcore/textures/icon/ed_icon.icns";
+
     // Menu Logo
-    public static final Identifier ED_MENU_LOGO = new Identifier("elysiumcore",
-            "textures/logo/edlogo.png");
+    public static final Identifier MENU_LOGO = new Identifier(
+            "elysiumcore",
+            "textures/logo/menulogo.png");
 
     // - Health Bar Textures -
     // OFF

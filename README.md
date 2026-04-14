@@ -2,6 +2,7 @@
 
 <img src="https://cdn.modrinth.com/data/cached_images/d40adbf6cf2abc56c43341e893a47de9250ec4d8.png" width="90%">
 
+***
 This mod is the core mod of [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack for fixing vanilla bugs,
 bridging compatibility between mods, and fixing issues in the modpack alongside cosmetic features.
 
