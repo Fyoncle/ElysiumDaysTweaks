@@ -10,7 +10,7 @@ public class Textures {
     // Menu Logo
     public static final Identifier MENU_LOGO = new Identifier(
             "elysiumcore",
-            "textures/logo/menulogo.png");
+            "textures/logo/menu_logo.png");
 
     // - Health Bar Textures -
     // OFF
