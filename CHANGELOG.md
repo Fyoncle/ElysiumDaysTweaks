@@ -18,7 +18,7 @@
   now to fix crashes with other mods.
 - Abandon the config system of Elysium Core and implement FzzyConfig
 - Removed all the holiday-based logo & panorama variants
-- The custom icon being blurry on some setups or distros, specially was seen on Windows when icon scale was manipulated with Windhawk or MyDocKFinder
+- The custom icon being blurry on some setups or distros, specially was seen on Windows when icon scale was manipulated with Windhawk or MyDockFinder
 - Fixed the icon not showing up on MacOS
 
 ### VipCoder:
