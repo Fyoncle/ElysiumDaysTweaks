@@ -21,9 +21,9 @@ standalone use.
 
 ### Main Content
 
-- Main Menu Elysium Days Logo & App Icon
-- Main Menu Discord Button
-- Mian Menu Wiki Button
+- Menu Elysium Days Logo & App Icon
+- Menu Discord Button
+- Menu Wiki Button
 - Modpack Update Notifier
 - Ram Warning Screen
 - Toggle Button for [Neat](https://modrinth.com/mod/neat) Mod
