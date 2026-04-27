@@ -3,9 +3,6 @@
     "item:moonlight:placeable_item"
   ],
   "filters": [
-    "/libraryferret:/",
-    {
-      "id": "incendium:upgrade_elytra"
-    }
+    "/libraryferret:/"
   ]
 }
