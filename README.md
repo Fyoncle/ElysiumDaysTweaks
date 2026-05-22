@@ -3,10 +3,9 @@
 <img src="https://cdn.modrinth.com/data/cached_images/d40adbf6cf2abc56c43341e893a47de9250ec4d8.png" width="90%">
 
 ***
-This mod is the core mod of [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack for fixing vanilla bugs,
-bridging compatibility between mods, and fixing issues in the modpack alongside cosmetic features.
+This mod is the core mod of [Elysium Days](https://modrinth.com/modpack/elysium-days) modpack for fixing compatibility issues, vanilla bugs and more.
 
-Incompatibilities will not be fixed unless they affect the Elysium Days modpack, as this mod is not intended for
+Incompatibilities won't be fixed unless they affect the Elysium Days modpack, as this mod is not intended for
 standalone use.
 
 <a href="https://discord.gg/WFpDr7zY8Z" rel="noopener nofollow ugc">
@@ -17,42 +16,33 @@ standalone use.
 ***
 </div>
 <details>
-<summary>Tweak List</summary>
+<summary>List of Changes</summary>
 
-### Main Content
+### Features & Aesthetics
 
-- Menu Elysium Days Logo & App Icon
-- Menu Discord Button
-- Menu Wiki Button
-- Modpack Update Notifier
-- Ram Warning Screen
-- Toggle Button for [Neat](https://modrinth.com/mod/neat) Mod
-
-***
-
-### Other Tweaks
-
-- Adding [End Remastered](https://modrinth.com/mod/endrem) compatibility
-  to [Friends & Foes](https://modrinth.com/mod/friends-and-foes) Mod
-- Custom Translations for Eye of Ender Warning Message in [End Remastered](https://modrinth.com/mod/endrem) Mod for
-  compatibility with [The Lost Castle](https://modrinth.com/mod/the-lost-castle)
-- Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
-- Nerf [Bygone Nether](https://modrinth.com/mod/bygone-nether)'s Wither Skeleton Horses to work better
-  with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
-- Fixes Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
-- Removing Splash Text & Edition Logo of Minecraft Logo Renderer
-- New Panorama
-- New Map Icon Designs! *(Thanks to Vixel!)*
-- 15 More Tips with Mod Support for the [Tips](https://modrinth.com/mod/tips) Mod
-- Removing Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to
-  ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
-- 2 Loot Tables for End Remastered eyes getting injected to Elysium Days
-  using [Loot Patcher](https://modrinth.com/mod/loot-patcher)
-- Less Distracting Spyglass Lens Texture
-- Changes a translation on [End's Phantasm](https://modrinth.com/mod/ends-phantasm) mod as an Easter egg
-- Fixes [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working
-  with modded knives
+- Adds the Elysium Days logo on the main menu and the app icon
+- Adds a Discord Button on the main menu
+- Adds a Wiki Button on the main menu
+- Adds a Modpack Update Notifier on the main menu
+- Adds a RAM Warning Screen
+- Removes Splash Text & Edition Logo of Minecraft Menu Logo
+- Adds a toggle for the [Neat](https://modrinth.com/mod/neat) Mod
+- Adds a new panorama
 - Adds prettier banners for [Modern World Creation](https://modrinth.com/mod/modern-world-creation)
+- Adds a less distracting spyglass overlay
+- Adds new map icon sprites!
+
+### Compatibility & Fixes
+
+- Adds custom Eye of Ender warning translations for [End Remastered](https://modrinth.com/mod/endrem) mod to ensure compatibility with [The Lost Castle](https://modrinth.com/mod/the-lost-castle)
+- Adds 2 Loot Tables for [End Remastered](https://modrinth.com/mod/endrem) eyes for injection with [Loot Patcher](https://modrinth.com/mod/loot-patcher)
+- Changes a translation in [End's Phantasm](https://modrinth.com/mod/ends-phantasm) mod for an easter egg
+- Nerfs [Bygone Nether](https://modrinth.com/mod/bygone-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
+- Fixes Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
+- Adds 13 more tips with mod support for the [Tips](https://modrinth.com/mod/tips) mod
+- Removes Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
+- Fixes [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working with modded knives
+- Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 
 </details>
 <div align="center">
@@ -65,11 +55,10 @@ standalone use.
   <a href="https://modrinth.com/user/shizotoaster" rel="noopener nofollow ugc">
     <img src="https://wsrv.nl/?url=https://i.ibb.co/fdYNX3K/Heart.png" alt="Heart">
   </a>
-</div>
 
-
-**Special thanks to [VipCoder](https://github.com/VipCoder8), [Shizotoaster](https://github.com/shizotoaster) and [Lancet-crow](https://github.com/Lancet-crow) for
-their contributions while making this mod, without them, it wouldn't be possible :)**
+Special thanks to [VipCoder](https://github.com/VipCoder8), [Lancet-crow](https://github.com/Lancet-crow) and [Shizotoaster](https://github.com/shizotoaster) for
+their contributions while making this mod, without them it wouldn't be possible.
 
 And many thanks to [Vixel](https://modrinth.com/user/Vixel) for letting me use his pixel arts in this mod!
+
 </div>
