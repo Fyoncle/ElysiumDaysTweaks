@@ -39,8 +39,9 @@ standalone use.
 - Changes a translation in [End's Phantasm](https://modrinth.com/mod/ends-phantasm) mod for an easter egg
 - Nerfs [Bygone Nether](https://modrinth.com/mod/bygone-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
 - Fixes Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
-- Adds 13 more tips with mod support for the [Tips](https://modrinth.com/mod/tips) mod
+- Adds 1 secret tip for the [Tips](https://modrinth.com/mod/tips) mod
 - Removes Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
+- Fixes the Barbed and Pummeling enchantment of [Guarding](https://modrinth.com/mod/guarding) not working with [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions)
 - Fixes [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working with modded knives
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 
