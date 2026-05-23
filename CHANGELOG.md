@@ -15,7 +15,7 @@
 - Fixed the app icon not showing on macOS
 - Fixed Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
 - Fixed [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working with modded knives
-- Fixed the resource pack not being pinned to the top as intended *(by [Lancet-crow](https://github.com/Lancet-crow))*
+- Fixed the resourcepack not being pinned to the top as intended *(by [Lancet-crow](https://github.com/Lancet-crow))*
 - Fixed a few wrong pixels on the focused Discord button
 - Fixed Enchantment Descriptions compatibility for Guarding
 - Fixed the update checker crashing if Modrinth is down *(by VipCoder)*
@@ -91,9 +91,9 @@
 - Removed Lost Castle advancement compat *(fixed upstream)*
 - Separated Spawn Animations compat to [its own datapack](https://modrinth.com/datapack/spawn-animations-compats)
 - Separated Backported Wolves compat to [its own datapack](https://modrinth.com/datapack/backported-wolves-regions-unexplored-compat)
-- Separated Icons compat to [its own resource pack](https://modrinth.com/resourcepack/icons-compats)
+- Separated Icons compat to [its own resourcepack](https://modrinth.com/resourcepack/icons-compats)
 - Separated Horse Armor & Saddle recipes to [its own datapack](https://modrinth.com/datapack/bhar)
-- Separated Tips compat to [its own datapack](https://modrinth.com/datapack/tips-compats)
+- Separated Tips compat to [its own resourcepack](https://modrinth.com/datapack/tips-compats)
 
 </details>
 
