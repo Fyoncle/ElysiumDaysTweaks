@@ -35,7 +35,8 @@ public class EscapeMenuMixin extends Screen {
             int healthBarY = FabricLoader.getInstance().isModLoaded("replaymod") ? widget.getY() + widget.getHeight() + 3 : widget.getY();
 
             if (widget instanceof ButtonWidget) {
-                if (widgetText.equals(Text.translatable("menu.returnToMenu").getString())) {
+                if (widgetText.equals(Text.translatable("menu.returnToMenu").getString()) ||
+                        widgetText.equals(Text.translatable("menu.disconnect").getString())) {
                     addHealthBarTogglingButton(this.width / 2 - 100 / 2, healthBarY);
                     break;
                 }

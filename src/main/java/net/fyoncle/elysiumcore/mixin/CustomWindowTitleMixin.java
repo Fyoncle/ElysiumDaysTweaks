@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(MinecraftClient.class)
-public class CustomTitleMixin {
+public class CustomWindowTitleMixin {
     @Inject(
             at = @At("RETURN"),
             method = "getWindowTitle",
