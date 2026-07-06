@@ -2,7 +2,7 @@
 
 <img src="https://cdn.modrinth.com/data/cached_images/d40adbf6cf2abc56c43341e893a47de9250ec4d8.png" width="70%">
 
-# 8.0.1 Update
+# 8.1.0 Update
 
 </div>
 
@@ -24,7 +24,7 @@
 <details>
 <summary>⚙️ Internal</summary>
 
-- Bumped version to 8.0.1
+- Bumped version to 8.1.0
 - Updated fabric.mod.json
 
 </details>

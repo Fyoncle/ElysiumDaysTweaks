@@ -12,7 +12,7 @@ public class Constants {
     }
 
     public static class Core {
-        public static final String CURRENT_ED_VERSION = "8.0.1";
+        public static final String CURRENT_ED_VERSION = "8.1.0";
         public static final String CURRENT_MINECRAFT_VERSION = MinecraftVersion.CURRENT.getName();
         public static final String ELYSIUM_DAYS_WINDOW_TITLE = "Elysium Days " + CURRENT_ED_VERSION + " - " + CURRENT_MINECRAFT_VERSION;
     }
