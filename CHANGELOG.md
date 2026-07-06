@@ -2,7 +2,7 @@
 
 <img src="https://cdn.modrinth.com/data/cached_images/d40adbf6cf2abc56c43341e893a47de9250ec4d8.png" width="70%">
 
-# 8.0.0 Update
+# 8.0.1 Update
 
 </div>
 
@@ -28,13 +28,3 @@
 - Updated fabric.mod.json
 
 </details>
-
----
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/1fd12c475756b54e467799d98eca7b406f109341/blockquotes/badge/dark-theme/info.svg" width="100">
-
-Due to the size of this release, some changes may be undocumented.
-
-</div>
