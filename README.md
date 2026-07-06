@@ -43,6 +43,8 @@ standalone use.
 - Removes Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
 - Fixes the Barbed and Pummeling enchantment of [Guarding](https://modrinth.com/mod/guarding) not working with [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions)
 - Fixes [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working with modded knives
+- Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
+- Adds [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) compat for [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) fragment texture
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 
 </details>
