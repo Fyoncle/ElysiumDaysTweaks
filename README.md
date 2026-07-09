@@ -25,7 +25,6 @@ standalone use.
 - Adds a Wiki Button on the main menu
 - Adds a Modpack Update Notifier on the main menu
 - Adds a RAM Warning Screen
-- Removes Splash Text & Edition Logo of Minecraft Menu Logo
 - Adds a toggle for the [Neat](https://modrinth.com/mod/neat) Mod
 - Adds a new panorama
 - Adds prettier banners for [Modern World Creation](https://modrinth.com/mod/modern-world-creation)

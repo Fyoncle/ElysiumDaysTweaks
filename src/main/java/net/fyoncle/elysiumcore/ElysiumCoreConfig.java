@@ -10,7 +10,7 @@ public class ElysiumCoreConfig extends Config {
     public boolean disableRamWarningScreen = false;
 
     public ElysiumCoreConfig() {
-        super(new Identifier(ElysiumCore.MOD_ID, "config"));
+        super(Identifier.of(ElysiumCore.MOD_ID, "config"));
     }
 
     public static void init() {

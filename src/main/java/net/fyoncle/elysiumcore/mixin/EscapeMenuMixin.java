@@ -51,7 +51,6 @@ public class EscapeMenuMixin extends Screen {
 
             healthBarStatusButton = new HoverableTextToggleButton(x,
                     y + 20 + 5, 100, 20,
-                    0, 0,
                     Textures.FOCUSED_ON_HEALTHBAR_TEXTURE,
                     Textures.FOCUSED_OFF_HEALTHBAR_TEXTURE,
                     Flags.IS_HEALTH_BAR_TOGGLED,

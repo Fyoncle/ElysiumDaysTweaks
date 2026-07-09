@@ -6,6 +6,7 @@ import net.fyoncle.elysiumcore.utility.constants.Textures;
 import net.fyoncle.elysiumcore.utility.other.Flags;
 import net.fyoncle.elysiumcore.utility.other.Strings;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.ButtonTextures;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
@@ -51,9 +52,7 @@ public class MainMenuMixin extends Screen {
                 startButton.getX() + startButton.getWidth() + 4,
                 startButton.getY(),
                 20, 20,
-                0, 0, 20,
-                Textures.DISCORD_BUTTON_TEXTURE,
-                20, 40,
+                new ButtonTextures(Textures.DISCORD_BUTTON_UNFOCUSED_TEXTURE, Textures.DISCORD_BUTTON_FOCUSED_TEXTURE),
                 button -> Util.getOperatingSystem().open(Constants.Links.DISCORD_LINK)
         ));
     }
@@ -64,9 +63,7 @@ public class MainMenuMixin extends Screen {
                 startButton.getX() + startButton.getWidth() - 248,
                 startButton.getY(),
                 20, 20,
-                0, 0, 20,
-                Textures.WIKI_BUTTON_TEXTURE,
-                20, 40,
+                new ButtonTextures(Textures.WIKI_BUTTON_UNFOCUSED_TEXTURE, Textures.WIKI_BUTTON_FOCUSED_TEXTURE),
                 button -> Util.getOperatingSystem().open(Constants.Links.WIKI_LINK)
         ));
     }
@@ -87,7 +84,7 @@ public class MainMenuMixin extends Screen {
             this.addDrawableChild(new HoverableTextButton(
                     this.width / 2 - 200 / 2,
                     startButton.getY() + 30,
-                    200, 20, 0, 0, 0, 200, 20,
+                    200, 20,
                     Text.translatable("elysiumcore.update_available", Strings.LATEST_ED_VERSION).getString(),
                     Textures.GREEN_BUTTON_UNFOCUSED_TEXTURE,
                     Textures.GREEN_BUTTON_FOCUSED_TEXTURE,

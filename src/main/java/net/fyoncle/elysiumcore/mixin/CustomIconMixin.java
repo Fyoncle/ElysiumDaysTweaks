@@ -3,6 +3,7 @@ package net.fyoncle.elysiumcore.mixin;
 import net.fyoncle.elysiumcore.utility.constants.Textures;
 import net.minecraft.client.util.Icons;
 import net.minecraft.resource.InputSupplier;
+import net.minecraft.resource.ResourcePack;
 import org.apache.commons.io.IOUtils;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -30,12 +31,12 @@ public class CustomIconMixin {
     }
 
     @Inject(method = "getIcons", at = @At("HEAD"), cancellable = true)
-    private void getIcons(CallbackInfoReturnable<List<InputSupplier<InputStream>>> cir) {
+    private void getIcons(ResourcePack resourcePack, CallbackInfoReturnable<List<InputSupplier<InputStream>>> cir) {
         cir.setReturnValue(List.of(loadIcon(Textures.APP_ICON)));
     }
 
     @Inject(method = "getMacIcon", at = @At("HEAD"), cancellable = true)
-    private void getMacIcon(CallbackInfoReturnable<InputSupplier<InputStream>> cir) {
+    private void getMacIcon(ResourcePack resourcePack, CallbackInfoReturnable<InputSupplier<InputStream>> cir) {
         cir.setReturnValue(loadIcon(Textures.APP_ICON_MAC));
     }
 }

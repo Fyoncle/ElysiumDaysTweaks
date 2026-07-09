@@ -6,12 +6,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.URL;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class RequestSender {
     public String sendRequestTo(String urlString) {
         try {
-            HttpURLConnection connection = (HttpURLConnection) new URL(urlString).openConnection();
+            HttpURLConnection connection = (HttpURLConnection) new URI(urlString).toURL().openConnection();
             connection.setConnectTimeout(5000);
             connection.setReadTimeout(5000);
 
@@ -21,7 +22,7 @@ public class RequestSender {
                 String result = reader.readLine();
                 return result != null ? result : "invalid_result";
             }
-        } catch (IOException e) {
+        } catch (IOException | URISyntaxException e) {
             ElysiumCore.LOGGER.error("Request to {} failed: {}", urlString, e.getMessage());
             return "request_failed";
         }

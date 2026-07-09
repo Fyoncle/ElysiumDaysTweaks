@@ -2,31 +2,25 @@ package net.fyoncle.elysiumcore.customwidgets;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.ButtonTextures;
 import net.minecraft.client.gui.widget.TexturedButtonWidget;
 import net.minecraft.util.Colors;
 import net.minecraft.util.Identifier;
 
 public class HoverableTextButton extends TexturedButtonWidget {
-    private final Identifier unfocused;
-    private final Identifier focused;
     private final String text;
 
     public HoverableTextButton(int x, int y, int width, int height,
-                               int u, int v, int offset, int tw, int th,
                                String text,
-                               Identifier textureUnFocused,
+                               Identifier textureUnfocused,
                                Identifier textureFocused, PressAction pressAction) {
-        super(x, y, width, height, u, v, offset, textureUnFocused, tw, th, pressAction);
-        this.unfocused = textureUnFocused;
-        this.focused = textureFocused;
+        super(x, y, width, height, new ButtonTextures(textureUnfocused, textureFocused), pressAction);
         this.text = text;
     }
 
     @Override
-    public void renderButton(DrawContext context, int mouseX, int mouseY, float delta) {
-        Identifier texture = isHovered() ? focused : unfocused;
-        context.drawTexture(texture, this.getX(), this.getY(), this.u, this.v,
-                this.width, this.height, this.textureWidth, this.textureHeight);
+    public void renderWidget(DrawContext context, int mouseX, int mouseY, float delta) {
+        super.renderWidget(context, mouseX, mouseY, delta);
 
         if (text != null) {
             context.drawCenteredTextWithShadow(MinecraftClient.getInstance().textRenderer,

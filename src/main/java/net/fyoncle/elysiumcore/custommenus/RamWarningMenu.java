@@ -7,11 +7,12 @@ import net.fyoncle.elysiumcore.utility.constants.Textures;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.MultilineText;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.AccessibilityOnboardingButtons;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.screen.option.LanguageOptionsScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
-import net.minecraft.client.gui.widget.TexturedButtonWidget;
+import net.minecraft.client.gui.widget.TextIconButtonWidget;
 import net.minecraft.text.Text;
 import net.minecraft.util.Colors;
 import net.minecraft.util.Identifier;
@@ -45,7 +46,7 @@ public class RamWarningMenu extends Screen {
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        renderBackground(context);
+        renderBackground(context, mouseX, mouseY, delta);
         super.render(context, mouseX, mouseY, delta);
         MultilineText.create(
                 MinecraftClient.getInstance().textRenderer,
@@ -60,7 +61,7 @@ public class RamWarningMenu extends Screen {
                                              ButtonWidget.PressAction action) {
         return new HoverableTextButton(
                 this.width / 2 - 100, y,
-                200, 20, 0, 0, 0, 200, 20,
+                200, 20,
                 label, unfocused, focused, action
         );
     }
@@ -109,22 +110,20 @@ public class RamWarningMenu extends Screen {
     }
 
     private void addLanguageButton() {
-        this.addDrawableChild(new TexturedButtonWidget(
-                this.width / 2 - 10,
-                this.height / 2 + 100,
-                20, 20,
-                0, 106, 20,
-                new Identifier("textures/gui/widgets.png"),
-                256, 256,
-                button -> MinecraftClient.getInstance().setScreen(
-                        new LanguageOptionsScreen(
-                                this,
-                                MinecraftClient.getInstance().options,
-                                MinecraftClient.getInstance().getLanguageManager()
-                        )
-                ),
-                Text.translatable("narrator.button.language")
-        ));
+        TextIconButtonWidget languageButton = (TextIconButtonWidget) this.addDrawableChild(
+                AccessibilityOnboardingButtons.createLanguageButton(
+                        20,
+                        button -> MinecraftClient.getInstance().setScreen(
+                                new LanguageOptionsScreen(
+                                        this,
+                                        MinecraftClient.getInstance().options,
+                                        MinecraftClient.getInstance().getLanguageManager()
+                                )
+                        ),
+                        true
+                )
+        );
+        languageButton.setPosition(this.width / 2 - 10, this.height / 2 + 100);
     }
 
     @Override

@@ -16,12 +16,12 @@ public abstract class ResourcePackPin {
     };
 
     @Shadow
-    public abstract String getName();
+    public abstract String getId();
 
     @Inject(method = "getInitialPosition", at = @At("HEAD"), cancellable = true)
     public void getInitialPosition(CallbackInfoReturnable<ResourcePackProfile.InsertionPosition> cir) {
         for (String pinnable : PINNED_RPS) {
-            if (this.getName().equals(pinnable)) {
+            if (this.getId().equals(pinnable)) {
                 cir.setReturnValue(ResourcePackProfile.InsertionPosition.TOP);
             }
         }
@@ -30,7 +30,7 @@ public abstract class ResourcePackPin {
     @Inject(method = "isPinned", at = @At("HEAD"), cancellable = true)
     public void isPinned(CallbackInfoReturnable<Boolean> cir) {
         for (String pinnable : PINNED_RPS) {
-            if (this.getName().equals(pinnable)) {
+            if (this.getId().equals(pinnable)) {
                 cir.setReturnValue(true);
             }
         }

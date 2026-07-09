@@ -1,12 +1,11 @@
 {
   "required": true,
   "package": "net.fyoncle.elysiumcore.mixin",
-  "compatibilityLevel": "JAVA_17",
+  "compatibilityLevel": "JAVA_21",
   "plugin": "net.fyoncle.elysiumcore.mixin.ElysiumCoreMixinPlugin",
   "mixins": [
     "PlayerEntityMixin",
-    "SuperbSteedEntityAttributesMixin",
-    "WitherSkeletonHorseModifier"
+    "SuperbSteedEntityAttributesMixin"
   ],
   "client": [
     "CustomIconMixin",
@@ -15,8 +14,7 @@
     "EscapeMenuMixin",
     "MainMenuMixin",
     "MixinClientPackSource",
-    "ResourcePackPin",
-    "SplashRemovalMixin"
+    "ResourcePackPin"
   ],
   "injectors": {
     "defaultRequire": 1

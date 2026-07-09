@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.8-SNAPSHOT'
+    id 'fabric-loom' version '1.17-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -19,8 +19,6 @@ repositories {
     maven { url = "https://repo.spongepowered.org/repository/maven-public/" }
     // Fzzy Maven
     maven { url = "https://maven.fzzyhmstrs.me/" }
-    // Lady Snake Maven
-    maven { url = "https://maven.ladysnake.org/releases" }
 }
 
 dependencies {
@@ -34,18 +32,15 @@ dependencies {
 
     // Neat
     modImplementation "maven.modrinth:neat:${project.neatVersion}"
-    implementation "me.zeroeightsix:fiber:${project.fiberVersion}"
+    modImplementation "maven.modrinth:cloth-config:${project.clothConfigVersion}"
 
-    // Bygone Nether
-    modImplementation "maven.modrinth:bygone-nether:${project.bygoneNetherVersion}"
+    // Eternal Nether
+    //modImplementation "maven.modrinth:eternal-nether:${project.eternalNetherVersion}"
+    //modImplementation "maven.modrinth:puzzles-lib:${project.puzzlesLibVersion}"
+    //modImplementation "maven.modrinth:forge-config-api-port:${forgeConfigApiPortVersion}"
 
     // Superb Steeds
     modImplementation "maven.modrinth:superb-steeds:${project.superbSteedsVersion}"
-    modApi include("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.ccaVersion}")
-    modApi include("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.ccaVersion}")
-
-    // Mixins
-    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     // Mixin Squared (library)
     include(implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.3.7-beta.1")))
@@ -64,14 +59,14 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-    it.options.release = 17
+    it.options.release = 21
 }
 
 java {
     withSourcesJar()
 
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
 
 jar {
