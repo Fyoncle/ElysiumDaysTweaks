@@ -11,6 +11,7 @@
 
 - Added compatibility for [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) Elytra Fragment texture for consistency with [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
 - Added broken elytra texture since [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) doesn't have one
+- Fixed a [Let's Do Candlelight](https://modrinth.com/mod/lets-do-candlelight-farmcharm-compat) issue
 
 </details>
 
