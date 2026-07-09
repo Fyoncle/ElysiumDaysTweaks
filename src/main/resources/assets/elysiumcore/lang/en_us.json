@@ -6,5 +6,7 @@
   "elysiumcore.ramwarningscreen.button_ignore": "Ignore",
   "elysiumcore.ramwarningscreen.button_dont_warn_again": "Don't Warn Again",
   "elysiumcore.update_available": "Modpack Update Available (%s)",
-  "elysiumcore.neat_health_bar": "Health Bars"
+  "elysiumcore.neat_health_bar": "Health Bars",
+  "elysiumcore.tip.secret_story_title": "Secret Story of Elysium Days",
+  "elysiumcore.tip.secret_story": "If you want to learn about this story, message Fyoncle on Discord."
 }
