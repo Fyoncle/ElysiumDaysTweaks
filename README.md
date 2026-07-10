@@ -33,7 +33,7 @@ standalone use.
 ### Compatibility & Fixes
 
 - Adds custom Eye of Ender warning translations for [End Remastered](https://modrinth.com/mod/endrem) mod to ensure compatibility with [The Lost Castle](https://modrinth.com/mod/the-lost-castle)
-- Adds 2 Loot Tables for [End Remastered](https://modrinth.com/mod/endrem) eyes for injection with [Loot Patcher](https://modrinth.com/mod/loot-patcher)
+- Adds 2 Loot Tables for [End Remastered](https://modrinth.com/mod/endrem) eyes for injection with [Datapatched](https://modrinth.com/mod/datapatched)
 - Changes a translation in [End's Phantasm](https://modrinth.com/mod/ends-phantasm) mod for an easter egg
 - Nerfs [Bygone Nether](https://modrinth.com/mod/bygone-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
 - Fixes [The Lost Castle](https://modrinth.com/mod/the-lost-castle) not granting the Eye Spy advancement
