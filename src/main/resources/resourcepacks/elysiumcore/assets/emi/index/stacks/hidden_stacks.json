@@ -2,7 +2,7 @@
   "disable": true,
   "removed": [
     "item:moonlight:placeable_item",
-    "item:moonlight:"
+    "item:moonlight:spawn_box"
   ],
   "filters": [
     "/libraryferret:/"
