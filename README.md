@@ -28,7 +28,6 @@ standalone use.
 - Adds a toggle for the [Neat](https://modrinth.com/mod/neat) Mod
 - Adds a new panorama
 - Adds prettier banners for [Modern World Creation](https://modrinth.com/mod/modern-world-creation)
-- Adds a less distracting spyglass overlay
 - Adds new map icon sprites!
 
 ### Compatibility & Fixes
@@ -37,6 +36,7 @@ standalone use.
 - Adds 2 Loot Tables for [End Remastered](https://modrinth.com/mod/endrem) eyes for injection with [Loot Patcher](https://modrinth.com/mod/loot-patcher)
 - Changes a translation in [End's Phantasm](https://modrinth.com/mod/ends-phantasm) mod for an easter egg
 - Nerfs [Bygone Nether](https://modrinth.com/mod/bygone-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
+- Fixes [The Lost Castle](https://modrinth.com/mod/the-lost-castle) not granting the Eye Spy advancement
 - Fixes Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
 - Adds 1 secret tip for the [Tips](https://modrinth.com/mod/tips) mod
 - Removes Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
@@ -44,6 +44,7 @@ standalone use.
 - Fixes [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working with modded knives
 - Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
 - Adds [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) compat for [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) fragment texture
+- Fixes a [Let's Do Candlelight](https://modrinth.com/mod/lets-do-candlelight-farmcharm-compat) issue where the golden ring can't be equipped on the off-hand ring slot
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 
 </details>
