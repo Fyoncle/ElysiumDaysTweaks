@@ -1,0 +1,26 @@
+{
+  "type": "datapatched:add_pools",
+  "targets": "friendsandfoes:entities/iceologer",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "endrem:cold_eye",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 80
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "datapatched:add_pools",
+  "targets": "friendsandfoes:entities/wildfire",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "endrem:nether_eye",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 60
+        }
+      ]
+    }
+  ]
+}
