@@ -29,7 +29,6 @@ standalone use.
 - Adds a toggle for the [Neat](https://modrinth.com/mod/neat) Mod
 - Adds a new panorama
 - Adds prettier banners for [Modern World Creation](https://modrinth.com/mod/modern-world-creation)
-- Adds a less distracting spyglass overlay
 - Adds new map icon sprites!
 
 ### Compatibility & Fixes
