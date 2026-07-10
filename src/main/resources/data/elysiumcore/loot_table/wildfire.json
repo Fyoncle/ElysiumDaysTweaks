@@ -1,26 +1,17 @@
 {
-  "pools": [
+  "type": "datapatched:add_entries",
+  "targets": "friendsandfoes:entities/wildfire",
+  "entries": [
     {
-      "name": "eye_pool",
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "tag",
-          "name": "elysiumcore:nether_eye",
-          "expand": false,
-          "weight": 40,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "type": "empty",
-          "weight": 60
-        }
-      ]
+      "type": "minecraft:item",
+      "name": "endrem:nether_eye",
+      "weight": 40,
+      "conditions": [],
+      "functions": []
+    },
+    {
+      "type": "minecraft:empty",
+      "weight": 60
     }
   ]
 }

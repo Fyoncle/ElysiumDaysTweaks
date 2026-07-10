@@ -1,26 +1,17 @@
 {
-  "pools": [
+  "type": "datapatched:add_entries",
+  "targets": "friendsandfoes:entities/iceologer",
+  "entries": [
     {
-      "name": "eye_pool",
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "tag",
-          "name": "elysiumcore:cold_eye",
-          "expand": false,
-          "weight": 20,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "type": "empty",
-          "weight": 80
-        }
-      ]
+      "type": "minecraft:item",
+      "name": "endrem:cold_eye",
+      "weight": 20,
+      "conditions": [],
+      "functions": []
+    },
+    {
+      "type": "minecraft:empty",
+      "weight": 80
     }
   ]
 }
