@@ -45,6 +45,7 @@ standalone use.
 - Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
 - Adds [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) compat for [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) fragment texture
 - Fixes a [Let's Do Candlelight](https://modrinth.com/mod/lets-do-candlelight-farmcharm-compat) issue where the golden ring can't be equipped on the off-hand ring slot
+- Adds [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) compatibility for [Enderscape](https://modrinth.com/mod/enderscape)
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 
 </details>
