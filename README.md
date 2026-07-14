@@ -34,6 +34,8 @@ standalone use.
 
 - Adds custom Eye of Ender warning translations for [End Remastered](https://modrinth.com/mod/endrem) mod to ensure compatibility with [The Lost Castle](https://modrinth.com/mod/the-lost-castle)
 - Adds 2 Loot Tables for [End Remastered](https://modrinth.com/mod/endrem) eyes for injection with [Datapatched](https://modrinth.com/mod/datapatched)
+- Adds [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) compatibility for [Enderscape](https://modrinth.com/mod/enderscape)
+- Adds [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) compat for [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) fragment texture
 - Changes a translation in [End's Phantasm](https://modrinth.com/mod/ends-phantasm) mod for an easter egg
 - Nerfs [Bygone Nether](https://modrinth.com/mod/bygone-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
 - Fixes [The Lost Castle](https://modrinth.com/mod/the-lost-castle) not granting the Eye Spy advancement
@@ -43,9 +45,7 @@ standalone use.
 - Fixes the Barbed and Pummeling enchantment of [Guarding](https://modrinth.com/mod/guarding) not working with [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions)
 - Fixes [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working with modded knives
 - Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
-- Adds [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) compat for [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) fragment texture
 - Fixes a [Let's Do Candlelight](https://modrinth.com/mod/lets-do-candlelight-farmcharm-compat) issue where the golden ring can't be equipped on the off-hand ring slot
-- Adds [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) compatibility for [Enderscape](https://modrinth.com/mod/enderscape)
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 
 </details>
