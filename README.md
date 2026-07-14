@@ -34,7 +34,6 @@ standalone use.
 
 - Adds custom Eye of Ender warning translations for [End Remastered](https://modrinth.com/mod/endrem) mod to ensure compatibility with [The Lost Castle](https://modrinth.com/mod/the-lost-castle)
 - Adds 2 Loot Tables for [End Remastered](https://modrinth.com/mod/endrem) eyes for injection with [Datapatched](https://modrinth.com/mod/datapatched)
-- Adds [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) compatibility for [Enderscape](https://modrinth.com/mod/enderscape)
 - Adds [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp) compat for [Grindy Elytras](https://modrinth.com/mod/grindy-elytras) fragment texture
 - Changes a translation in [End's Phantasm](https://modrinth.com/mod/ends-phantasm) mod for an easter egg
 - Nerfs [Bygone Nether](https://modrinth.com/mod/bygone-nether)'s Wither Skeleton Horses to work better with [SuperbSteeds](https://modrinth.com/mod/superb-steeds)
