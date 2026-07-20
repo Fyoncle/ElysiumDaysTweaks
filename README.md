@@ -45,6 +45,7 @@ standalone use.
 - Fixes [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working with modded knives
 - Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
 - Fixes a [Let's Do Candlelight](https://modrinth.com/mod/lets-do-candlelight-farmcharm-compat) issue where the golden ring can't be equipped on the off-hand ring slot
+- Fixes [Snow Pig](https://modrinth.com/mod/snowpig-fabric) compatibility with [Fresh Animations: Details](https://modrinth.com/resourcepack/fresh-animations-details)
 - Fixes [MC-220390](https://bugs.mojang.com/browse/MC/issues/MC-220390)
 
 </details>
