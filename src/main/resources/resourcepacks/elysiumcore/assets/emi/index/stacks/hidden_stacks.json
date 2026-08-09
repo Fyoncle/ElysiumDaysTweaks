@@ -4,8 +4,5 @@
     "item:moonlight:placeable_item",
     "item:moonlight:spawn_box",
     "item:ecologics:moss_layer"
-  ],
-  "filters": [
-    "/libraryferret:/"
   ]
 }
