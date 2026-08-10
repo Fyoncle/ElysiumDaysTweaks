@@ -35,9 +35,9 @@ dependencies {
     modImplementation "maven.modrinth:cloth-config:${project.clothConfigVersion}"
 
     // Eternal Nether
-    //modImplementation "maven.modrinth:eternal-nether:${project.eternalNetherVersion}"
-    //modImplementation "maven.modrinth:puzzles-lib:${project.puzzlesLibVersion}"
-    //modImplementation "maven.modrinth:forge-config-api-port:${forgeConfigApiPortVersion}"
+    modImplementation "maven.modrinth:eternal-nether:${project.eternalNetherVersion}"
+    modImplementation "maven.modrinth:puzzles-lib:${project.puzzlesLibVersion}"
+    modImplementation "maven.modrinth:forge-config-api-port:${forgeConfigApiPortVersion}"
 
     // Superb Steeds
     modImplementation "maven.modrinth:superb-steeds:${project.superbSteedsVersion}"

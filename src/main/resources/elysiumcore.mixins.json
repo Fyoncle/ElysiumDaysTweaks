@@ -5,7 +5,8 @@
   "plugin": "net.fyoncle.elysiumcore.mixin.ElysiumCoreMixinPlugin",
   "mixins": [
     "PlayerEntityMixin",
-    "SuperbSteedEntityAttributesMixin"
+    "SuperbSteedEntityAttributesMixin",
+    "WitherSkeletonHorseModifier"
   ],
   "client": [
     "CustomIconMixin",
