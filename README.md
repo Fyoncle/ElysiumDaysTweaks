@@ -40,7 +40,6 @@ standalone use.
 - Fixes Superb Steeds's issue [#9](https://github.com/MoriyaShiine/superb-steeds/issues/9)
 - Adds 1 secret tip for the [Tips](https://modrinth.com/mod/tips) mod
 - Removes Iceologer from [Drodi's Illagers FA](https://modrinth.com/resourcepack/drodis-illagers-fresh-animation) to ensure compatibility with [Friends & Foes](https://modrinth.com/mod/friends-and-foes)
-- Fixes the Barbed and Pummeling enchantment of [Guarding](https://modrinth.com/mod/guarding) not working with [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions)
 - Fixes [[Let's Do] Bakery - Farm&Charm Compat](https://modrinth.com/mod/lets-do-bakery-farmcharm-compat) not working with modded knives
 - Fixes inconsistencies within [Ender Dragon Revamp](https://www.curseforge.com/minecraft/texture-packs/ender-dragon-revamp)
 - Fixes a [Let's Do Candlelight](https://modrinth.com/mod/lets-do-candlelight-farmcharm-compat) issue where the golden ring can't be equipped on the off-hand ring slot
